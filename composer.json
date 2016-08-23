@@ -9,5 +9,10 @@
             "email": "boehsermoe@me.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "": "php/Payone"
+        }
+    }
 }
