@@ -1,0 +1,13 @@
+{
+    "name": "boehsermoe/payone-php-sdk",
+    "description": "PAYONE PHP Software Development Kit",
+    "type": "library",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Bennet Klaroelter",
+            "email": "boehsermoe@me.com"
+        }
+    ],
+    "require": {}
+}
