@@ -1,0 +1,1002 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Api_Response_Capture_Approved</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public inherited"><a href="#__construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#__toString" title="__toString :: "><span class="description">__toString()
+        </span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#getClearingBankaccount" title="getClearingBankaccount :: "><span class="description">getClearingBankaccount()
+        </span><pre>getClearingBankaccount()</pre></a></li>
+<li class="method public "><a href="#getClearingBankaccountholder" title="getClearingBankaccountholder :: "><span class="description">getClearingBankaccountholder()
+        </span><pre>getClearingBankaccountholder()</pre></a></li>
+<li class="method public "><a href="#getClearingBankbic" title="getClearingBankbic :: "><span class="description">getClearingBankbic()
+        </span><pre>getClearingBankbic()</pre></a></li>
+<li class="method public "><a href="#getClearingBankcity" title="getClearingBankcity :: "><span class="description">getClearingBankcity()
+        </span><pre>getClearingBankcity()</pre></a></li>
+<li class="method public "><a href="#getClearingBankcode" title="getClearingBankcode :: "><span class="description">getClearingBankcode()
+        </span><pre>getClearingBankcode()</pre></a></li>
+<li class="method public "><a href="#getClearingBankcountry" title="getClearingBankcountry :: "><span class="description">getClearingBankcountry()
+        </span><pre>getClearingBankcountry()</pre></a></li>
+<li class="method public "><a href="#getClearingBankiban" title="getClearingBankiban :: "><span class="description">getClearingBankiban()
+        </span><pre>getClearingBankiban()</pre></a></li>
+<li class="method public "><a href="#getClearingBankname" title="getClearingBankname :: "><span class="description">getClearingBankname()
+        </span><pre>getClearingBankname()</pre></a></li>
+<li class="method public "><a href="#getClearingDuedate" title="getClearingDuedate :: "><span class="description">getClearingDuedate()
+        </span><pre>getClearingDuedate()</pre></a></li>
+<li class="method public "><a href="#getClearingInstructionnote" title="getClearingInstructionnote :: "><span class="description">getClearingInstructionnote()
+        </span><pre>getClearingInstructionnote()</pre></a></li>
+<li class="method public "><a href="#getClearingLegalnote" title="getClearingLegalnote :: "><span class="description">getClearingLegalnote()
+        </span><pre>getClearingLegalnote()</pre></a></li>
+<li class="method public "><a href="#getClearingReference" title="getClearingReference :: "><span class="description">getClearingReference()
+        </span><pre>getClearingReference()</pre></a></li>
+<li class="method public inherited"><a href="#getRawResponse" title="getRawResponse :: "><span class="description">getRawResponse()
+        </span><pre>getRawResponse()</pre></a></li>
+<li class="method public "><a href="#getSettleaccount" title="getSettleaccount :: "><span class="description">getSettleaccount()
+        </span><pre>getSettleaccount()</pre></a></li>
+<li class="method public inherited"><a href="#getStatus" title="getStatus :: "><span class="description">getStatus()
+        </span><pre>getStatus()</pre></a></li>
+<li class="method public "><a href="#getTxid" title="getTxid :: "><span class="description">getTxid()
+        </span><pre>getTxid()</pre></a></li>
+<li class="method public inherited"><a href="#getValue" title="getValue :: "><span class="description">getValue()
+        </span><pre>getValue()</pre></a></li>
+<li class="method public inherited"><a href="#init" title="init :: "><span class="description">init()
+        </span><pre>init()</pre></a></li>
+<li class="method public inherited"><a href="#isApproved" title="isApproved :: "><span class="description">isApproved()
+        </span><pre>isApproved()</pre></a></li>
+<li class="method public inherited"><a href="#isBlocked" title="isBlocked :: "><span class="description">isBlocked()
+        </span><pre>isBlocked()</pre></a></li>
+<li class="method public inherited"><a href="#isEnrolled" title="isEnrolled :: "><span class="description">isEnrolled()
+        </span><pre>isEnrolled()</pre></a></li>
+<li class="method public inherited"><a href="#isError" title="isError :: "><span class="description">isError()
+        </span><pre>isError()</pre></a></li>
+<li class="method public inherited"><a href="#isInvalid" title="isInvalid :: "><span class="description">isInvalid()
+        </span><pre>isInvalid()</pre></a></li>
+<li class="method public inherited"><a href="#isRedirect" title="isRedirect :: "><span class="description">isRedirect()
+        </span><pre>isRedirect()</pre></a></li>
+<li class="method public inherited"><a href="#isValid" title="isValid :: "><span class="description">isValid()
+        </span><pre>isValid()</pre></a></li>
+<li class="method public "><a href="#setClearingBankaccount" title="setClearingBankaccount :: "><span class="description">setClearingBankaccount()
+        </span><pre>setClearingBankaccount()</pre></a></li>
+<li class="method public "><a href="#setClearingBankaccountholder" title="setClearingBankaccountholder :: "><span class="description">setClearingBankaccountholder()
+        </span><pre>setClearingBankaccountholder()</pre></a></li>
+<li class="method public "><a href="#setClearingBankbic" title="setClearingBankbic :: "><span class="description">setClearingBankbic()
+        </span><pre>setClearingBankbic()</pre></a></li>
+<li class="method public "><a href="#setClearingBankcity" title="setClearingBankcity :: "><span class="description">setClearingBankcity()
+        </span><pre>setClearingBankcity()</pre></a></li>
+<li class="method public "><a href="#setClearingBankcode" title="setClearingBankcode :: "><span class="description">setClearingBankcode()
+        </span><pre>setClearingBankcode()</pre></a></li>
+<li class="method public "><a href="#setClearingBankcountry" title="setClearingBankcountry :: "><span class="description">setClearingBankcountry()
+        </span><pre>setClearingBankcountry()</pre></a></li>
+<li class="method public "><a href="#setClearingBankiban" title="setClearingBankiban :: "><span class="description">setClearingBankiban()
+        </span><pre>setClearingBankiban()</pre></a></li>
+<li class="method public "><a href="#setClearingBankname" title="setClearingBankname :: "><span class="description">setClearingBankname()
+        </span><pre>setClearingBankname()</pre></a></li>
+<li class="method public "><a href="#setClearingDuedate" title="setClearingDuedate :: "><span class="description">setClearingDuedate()
+        </span><pre>setClearingDuedate()</pre></a></li>
+<li class="method public "><a href="#setClearingInstructionnote" title="setClearingInstructionnote :: "><span class="description">setClearingInstructionnote()
+        </span><pre>setClearingInstructionnote()</pre></a></li>
+<li class="method public "><a href="#setClearingLegalnote" title="setClearingLegalnote :: "><span class="description">setClearingLegalnote()
+        </span><pre>setClearingLegalnote()</pre></a></li>
+<li class="method public "><a href="#setClearingReference" title="setClearingReference :: "><span class="description">setClearingReference()
+        </span><pre>setClearingReference()</pre></a></li>
+<li class="method public inherited"><a href="#setRawResponse" title="setRawResponse :: "><span class="description">setRawResponse()
+        </span><pre>setRawResponse()</pre></a></li>
+<li class="method public "><a href="#setSettleaccount" title="setSettleaccount :: "><span class="description">setSettleaccount()
+        </span><pre>setSettleaccount()</pre></a></li>
+<li class="method public inherited"><a href="#setStatus" title="setStatus :: "><span class="description">setStatus()
+        </span><pre>setStatus()</pre></a></li>
+<li class="method public "><a href="#setTxid" title="setTxid :: "><span class="description">setTxid()
+        </span><pre>setTxid()</pre></a></li>
+<li class="method public inherited"><a href="#setValue" title="setValue :: "><span class="description">setValue()
+        </span><pre>setValue()</pre></a></li>
+<li class="method public inherited"><a href="#toArray" title="toArray :: "><span class="description">toArray()
+        </span><pre>toArray()</pre></a></li>
+<li class="nav-header protected">» Protected</li>
+<li class="method protected inherited"><a href="#get" title="get :: "><span class="description">get()
+        </span><pre>get()</pre></a></li>
+<li class="method protected inherited"><a href="#set" title="set :: "><span class="description">set()
+        </span><pre>set()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24clearing_bankaccount" title="$clearing_bankaccount :: "><span class="description">$clearing_bankaccount</span><pre>$clearing_bankaccount</pre></a></li>
+<li class="property protected "><a href="#%24clearing_bankaccountholder" title="$clearing_bankaccountholder :: "><span class="description">$clearing_bankaccountholder</span><pre>$clearing_bankaccountholder</pre></a></li>
+<li class="property protected "><a href="#%24clearing_bankbic" title="$clearing_bankbic :: "><span class="description">$clearing_bankbic</span><pre>$clearing_bankbic</pre></a></li>
+<li class="property protected "><a href="#%24clearing_bankcity" title="$clearing_bankcity :: "><span class="description">$clearing_bankcity</span><pre>$clearing_bankcity</pre></a></li>
+<li class="property protected "><a href="#%24clearing_bankcode" title="$clearing_bankcode :: "><span class="description">$clearing_bankcode</span><pre>$clearing_bankcode</pre></a></li>
+<li class="property protected "><a href="#%24clearing_bankcountry" title="$clearing_bankcountry :: "><span class="description">$clearing_bankcountry</span><pre>$clearing_bankcountry</pre></a></li>
+<li class="property protected "><a href="#%24clearing_bankiban" title="$clearing_bankiban :: "><span class="description">$clearing_bankiban</span><pre>$clearing_bankiban</pre></a></li>
+<li class="property protected "><a href="#%24clearing_bankname" title="$clearing_bankname :: "><span class="description">$clearing_bankname</span><pre>$clearing_bankname</pre></a></li>
+<li class="property protected "><a href="#%24clearing_duedate" title="$clearing_duedate :: (YYYYMMDD)"><span class="description">(YYYYMMDD)</span><pre>$clearing_duedate</pre></a></li>
+<li class="property protected "><a href="#%24clearing_instructionnote" title="$clearing_instructionnote :: "><span class="description">$clearing_instructionnote</span><pre>$clearing_instructionnote</pre></a></li>
+<li class="property protected "><a href="#%24clearing_legalnote" title="$clearing_legalnote :: "><span class="description">$clearing_legalnote</span><pre>$clearing_legalnote</pre></a></li>
+<li class="property protected "><a href="#%24clearing_reference" title="$clearing_reference :: "><span class="description">$clearing_reference</span><pre>$clearing_reference</pre></a></li>
+<li class="property protected inherited"><a href="#%24rawResponse" title="$rawResponse :: "><span class="description">$rawResponse</span><pre>$rawResponse</pre></a></li>
+<li class="property protected "><a href="#%24settleaccount" title="$settleaccount :: "><span class="description">$settleaccount</span><pre>$settleaccount</pre></a></li>
+<li class="property protected inherited"><a href="#%24status" title="$status :: "><span class="description">$status</span><pre>$status</pre></a></li>
+<li class="property protected "><a href="#%24txid" title="$txid :: "><span class="description">$txid</span><pre>$txid</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Api_Response_Capture_Approved" id="\Payone_Api_Response_Capture_Approved"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Api_Response_Capture_Approved.html">Payone_Api_Response_Capture_Approved</a>
+</li>
+</ul>
+<div href="../classes/Payone_Api_Response_Capture_Approved.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.Api.Response.html">Payone_Api</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Response</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct(array $params) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::__construct()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="__toString" id="__toString"></a><div class="element clickable method public __toString" data-toggle="collapse" data-target=".__toString .collapse">
+<h2>__toString()
+        </h2>
+<pre>__toString() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::__toString()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingBankaccount" id="getClearingBankaccount"></a><div class="element clickable method public getClearingBankaccount" data-toggle="collapse" data-target=".getClearingBankaccount .collapse">
+<h2>getClearingBankaccount()
+        </h2>
+<pre>getClearingBankaccount() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingBankaccountholder" id="getClearingBankaccountholder"></a><div class="element clickable method public getClearingBankaccountholder" data-toggle="collapse" data-target=".getClearingBankaccountholder .collapse">
+<h2>getClearingBankaccountholder()
+        </h2>
+<pre>getClearingBankaccountholder() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingBankbic" id="getClearingBankbic"></a><div class="element clickable method public getClearingBankbic" data-toggle="collapse" data-target=".getClearingBankbic .collapse">
+<h2>getClearingBankbic()
+        </h2>
+<pre>getClearingBankbic() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingBankcity" id="getClearingBankcity"></a><div class="element clickable method public getClearingBankcity" data-toggle="collapse" data-target=".getClearingBankcity .collapse">
+<h2>getClearingBankcity()
+        </h2>
+<pre>getClearingBankcity() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingBankcode" id="getClearingBankcode"></a><div class="element clickable method public getClearingBankcode" data-toggle="collapse" data-target=".getClearingBankcode .collapse">
+<h2>getClearingBankcode()
+        </h2>
+<pre>getClearingBankcode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingBankcountry" id="getClearingBankcountry"></a><div class="element clickable method public getClearingBankcountry" data-toggle="collapse" data-target=".getClearingBankcountry .collapse">
+<h2>getClearingBankcountry()
+        </h2>
+<pre>getClearingBankcountry() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingBankiban" id="getClearingBankiban"></a><div class="element clickable method public getClearingBankiban" data-toggle="collapse" data-target=".getClearingBankiban .collapse">
+<h2>getClearingBankiban()
+        </h2>
+<pre>getClearingBankiban() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingBankname" id="getClearingBankname"></a><div class="element clickable method public getClearingBankname" data-toggle="collapse" data-target=".getClearingBankname .collapse">
+<h2>getClearingBankname()
+        </h2>
+<pre>getClearingBankname() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingDuedate" id="getClearingDuedate"></a><div class="element clickable method public getClearingDuedate" data-toggle="collapse" data-target=".getClearingDuedate .collapse">
+<h2>getClearingDuedate()
+        </h2>
+<pre>getClearingDuedate() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingInstructionnote" id="getClearingInstructionnote"></a><div class="element clickable method public getClearingInstructionnote" data-toggle="collapse" data-target=".getClearingInstructionnote .collapse">
+<h2>getClearingInstructionnote()
+        </h2>
+<pre>getClearingInstructionnote() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingLegalnote" id="getClearingLegalnote"></a><div class="element clickable method public getClearingLegalnote" data-toggle="collapse" data-target=".getClearingLegalnote .collapse">
+<h2>getClearingLegalnote()
+        </h2>
+<pre>getClearingLegalnote() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingReference" id="getClearingReference"></a><div class="element clickable method public getClearingReference" data-toggle="collapse" data-target=".getClearingReference .collapse">
+<h2>getClearingReference()
+        </h2>
+<pre>getClearingReference() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getRawResponse" id="getRawResponse"></a><div class="element clickable method public getRawResponse" data-toggle="collapse" data-target=".getRawResponse .collapse">
+<h2>getRawResponse()
+        </h2>
+<pre>getRawResponse() : null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::getRawResponse()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>null</code></div>
+</div></div>
+</div>
+<a name="getSettleaccount" id="getSettleaccount"></a><div class="element clickable method public getSettleaccount" data-toggle="collapse" data-target=".getSettleaccount .collapse">
+<h2>getSettleaccount()
+        </h2>
+<pre>getSettleaccount() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getStatus" id="getStatus"></a><div class="element clickable method public getStatus" data-toggle="collapse" data-target=".getStatus .collapse">
+<h2>getStatus()
+        </h2>
+<pre>getStatus() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::getStatus()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getTxid" id="getTxid"></a><div class="element clickable method public getTxid" data-toggle="collapse" data-target=".getTxid .collapse">
+<h2>getTxid()
+        </h2>
+<pre>getTxid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getValue" id="getValue"></a><div class="element clickable method public getValue" data-toggle="collapse" data-target=".getValue .collapse">
+<h2>getValue()
+        </h2>
+<pre>getValue(string $key) : null | mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::getValue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>mixed</code>
+</div>
+</div></div>
+</div>
+<a name="init" id="init"></a><div class="element clickable method public init" data-toggle="collapse" data-target=".init .collapse">
+<h2>init()
+        </h2>
+<pre>init(array $data) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::init()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="isApproved" id="isApproved"></a><div class="element clickable method public isApproved" data-toggle="collapse" data-target=".isApproved .collapse">
+<h2>isApproved()
+        </h2>
+<pre>isApproved() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::isApproved()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="isBlocked" id="isBlocked"></a><div class="element clickable method public isBlocked" data-toggle="collapse" data-target=".isBlocked .collapse">
+<h2>isBlocked()
+        </h2>
+<pre>isBlocked() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::isBlocked()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="isEnrolled" id="isEnrolled"></a><div class="element clickable method public isEnrolled" data-toggle="collapse" data-target=".isEnrolled .collapse">
+<h2>isEnrolled()
+        </h2>
+<pre>isEnrolled() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::isEnrolled()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="isError" id="isError"></a><div class="element clickable method public isError" data-toggle="collapse" data-target=".isError .collapse">
+<h2>isError()
+        </h2>
+<pre>isError() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::isError()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="isInvalid" id="isInvalid"></a><div class="element clickable method public isInvalid" data-toggle="collapse" data-target=".isInvalid .collapse">
+<h2>isInvalid()
+        </h2>
+<pre>isInvalid() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::isInvalid()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="isRedirect" id="isRedirect"></a><div class="element clickable method public isRedirect" data-toggle="collapse" data-target=".isRedirect .collapse">
+<h2>isRedirect()
+        </h2>
+<pre>isRedirect() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::isRedirect()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="isValid" id="isValid"></a><div class="element clickable method public isValid" data-toggle="collapse" data-target=".isValid .collapse">
+<h2>isValid()
+        </h2>
+<pre>isValid() : bool</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::isValid()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="setClearingBankaccount" id="setClearingBankaccount"></a><div class="element clickable method public setClearingBankaccount" data-toggle="collapse" data-target=".setClearingBankaccount .collapse">
+<h2>setClearingBankaccount()
+        </h2>
+<pre>setClearingBankaccount(string $clearing_bankaccount) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_bankaccount</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingBankaccountholder" id="setClearingBankaccountholder"></a><div class="element clickable method public setClearingBankaccountholder" data-toggle="collapse" data-target=".setClearingBankaccountholder .collapse">
+<h2>setClearingBankaccountholder()
+        </h2>
+<pre>setClearingBankaccountholder(string $clearing_bankaccountholder) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_bankaccountholder</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingBankbic" id="setClearingBankbic"></a><div class="element clickable method public setClearingBankbic" data-toggle="collapse" data-target=".setClearingBankbic .collapse">
+<h2>setClearingBankbic()
+        </h2>
+<pre>setClearingBankbic(string $clearing_bankbic) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_bankbic</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingBankcity" id="setClearingBankcity"></a><div class="element clickable method public setClearingBankcity" data-toggle="collapse" data-target=".setClearingBankcity .collapse">
+<h2>setClearingBankcity()
+        </h2>
+<pre>setClearingBankcity(string $clearing_bankcity) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_bankcity</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingBankcode" id="setClearingBankcode"></a><div class="element clickable method public setClearingBankcode" data-toggle="collapse" data-target=".setClearingBankcode .collapse">
+<h2>setClearingBankcode()
+        </h2>
+<pre>setClearingBankcode(string $clearing_bankcode) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_bankcode</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingBankcountry" id="setClearingBankcountry"></a><div class="element clickable method public setClearingBankcountry" data-toggle="collapse" data-target=".setClearingBankcountry .collapse">
+<h2>setClearingBankcountry()
+        </h2>
+<pre>setClearingBankcountry(string $clearing_bankcountry) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_bankcountry</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingBankiban" id="setClearingBankiban"></a><div class="element clickable method public setClearingBankiban" data-toggle="collapse" data-target=".setClearingBankiban .collapse">
+<h2>setClearingBankiban()
+        </h2>
+<pre>setClearingBankiban(string $clearing_bankiban) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_bankiban</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingBankname" id="setClearingBankname"></a><div class="element clickable method public setClearingBankname" data-toggle="collapse" data-target=".setClearingBankname .collapse">
+<h2>setClearingBankname()
+        </h2>
+<pre>setClearingBankname(string $clearing_bankname) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_bankname</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingDuedate" id="setClearingDuedate"></a><div class="element clickable method public setClearingDuedate" data-toggle="collapse" data-target=".setClearingDuedate .collapse">
+<h2>setClearingDuedate()
+        </h2>
+<pre>setClearingDuedate(string $clearing_duedate) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_duedate</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingInstructionnote" id="setClearingInstructionnote"></a><div class="element clickable method public setClearingInstructionnote" data-toggle="collapse" data-target=".setClearingInstructionnote .collapse">
+<h2>setClearingInstructionnote()
+        </h2>
+<pre>setClearingInstructionnote(string $clearing_instructionnote) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_instructionnote</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingLegalnote" id="setClearingLegalnote"></a><div class="element clickable method public setClearingLegalnote" data-toggle="collapse" data-target=".setClearingLegalnote .collapse">
+<h2>setClearingLegalnote()
+        </h2>
+<pre>setClearingLegalnote(string $clearing_legalnote) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_legalnote</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingReference" id="setClearingReference"></a><div class="element clickable method public setClearingReference" data-toggle="collapse" data-target=".setClearingReference .collapse">
+<h2>setClearingReference()
+        </h2>
+<pre>setClearingReference(string $clearing_reference) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearing_reference</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setRawResponse" id="setRawResponse"></a><div class="element clickable method public setRawResponse" data-toggle="collapse" data-target=".setRawResponse .collapse">
+<h2>setRawResponse()
+        </h2>
+<pre>setRawResponse($rawResponse) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::setRawResponse()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rawResponse</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setSettleaccount" id="setSettleaccount"></a><div class="element clickable method public setSettleaccount" data-toggle="collapse" data-target=".setSettleaccount .collapse">
+<h2>setSettleaccount()
+        </h2>
+<pre>setSettleaccount(string $settleaccount) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$settleaccount</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setStatus" id="setStatus"></a><div class="element clickable method public setStatus" data-toggle="collapse" data-target=".setStatus .collapse">
+<h2>setStatus()
+        </h2>
+<pre>setStatus(string $status) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::setStatus()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$status</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setTxid" id="setTxid"></a><div class="element clickable method public setTxid" data-toggle="collapse" data-target=".setTxid .collapse">
+<h2>setTxid()
+        </h2>
+<pre>setTxid(int $txid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$txid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setValue" id="setValue"></a><div class="element clickable method public setValue" data-toggle="collapse" data-target=".setValue .collapse">
+<h2>setValue()
+        </h2>
+<pre>setValue(string $key, string $name) : boolean | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::setValue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="toArray" id="toArray"></a><div class="element clickable method public toArray" data-toggle="collapse" data-target=".toArray .collapse">
+<h2>toArray()
+        </h2>
+<pre>toArray() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::toArray()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="get" id="get"></a><div class="element clickable method protected get" data-toggle="collapse" data-target=".get .collapse">
+<h2>get()
+        </h2>
+<pre>get($name) : null | mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::get()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>mixed</code>
+</div>
+</div></div>
+</div>
+<a name="set" id="set"></a><div class="element clickable method protected set" data-toggle="collapse" data-target=".set .collapse">
+<h2>set()
+        </h2>
+<pre>set(string $name, mixed $value) : boolean | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::set()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>null</code>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24clearing_bankaccount" id="$clearing_bankaccount"> </a><div class="element clickable property protected $clearing_bankaccount" data-toggle="collapse" data-target=".$clearing_bankaccount .collapse">
+<h2>$clearing_bankaccount</h2>
+<pre>$clearing_bankaccount : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_bankaccountholder" id="$clearing_bankaccountholder"> </a><div class="element clickable property protected $clearing_bankaccountholder" data-toggle="collapse" data-target=".$clearing_bankaccountholder .collapse">
+<h2>$clearing_bankaccountholder</h2>
+<pre>$clearing_bankaccountholder : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_bankbic" id="$clearing_bankbic"> </a><div class="element clickable property protected $clearing_bankbic" data-toggle="collapse" data-target=".$clearing_bankbic .collapse">
+<h2>$clearing_bankbic</h2>
+<pre>$clearing_bankbic : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_bankcity" id="$clearing_bankcity"> </a><div class="element clickable property protected $clearing_bankcity" data-toggle="collapse" data-target=".$clearing_bankcity .collapse">
+<h2>$clearing_bankcity</h2>
+<pre>$clearing_bankcity : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_bankcode" id="$clearing_bankcode"> </a><div class="element clickable property protected $clearing_bankcode" data-toggle="collapse" data-target=".$clearing_bankcode .collapse">
+<h2>$clearing_bankcode</h2>
+<pre>$clearing_bankcode : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_bankcountry" id="$clearing_bankcountry"> </a><div class="element clickable property protected $clearing_bankcountry" data-toggle="collapse" data-target=".$clearing_bankcountry .collapse">
+<h2>$clearing_bankcountry</h2>
+<pre>$clearing_bankcountry : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_bankiban" id="$clearing_bankiban"> </a><div class="element clickable property protected $clearing_bankiban" data-toggle="collapse" data-target=".$clearing_bankiban .collapse">
+<h2>$clearing_bankiban</h2>
+<pre>$clearing_bankiban : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_bankname" id="$clearing_bankname"> </a><div class="element clickable property protected $clearing_bankname" data-toggle="collapse" data-target=".$clearing_bankname .collapse">
+<h2>$clearing_bankname</h2>
+<pre>$clearing_bankname : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_duedate" id="$clearing_duedate"> </a><div class="element clickable property protected $clearing_duedate" data-toggle="collapse" data-target=".$clearing_duedate .collapse">
+<h2>(YYYYMMDD)</h2>
+<pre>$clearing_duedate : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_instructionnote" id="$clearing_instructionnote"> </a><div class="element clickable property protected $clearing_instructionnote" data-toggle="collapse" data-target=".$clearing_instructionnote .collapse">
+<h2>$clearing_instructionnote</h2>
+<pre>$clearing_instructionnote : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_legalnote" id="$clearing_legalnote"> </a><div class="element clickable property protected $clearing_legalnote" data-toggle="collapse" data-target=".$clearing_legalnote .collapse">
+<h2>$clearing_legalnote</h2>
+<pre>$clearing_legalnote : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearing_reference" id="$clearing_reference"> </a><div class="element clickable property protected $clearing_reference" data-toggle="collapse" data-target=".$clearing_reference .collapse">
+<h2>$clearing_reference</h2>
+<pre>$clearing_reference : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24rawResponse" id="$rawResponse"> </a><div class="element clickable property protected $rawResponse" data-toggle="collapse" data-target=".$rawResponse .collapse">
+<h2>$rawResponse</h2>
+<pre>$rawResponse </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::$$rawResponse</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24settleaccount" id="$settleaccount"> </a><div class="element clickable property protected $settleaccount" data-toggle="collapse" data-target=".$settleaccount .collapse">
+<h2>$settleaccount</h2>
+<pre>$settleaccount : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24status" id="$status"> </a><div class="element clickable property protected $status" data-toggle="collapse" data-target=".$status .collapse">
+<h2>$status</h2>
+<pre>$status </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Response_Abstract::$$status</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24txid" id="$txid"> </a><div class="element clickable property protected $txid" data-toggle="collapse" data-target=".$txid .collapse">
+<h2>$txid</h2>
+<pre>$txid : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:05+02:00.<br></footer></div>
+</div>
+</body>
+</html>

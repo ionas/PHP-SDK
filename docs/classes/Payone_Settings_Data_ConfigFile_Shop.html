@@ -1,0 +1,395 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Settings_Data_ConfigFile_Shop</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#getClearingtypes" title="getClearingtypes :: "><span class="description">getClearingtypes()
+        </span><pre>getClearingtypes()</pre></a></li>
+<li class="method public "><a href="#getCode" title="getCode :: "><span class="description">getCode()
+        </span><pre>getCode()</pre></a></li>
+<li class="method public "><a href="#getGlobal" title="getGlobal :: "><span class="description">getGlobal()
+        </span><pre>getGlobal()</pre></a></li>
+<li class="method public "><a href="#getKey" title="getKey :: "><span class="description">getKey()
+        </span><pre>getKey()</pre></a></li>
+<li class="method public "><a href="#getMisc" title="getMisc :: "><span class="description">getMisc()
+        </span><pre>getMisc()</pre></a></li>
+<li class="method public "><a href="#getName" title="getName :: "><span class="description">getName()
+        </span><pre>getName()</pre></a></li>
+<li class="method public "><a href="#getProtect" title="getProtect :: "><span class="description">getProtect()
+        </span><pre>getProtect()</pre></a></li>
+<li class="method public "><a href="#getSystem" title="getSystem :: "><span class="description">getSystem()
+        </span><pre>getSystem()</pre></a></li>
+<li class="method public "><a href="#setClearingtypes" title="setClearingtypes :: "><span class="description">setClearingtypes()
+        </span><pre>setClearingtypes()</pre></a></li>
+<li class="method public "><a href="#setCode" title="setCode :: "><span class="description">setCode()
+        </span><pre>setCode()</pre></a></li>
+<li class="method public "><a href="#setGlobal" title="setGlobal :: "><span class="description">setGlobal()
+        </span><pre>setGlobal()</pre></a></li>
+<li class="method public "><a href="#setMisc" title="setMisc :: "><span class="description">setMisc()
+        </span><pre>setMisc()</pre></a></li>
+<li class="method public "><a href="#setName" title="setName :: "><span class="description">setName()
+        </span><pre>setName()</pre></a></li>
+<li class="method public "><a href="#setProtect" title="setProtect :: "><span class="description">setProtect()
+        </span><pre>setProtect()</pre></a></li>
+<li class="method public "><a href="#setSystem" title="setSystem :: "><span class="description">setSystem()
+        </span><pre>setSystem()</pre></a></li>
+<li class="method public inherited"><a href="#toArray" title="toArray :: "><span class="description">toArray()
+        </span><pre>toArray()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24clearingtypes" title="$clearingtypes :: "><span class="description">$clearingtypes</span><pre>$clearingtypes</pre></a></li>
+<li class="property protected "><a href="#%24code" title="$code :: "><span class="description">$code</span><pre>$code</pre></a></li>
+<li class="property protected "><a href="#%24global" title="$global :: "><span class="description">$global</span><pre>$global</pre></a></li>
+<li class="property protected "><a href="#%24key" title="$key :: "><span class="description">$key</span><pre>$key</pre></a></li>
+<li class="property protected "><a href="#%24misc" title="$misc :: "><span class="description">$misc</span><pre>$misc</pre></a></li>
+<li class="property protected "><a href="#%24name" title="$name :: "><span class="description">$name</span><pre>$name</pre></a></li>
+<li class="property protected "><a href="#%24protect" title="$protect :: "><span class="description">$protect</span><pre>$protect</pre></a></li>
+<li class="property protected "><a href="#%24system" title="$system :: "><span class="description">$system</span><pre>$system</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Settings_Data_ConfigFile_Shop" id="\Payone_Settings_Data_ConfigFile_Shop"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Settings_Data_ConfigFile_Shop.html">Payone_Settings_Data_ConfigFile_Shop</a>
+</li>
+</ul>
+<div href="../classes/Payone_Settings_Data_ConfigFile_Shop.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.Settings.Data.html">Payone_Settings</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Data</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="getClearingtypes" id="getClearingtypes"></a><div class="element clickable method public getClearingtypes" data-toggle="collapse" data-target=".getClearingtypes .collapse">
+<h2>getClearingtypes()
+        </h2>
+<pre>getClearingtypes() : <a href="../classes/Payone_Settings_Data_ConfigFile_Shop_ClearingTypes.html">\Payone_Settings_Data_ConfigFile_Shop_ClearingTypes</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_ClearingTypes.html">\Payone_Settings_Data_ConfigFile_Shop_ClearingTypes</a></code></div>
+</div></div>
+</div>
+<a name="getCode" id="getCode"></a><div class="element clickable method public getCode" data-toggle="collapse" data-target=".getCode .collapse">
+<h2>getCode()
+        </h2>
+<pre>getCode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getGlobal" id="getGlobal"></a><div class="element clickable method public getGlobal" data-toggle="collapse" data-target=".getGlobal .collapse">
+<h2>getGlobal()
+        </h2>
+<pre>getGlobal() : <a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">\Payone_Settings_Data_ConfigFile_Shop_Global</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">\Payone_Settings_Data_ConfigFile_Shop_Global</a></code></div>
+</div></div>
+</div>
+<a name="getKey" id="getKey"></a><div class="element clickable method public getKey" data-toggle="collapse" data-target=".getKey .collapse">
+<h2>getKey()
+        </h2>
+<pre>getKey() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getMisc" id="getMisc"></a><div class="element clickable method public getMisc" data-toggle="collapse" data-target=".getMisc .collapse">
+<h2>getMisc()
+        </h2>
+<pre>getMisc() : <a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Misc.html">\Payone_Settings_Data_ConfigFile_Shop_Misc</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Misc.html">\Payone_Settings_Data_ConfigFile_Shop_Misc</a></code></div>
+</div></div>
+</div>
+<a name="getName" id="getName"></a><div class="element clickable method public getName" data-toggle="collapse" data-target=".getName .collapse">
+<h2>getName()
+        </h2>
+<pre>getName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getProtect" id="getProtect"></a><div class="element clickable method public getProtect" data-toggle="collapse" data-target=".getProtect .collapse">
+<h2>getProtect()
+        </h2>
+<pre>getProtect() : <a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Protect.html">\Payone_Settings_Data_ConfigFile_Shop_Protect</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Protect.html">\Payone_Settings_Data_ConfigFile_Shop_Protect</a></code></div>
+</div></div>
+</div>
+<a name="getSystem" id="getSystem"></a><div class="element clickable method public getSystem" data-toggle="collapse" data-target=".getSystem .collapse">
+<h2>getSystem()
+        </h2>
+<pre>getSystem() : <a href="../classes/Payone_Settings_Data_ConfigFile_Shop_System.html">\Payone_Settings_Data_ConfigFile_Shop_System</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_System.html">\Payone_Settings_Data_ConfigFile_Shop_System</a></code></div>
+</div></div>
+</div>
+<a name="setClearingtypes" id="setClearingtypes"></a><div class="element clickable method public setClearingtypes" data-toggle="collapse" data-target=".setClearingtypes .collapse">
+<h2>setClearingtypes()
+        </h2>
+<pre>setClearingtypes(<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_ClearingTypes.html">\Payone_Settings_Data_ConfigFile_Shop_ClearingTypes</a> $clearingtypes) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearingtypes</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_ClearingTypes.html">\Payone_Settings_Data_ConfigFile_Shop_ClearingTypes</a></code>
+</div>
+</div></div>
+</div>
+<a name="setCode" id="setCode"></a><div class="element clickable method public setCode" data-toggle="collapse" data-target=".setCode .collapse">
+<h2>setCode()
+        </h2>
+<pre>setCode(string $code) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setGlobal" id="setGlobal"></a><div class="element clickable method public setGlobal" data-toggle="collapse" data-target=".setGlobal .collapse">
+<h2>setGlobal()
+        </h2>
+<pre>setGlobal(<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">\Payone_Settings_Data_ConfigFile_Shop_Global</a> $global) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$global</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">\Payone_Settings_Data_ConfigFile_Shop_Global</a></code>
+</div>
+</div></div>
+</div>
+<a name="setMisc" id="setMisc"></a><div class="element clickable method public setMisc" data-toggle="collapse" data-target=".setMisc .collapse">
+<h2>setMisc()
+        </h2>
+<pre>setMisc(<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Misc.html">\Payone_Settings_Data_ConfigFile_Shop_Misc</a> $misc) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$misc</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Misc.html">\Payone_Settings_Data_ConfigFile_Shop_Misc</a></code>
+</div>
+</div></div>
+</div>
+<a name="setName" id="setName"></a><div class="element clickable method public setName" data-toggle="collapse" data-target=".setName .collapse">
+<h2>setName()
+        </h2>
+<pre>setName(string $name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setProtect" id="setProtect"></a><div class="element clickable method public setProtect" data-toggle="collapse" data-target=".setProtect .collapse">
+<h2>setProtect()
+        </h2>
+<pre>setProtect(<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Protect.html">\Payone_Settings_Data_ConfigFile_Shop_Protect</a> $protect) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$protect</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Protect.html">\Payone_Settings_Data_ConfigFile_Shop_Protect</a></code>
+</div>
+</div></div>
+</div>
+<a name="setSystem" id="setSystem"></a><div class="element clickable method public setSystem" data-toggle="collapse" data-target=".setSystem .collapse">
+<h2>setSystem()
+        </h2>
+<pre>setSystem(<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_System.html">\Payone_Settings_Data_ConfigFile_Shop_System</a> $system) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$system</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_System.html">\Payone_Settings_Data_ConfigFile_Shop_System</a></code>
+</div>
+</div></div>
+</div>
+<a name="toArray" id="toArray"></a><div class="element clickable method public toArray" data-toggle="collapse" data-target=".toArray .collapse">
+<h2>toArray()
+        </h2>
+<pre>toArray() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>abstract</th>
+<td></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_Interface::toArray()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24clearingtypes" id="$clearingtypes"> </a><div class="element clickable property protected $clearingtypes" data-toggle="collapse" data-target=".$clearingtypes .collapse">
+<h2>$clearingtypes</h2>
+<pre>$clearingtypes : <a href="../classes/Payone_Settings_Data_ConfigFile_Shop_ClearingTypes.html">\Payone_Settings_Data_ConfigFile_Shop_ClearingTypes</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24code" id="$code"> </a><div class="element clickable property protected $code" data-toggle="collapse" data-target=".$code .collapse">
+<h2>$code</h2>
+<pre>$code : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24global" id="$global"> </a><div class="element clickable property protected $global" data-toggle="collapse" data-target=".$global .collapse">
+<h2>$global</h2>
+<pre>$global : <a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">\Payone_Settings_Data_ConfigFile_Shop_Global</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24key" id="$key"> </a><div class="element clickable property protected $key" data-toggle="collapse" data-target=".$key .collapse">
+<h2>$key</h2>
+<pre>$key </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24misc" id="$misc"> </a><div class="element clickable property protected $misc" data-toggle="collapse" data-target=".$misc .collapse">
+<h2>$misc</h2>
+<pre>$misc : <a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Misc.html">\Payone_Settings_Data_ConfigFile_Shop_Misc</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24name" id="$name"> </a><div class="element clickable property protected $name" data-toggle="collapse" data-target=".$name .collapse">
+<h2>$name</h2>
+<pre>$name : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24protect" id="$protect"> </a><div class="element clickable property protected $protect" data-toggle="collapse" data-target=".$protect .collapse">
+<h2>$protect</h2>
+<pre>$protect : <a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Protect.html">\Payone_Settings_Data_ConfigFile_Shop_Protect</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24system" id="$system"> </a><div class="element clickable property protected $system" data-toggle="collapse" data-target=".$system .collapse">
+<h2>$system</h2>
+<pre>$system : <a href="../classes/Payone_Settings_Data_ConfigFile_Shop_System.html">\Payone_Settings_Data_ConfigFile_Shop_System</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:09+02:00.<br></footer></div>
+</div>
+</body>
+</html>

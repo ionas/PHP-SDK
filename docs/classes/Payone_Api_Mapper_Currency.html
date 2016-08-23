@@ -1,0 +1,440 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Api_Mapper_Currency</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#getCodeById" title="getCodeById :: "><span class="description">getCodeById()
+        </span><pre>getCodeById()</pre></a></li>
+<li class="method public "><a href="#getCurrencySymbolByCode" title="getCurrencySymbolByCode :: "><span class="description">getCurrencySymbolByCode()
+        </span><pre>getCurrencySymbolByCode()</pre></a></li>
+<li class="method public "><a href="#getIdByCode" title="getIdByCode :: "><span class="description">getIdByCode()
+        </span><pre>getIdByCode()</pre></a></li>
+<li class="method public "><a href="#getMappingByCode" title="getMappingByCode :: "><span class="description">getMappingByCode()
+        </span><pre>getMappingByCode()</pre></a></li>
+<li class="method public "><a href="#getMappingById" title="getMappingById :: "><span class="description">getMappingById()
+        </span><pre>getMappingById()</pre></a></li>
+<li class="method public "><a href="#getPathToProperties" title="getPathToProperties :: "><span class="description">getPathToProperties()
+        </span><pre>getPathToProperties()</pre></a></li>
+<li class="method public "><a href="#hasMappingByCode" title="hasMappingByCode :: "><span class="description">hasMappingByCode()
+        </span><pre>hasMappingByCode()</pre></a></li>
+<li class="method public "><a href="#mapAmountToMain" title="mapAmountToMain :: "><span class="description">mapAmountToMain()
+        </span><pre>mapAmountToMain()</pre></a></li>
+<li class="method public "><a href="#mapAmountToSub" title="mapAmountToSub :: "><span class="description">mapAmountToSub()
+        </span><pre>mapAmountToSub()</pre></a></li>
+<li class="method public "><a href="#setMappingByCode" title="setMappingByCode :: "><span class="description">setMappingByCode()
+        </span><pre>setMappingByCode()</pre></a></li>
+<li class="method public "><a href="#setPathToProperties" title="setPathToProperties :: "><span class="description">setPathToProperties()
+        </span><pre>setPathToProperties()</pre></a></li>
+<li class="nav-header protected">» Protected</li>
+<li class="method protected "><a href="#initCurrenciesRaw" title="initCurrenciesRaw :: "><span class="description">initCurrenciesRaw()
+        </span><pre>initCurrenciesRaw()</pre></a></li>
+<li class="method protected "><a href="#initMappingByCode" title="initMappingByCode :: "><span class="description">initMappingByCode()
+        </span><pre>initMappingByCode()</pre></a></li>
+<li class="method protected "><a href="#initMappingById" title="initMappingById :: "><span class="description">initMappingById()
+        </span><pre>initMappingById()</pre></a></li>
+<li class="method protected "><a href="#initSubdivByCode" title="initSubdivByCode :: "><span class="description">initSubdivByCode()
+        </span><pre>initSubdivByCode()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24mappingByCode" title="$mappingByCode :: "><span class="description">$mappingByCode</span><pre>$mappingByCode</pre></a></li>
+<li class="property protected "><a href="#%24mappingById" title="$mappingById :: "><span class="description">$mappingById</span><pre>$mappingById</pre></a></li>
+<li class="property protected "><a href="#%24pathToProperties" title="$pathToProperties :: "><span class="description">$pathToProperties</span><pre>$pathToProperties</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#PATH_CURRENCY_PROPERTIES_DEFAULT" title="PATH_CURRENCY_PROPERTIES_DEFAULT :: "><span class="description">PATH_CURRENCY_PROPERTIES_DEFAULT</span><pre>PATH_CURRENCY_PROPERTIES_DEFAULT</pre></a></li>
+<li class="constant  "><a href="#PROPERTY_NAME_CODE" title="PROPERTY_NAME_CODE :: "><span class="description">PROPERTY_NAME_CODE</span><pre>PROPERTY_NAME_CODE</pre></a></li>
+<li class="constant  "><a href="#PROPERTY_NAME_ID" title="PROPERTY_NAME_ID :: Property names from properties file"><span class="description">Property names from properties file</span><pre>PROPERTY_NAME_ID</pre></a></li>
+<li class="constant  "><a href="#PROPERTY_NAME_SIGN" title="PROPERTY_NAME_SIGN :: "><span class="description">PROPERTY_NAME_SIGN</span><pre>PROPERTY_NAME_SIGN</pre></a></li>
+<li class="constant  "><a href="#PROPERTY_NAME_SUBDIV" title="PROPERTY_NAME_SUBDIV :: "><span class="description">PROPERTY_NAME_SUBDIV</span><pre>PROPERTY_NAME_SUBDIV</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Api_Mapper_Currency" id="\Payone_Api_Mapper_Currency"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Api_Mapper_Currency.html">Payone_Api_Mapper_Currency</a>
+</li>
+</ul>
+<div href="../classes/Payone_Api_Mapper_Currency.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.Api.Mapper.html">Payone_Api</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Mapper</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="getCodeById" id="getCodeById"></a><div class="element clickable method public getCodeById" data-toggle="collapse" data-target=".getCodeById .collapse">
+<h2>getCodeById()
+        </h2>
+<pre>getCodeById($id) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code></code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/Payone_Api_Exception_MappingNotFound.html">\Payone_Api_Exception_MappingNotFound</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getCurrencySymbolByCode" id="getCurrencySymbolByCode"></a><div class="element clickable method public getCurrencySymbolByCode" data-toggle="collapse" data-target=".getCurrencySymbolByCode .collapse">
+<h2>getCurrencySymbolByCode()
+        </h2>
+<pre>getCurrencySymbolByCode(string $code) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/Payone_Api_Exception_MappingNotFound.html">\Payone_Api_Exception_MappingNotFound</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getIdByCode" id="getIdByCode"></a><div class="element clickable method public getIdByCode" data-toggle="collapse" data-target=".getIdByCode .collapse">
+<h2>getIdByCode()
+        </h2>
+<pre>getIdByCode(string $code) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/Payone_Api_Exception_MappingNotFound.html">\Payone_Api_Exception_MappingNotFound</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getMappingByCode" id="getMappingByCode"></a><div class="element clickable method public getMappingByCode" data-toggle="collapse" data-target=".getMappingByCode .collapse">
+<h2>getMappingByCode()
+        </h2>
+<pre>getMappingByCode(string $code) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="getMappingById" id="getMappingById"></a><div class="element clickable method public getMappingById" data-toggle="collapse" data-target=".getMappingById .collapse">
+<h2>getMappingById()
+        </h2>
+<pre>getMappingById() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>mappingById is derived from mappingByCode</div>
+</div></div>
+</div>
+<a name="getPathToProperties" id="getPathToProperties"></a><div class="element clickable method public getPathToProperties" data-toggle="collapse" data-target=".getPathToProperties .collapse">
+<h2>getPathToProperties()
+        </h2>
+<pre>getPathToProperties() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="hasMappingByCode" id="hasMappingByCode"></a><div class="element clickable method public hasMappingByCode" data-toggle="collapse" data-target=".hasMappingByCode .collapse">
+<h2>hasMappingByCode()
+        </h2>
+<pre>hasMappingByCode($code, $innerArrayKey) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$innerArrayKey</h4>
+<code></code><p>('id' | 'sign' | 'subdiv')</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="mapAmountToMain" id="mapAmountToMain"></a><div class="element clickable method public mapAmountToMain" data-toggle="collapse" data-target=".mapAmountToMain .collapse">
+<h2>mapAmountToMain()
+        </h2>
+<pre>mapAmountToMain($subAmount, string $code) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$subAmount</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/Payone_Api_Exception_MappingNotFound.html">\Payone_Api_Exception_MappingNotFound</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="mapAmountToSub" id="mapAmountToSub"></a><div class="element clickable method public mapAmountToSub" data-toggle="collapse" data-target=".mapAmountToSub .collapse">
+<h2>mapAmountToSub()
+        </h2>
+<pre>mapAmountToSub($amount, $code) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$amount</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$code</h4>
+<code></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="setMappingByCode" id="setMappingByCode"></a><div class="element clickable method public setMappingByCode" data-toggle="collapse" data-target=".setMappingByCode .collapse">
+<h2>setMappingByCode()
+        </h2>
+<pre>setMappingByCode(array $mappingByCode) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mappingByCode</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="setPathToProperties" id="setPathToProperties"></a><div class="element clickable method public setPathToProperties" data-toggle="collapse" data-target=".setPathToProperties .collapse">
+<h2>setPathToProperties()
+        </h2>
+<pre>setPathToProperties(string $pathToProperties) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pathToProperties</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="initCurrenciesRaw" id="initCurrenciesRaw"></a><div class="element clickable method protected initCurrenciesRaw" data-toggle="collapse" data-target=".initCurrenciesRaw .collapse">
+<h2>initCurrenciesRaw()
+        </h2>
+<pre>initCurrenciesRaw() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="initMappingByCode" id="initMappingByCode"></a><div class="element clickable method protected initMappingByCode" data-toggle="collapse" data-target=".initMappingByCode .collapse">
+<h2>initMappingByCode()
+        </h2>
+<pre>initMappingByCode() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="initMappingById" id="initMappingById"></a><div class="element clickable method protected initMappingById" data-toggle="collapse" data-target=".initMappingById .collapse">
+<h2>initMappingById()
+        </h2>
+<pre>initMappingById() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="initSubdivByCode" id="initSubdivByCode"></a><div class="element clickable method protected initSubdivByCode" data-toggle="collapse" data-target=".initSubdivByCode .collapse">
+<h2>initSubdivByCode()
+        </h2>
+<pre>initSubdivByCode($code) : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code></code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/Payone_Api_Exception_MappingNotFound.html">\Payone_Api_Exception_MappingNotFound</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24mappingByCode" id="$mappingByCode"> </a><div class="element clickable property protected $mappingByCode" data-toggle="collapse" data-target=".$mappingByCode .collapse">
+<h2>$mappingByCode</h2>
+<pre>$mappingByCode : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24mappingById" id="$mappingById"> </a><div class="element clickable property protected $mappingById" data-toggle="collapse" data-target=".$mappingById .collapse">
+<h2>$mappingById</h2>
+<pre>$mappingById : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24pathToProperties" id="$pathToProperties"> </a><div class="element clickable property protected $pathToProperties" data-toggle="collapse" data-target=".$pathToProperties .collapse">
+<h2>$pathToProperties</h2>
+<pre>$pathToProperties : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a name="PATH_CURRENCY_PROPERTIES_DEFAULT" id="PATH_CURRENCY_PROPERTIES_DEFAULT"> </a><div class="element clickable constant  PATH_CURRENCY_PROPERTIES_DEFAULT" data-toggle="collapse" data-target=".PATH_CURRENCY_PROPERTIES_DEFAULT .collapse">
+<h2>PATH_CURRENCY_PROPERTIES_DEFAULT</h2>
+<pre>PATH_CURRENCY_PROPERTIES_DEFAULT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="PROPERTY_NAME_CODE" id="PROPERTY_NAME_CODE"> </a><div class="element clickable constant  PROPERTY_NAME_CODE" data-toggle="collapse" data-target=".PROPERTY_NAME_CODE .collapse">
+<h2>PROPERTY_NAME_CODE</h2>
+<pre>PROPERTY_NAME_CODE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="PROPERTY_NAME_ID" id="PROPERTY_NAME_ID"> </a><div class="element clickable constant  PROPERTY_NAME_ID" data-toggle="collapse" data-target=".PROPERTY_NAME_ID .collapse">
+<h2>Property names from properties file</h2>
+<pre>PROPERTY_NAME_ID </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="PROPERTY_NAME_SIGN" id="PROPERTY_NAME_SIGN"> </a><div class="element clickable constant  PROPERTY_NAME_SIGN" data-toggle="collapse" data-target=".PROPERTY_NAME_SIGN .collapse">
+<h2>PROPERTY_NAME_SIGN</h2>
+<pre>PROPERTY_NAME_SIGN </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="PROPERTY_NAME_SUBDIV" id="PROPERTY_NAME_SUBDIV"> </a><div class="element clickable constant  PROPERTY_NAME_SUBDIV" data-toggle="collapse" data-target=".PROPERTY_NAME_SUBDIV .collapse">
+<h2>PROPERTY_NAME_SUBDIV</h2>
+<pre>PROPERTY_NAME_SUBDIV </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:02+02:00.<br></footer></div>
+</div>
+</body>
+</html>

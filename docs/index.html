@@ -1,0 +1,214 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="css/template.css" rel="stylesheet" media="all">
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="js/bootstrap.js" type="text/javascript"></script><script src="js/template.js" type="text/javascript"></script><script src="js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span7">
+<div class="well"><ul class="nav nav-list">
+<li class="nav-header">Namespaces</li>
+<li><a href="namespaces/global.html"><i class="icon-th"></i> global</a></li>
+</ul></div>
+<div class="well"><ul class="nav nav-list">
+<li class="nav-header">Packages</li>
+<li><a href="packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul></div>
+</div>
+<div style="clear: both;"></div>
+<div class="span12"><div class="well"><p><h1>PAYONE SDK for PHP</h1><br><p>
+            The SDK provides a general Implementation of the Basic Api-Calls.
+            <br>
+            Every Extension written in PHP should use this SDK for accessing the PAYONE Api.
+        </p><br><h3>IMPORTANT NOTICE</h3><br><p>
+            All Provided Examples in the Api Documentation expect the SDK to be included and initialized properly.
+            <br>
+            You can find an example how to do this right below.
+        </p><br><h3>Requirements</h3><ul>
+<li>PHP 5.2+</li>
+<li>mod_curl</li>
+</ul><br><script type="text/javascript">
+            prettyPrint();
+        </script><h3>Getting Started</h3><br><p>
+            This is a short introduction on how to include the SDK and initalize a Service.
+            <br>
+            If necessary, this introduction can be moved to the documentation.
+        </p><b>Content of the SDK</b><p>
+            The SDK is shipped with three different directories:
+            <ul>
+<li>
+<b>php</b> 
+                    <small>(contains the PHP-Part of the SDK)</small>
+</li>
+<li>
+<b>js</b> 
+                    <small>(contains the Javascript-Part of the SDK)</small>
+</li>
+<li>
+<b>locale</b> 
+                    <small>(contains the German-Translation of the SDK)</small>
+</li>
+</ul>
+            The following examples assume that you placed the contents of the php-folder into a subdirectory "lib" of
+            your project:
+            <ul><li>project-root
+                    <ul>
+<li>lib
+                            <ul><li>Payone<br>...
+                                </li></ul>
+</li>
+<li>
+                            payoneApiTest.php
+                        </li>
+</ul>
+</li></ul><br>
+            You can place the folder "Payone" as needed, but make sure to adjust the "require_once" for the
+            Bootstrap.php Class.
+        </p><br><b>Including PAYONE SDK for PHP</b><pre class="prettyprint"><code lang="php">
+                define('PAYONE_SDK_LIB', dirname(__FILE__) . DIRECTORY_SEPARATOR . 'lib');
+                set_include_path(PAYONE_SDK_LIB . PATH_SEPARATOR . get_include_path());
+
+                require_once('Payone/Bootstrap.php');
+                $bootstrap = new <a href="classes/Payone_Bootstrap.html">Payone_Bootstrap();</a>
+                $bootstrap-&gt;init();
+            </code></pre><br><b>Using the Api Builder to construct a Service</b><br><pre class="prettyprint"><code lang="php">
+                $builder = new <a href="classes/Payone_Builder.html">Payone_Builder();</a>
+
+                $service = $builder-&gt;buildServicePaymentAuthorize();
+            </code></pre><br><b>Preauthorize a Payment</b><br><pre class="prettyprint"><code lang="php">
+                $builder = new <a href="classes/Payone_Builder.html">Payone_Builder();</a>
+                $service = $builder-&gt;buildServicePaymentPreauthorize();
+
+                $request = new <a href="classes/Payone_Api_Request_Preauthorization.html">Payone_Api_Request_Preauthorization();</a>
+                // Set Parameters here ...
+
+                $response = $service-&gt;preauthorize($request);
+            </code></pre><br><b>Capture a preauthorized Payment</b><br><pre class="prettyprint"><code lang="php">
+                $builder = new <a href="classes/Payone_Builder.html">Payone_Builder();</a>
+                $service = $builder-&gt;buildServicePaymentCapture();
+
+                $request = new <a href="classes/Payone_Api_Request_Capture.html">Payone_Api_Request_Capture();</a>
+                $request-&gt;setTxid('1234567890');
+                // Set Parameters here ...
+
+                $response = $service-&gt;capture($request);
+            </code></pre><br><b>Score a Customer</b><br><pre class="prettyprint"><code lang="php">
+                $builder = new <a href="classes/Payone_Builder.html">Payone_Builder();</a>
+                $service = $builder-&gt;buildServiceVerificationConsumerscore();
+
+                $requestData = array(
+                'mid' =&gt; 'YOUR_MID',
+                'portalid' =&gt; 'YOUR_PORTALID',
+                'aid' =&gt; 'YOUR_AID',
+                'mode' =&gt; 'test',
+                'encoding' =&gt; 'UTF-8',
+                'addresschecktype' =&gt; 'BA',
+                'consumerscoretype' =&gt; 'IH',
+                'firstname' =&gt; 'Max',
+                'lastname' =&gt; 'Mustermann',
+                'company' =&gt; 'Musterfirma',
+                'street' =&gt; 'Musterstrasse 1',
+                'streetname' =&gt; 'Musterstrasse',
+                'streetnumber' =&gt; '1',
+                'zip' =&gt; '123456',
+                'city' =&gt; 'Musterhausen',
+                'country' =&gt; 'DE',
+                'birthday' =&gt; '20120630',
+                'telephonenumber' =&gt; '123456789',
+                'language' =&gt; 'DE',
+                );
+                $request = new <a href="classes/Payone_Api_Request_Consumerscore.html">Payone_Api_Request_Consumerscore($requestData);</a>
+
+                $response = $service-&gt;score($request);
+            </code></pre><br><b>Transaction Status Handling</b><br><pre class="prettyprint"><code lang="php">
+                $key = 'YOUR_KEY';
+
+                $builder = new <a href="classes/Payone_Builder.html">Payone_Builder();</a>
+                $service = $builder-&gt;buildServiceTransactionStatusHandleRequest($key);
+
+                // Easy Way, Service Checks $_POST for data
+                $response = $service-&gt;handleByPost();
+
+                echo response-&gt;getStatus();
+                die();
+            </code></pre><br><b>Transaction Status Handling (alternatives)</b><br><pre class="prettyprint"><code lang="php">
+                // Fetching data from $_POST yourself and inject it to the service
+                $request = $_POST;
+                $response = $service-&gt;handleByArray($request);
+
+                // Fetching data from $_POST yourself, build and inject the Request object
+                $requestData = $_POST;
+                $request = new <a href="classes/Payone_TransactionStatus_Request.html">Payone_TransactionStatus_Request($requestData);</a>
+                $response = $service-&gt;handleByRequest($request);
+            </code></pre><br><b>Generate Configuration XML</b><br><pre class="prettyprint"><code lang="php">
+                $builder = new <a href="classes/Payone_Builder.html">Payone_Builder();</a>
+                $service = $builder-&gt;buildServiceXmlGenerate();
+
+                $global = new <a href="classes/Payone_Settings_Data_ConfigFile_Global.html">Payone_Settings_Data_ConfigFile_Global();</a>
+                // Set Parameters here ...
+
+                $shop = new <a href="classes/Payone_Settings_Data_ConfigFile_Shop.html">Payone_Settings_Data_ConfigFile_Shop();</a>
+                // Set Parameters here ...
+
+                $addressCheck = new <a href="classes/Payone_Settings_Data_ConfigFile_Protect_Addresscheck.html">Payone_Settings_Data_ConfigFile_Protect_Addresscheck();</a>
+                // Set Parameters here ...
+
+                $consumerscore = new <a href="classes/Payone_Settings_Data_ConfigFile_Protect_Consumerscore.html">Payone_Settings_Data_ConfigFile_Protect_Consumerscore();</a>
+                // Set Parameters here ...
+
+                $paymentMethods = array(
+                new <a href="classes/Payone_Settings_Data_ConfigFile_PaymentMethod_DebitPayment.html">Payone_Settings_Data_ConfigFile_PaymentMethod_DebitPayment()</a>,
+                // Add Other PaymentMethods here ...
+                );
+
+                $config = new <a href="classes/Payone_Settings_Data_ConfigFile_Root.html">Payone_Settings_Data_ConfigFile_Root();</a>
+                $config-&gt;setGlobal($global);
+                $config-&gt;setShop($shop);
+                $config-&gt;setProtectAddresscheck($addressCheck);
+                $config-&gt;setProtectConsumerscore($consumerscore);
+                $config-&gt;setPaymentMethods($paymentMethods);
+
+                $response = $service-&gt;execute($config);
+            </code></pre><br><h3>License</h3><br><p>
+            PAYONE SDK for PHP is licensed under the
+            <a href="http://www.gnu.org/licenses">GNU General Public License (GPL 3)</a> - see the LICENSE file for
+            details
+            <br>
+            Copyright (c) 2012, PAYONE GmbH &amp; Co. KG
+            <br>
+            All rights reserved.
+            <br></p><br></p></div></div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:43:59+02:00.<br></footer></div>
+</div>
+</body>
+</html>

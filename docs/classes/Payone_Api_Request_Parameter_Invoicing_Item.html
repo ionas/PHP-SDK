@@ -1,0 +1,565 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Api_Request_Parameter_Invoicing_Item</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public inherited"><a href="#__construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#get" title="get :: "><span class="description">get()
+        </span><pre>get()</pre></a></li>
+<li class="method public "><a href="#getDe" title="getDe :: "><span class="description">getDe()
+        </span><pre>getDe()</pre></a></li>
+<li class="method public "><a href="#getEd" title="getEd :: "><span class="description">getEd()
+        </span><pre>getEd()</pre></a></li>
+<li class="method public "><a href="#getId" title="getId :: "><span class="description">getId()
+        </span><pre>getId()</pre></a></li>
+<li class="method public "><a href="#getIt" title="getIt :: "><span class="description">getIt()
+        </span><pre>getIt()</pre></a></li>
+<li class="method public "><a href="#getNo" title="getNo :: "><span class="description">getNo()
+        </span><pre>getNo()</pre></a></li>
+<li class="method public "><a href="#getPr" title="getPr :: "><span class="description">getPr()
+        </span><pre>getPr()</pre></a></li>
+<li class="method public "><a href="#getSd" title="getSd :: "><span class="description">getSd()
+        </span><pre>getSd()</pre></a></li>
+<li class="method public "><a href="#getVa" title="getVa :: "><span class="description">getVa()
+        </span><pre>getVa()</pre></a></li>
+<li class="method public inherited"><a href="#getValue" title="getValue :: "><span class="description">getValue()
+        </span><pre>getValue()</pre></a></li>
+<li class="method public inherited"><a href="#init" title="init :: "><span class="description">init()
+        </span><pre>init()</pre></a></li>
+<li class="method public inherited"><a href="#set" title="set :: "><span class="description">set()
+        </span><pre>set()</pre></a></li>
+<li class="method public "><a href="#setDe" title="setDe :: "><span class="description">setDe()
+        </span><pre>setDe()</pre></a></li>
+<li class="method public "><a href="#setEd" title="setEd :: "><span class="description">setEd()
+        </span><pre>setEd()</pre></a></li>
+<li class="method public "><a href="#setId" title="setId :: "><span class="description">setId()
+        </span><pre>setId()</pre></a></li>
+<li class="method public "><a href="#setIt" title="setIt :: "><span class="description">setIt()
+        </span><pre>setIt()</pre></a></li>
+<li class="method public "><a href="#setNo" title="setNo :: "><span class="description">setNo()
+        </span><pre>setNo()</pre></a></li>
+<li class="method public "><a href="#setPr" title="setPr :: "><span class="description">setPr()
+        </span><pre>setPr()</pre></a></li>
+<li class="method public "><a href="#setSd" title="setSd :: "><span class="description">setSd()
+        </span><pre>setSd()</pre></a></li>
+<li class="method public "><a href="#setVa" title="setVa :: "><span class="description">setVa()
+        </span><pre>setVa()</pre></a></li>
+<li class="method public inherited"><a href="#setValue" title="setValue :: "><span class="description">setValue()
+        </span><pre>setValue()</pre></a></li>
+<li class="method public inherited"><a href="#toArray" title="toArray :: "><span class="description">toArray()
+        </span><pre>toArray()</pre></a></li>
+<li class="method public "><a href="#toArrayByKey" title="toArrayByKey :: "><span class="description">toArrayByKey()
+        </span><pre>toArrayByKey()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24de" title="$de :: "><span class="description">$de</span><pre>$de</pre></a></li>
+<li class="property protected "><a href="#%24ed" title="$ed :: Lieferzeitraums-Ende (YYYYMMDD)"><span class="description">Lieferzeitraums-Ende (YYYYMMDD)</span><pre>$ed</pre></a></li>
+<li class="property protected "><a href="#%24id" title="$id :: "><span class="description">$id</span><pre>$id</pre></a></li>
+<li class="property protected "><a href="#%24it" title="$it :: Artikeltyp (Enum)"><span class="description">Artikeltyp (Enum)</span><pre>$it</pre></a></li>
+<li class="property protected "><a href="#%24no" title="$no :: "><span class="description">$no</span><pre>$no</pre></a></li>
+<li class="property protected "><a href="#%24pr" title="$pr :: "><span class="description">$pr</span><pre>$pr</pre></a></li>
+<li class="property protected "><a href="#%24sd" title="$sd :: DeliveryDate (YYYYMMDD)"><span class="description">DeliveryDate (YYYYMMDD)</span><pre>$sd</pre></a></li>
+<li class="property protected "><a href="#%24va" title="$va :: "><span class="description">$va</span><pre>$va</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Api_Request_Parameter_Invoicing_Item" id="\Payone_Api_Request_Parameter_Invoicing_Item"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Api_Request_Parameter_Invoicing_Item.html">Payone_Api_Request_Parameter_Invoicing_Item</a>
+</li>
+</ul>
+<div href="../classes/Payone_Api_Request_Parameter_Invoicing_Item.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.Api.Request.html">Payone_Api</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Request</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct(array $data) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::__construct()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="get" id="get"></a><div class="element clickable method public get" data-toggle="collapse" data-target=".get .collapse">
+<h2>get()
+        </h2>
+<pre>get($property) : null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::get()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>null</code></div>
+</div></div>
+</div>
+<a name="getDe" id="getDe"></a><div class="element clickable method public getDe" data-toggle="collapse" data-target=".getDe .collapse">
+<h2>getDe()
+        </h2>
+<pre>getDe() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getEd" id="getEd"></a><div class="element clickable method public getEd" data-toggle="collapse" data-target=".getEd .collapse">
+<h2>getEd()
+        </h2>
+<pre>getEd() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getId" id="getId"></a><div class="element clickable method public getId" data-toggle="collapse" data-target=".getId .collapse">
+<h2>getId()
+        </h2>
+<pre>getId() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getIt" id="getIt"></a><div class="element clickable method public getIt" data-toggle="collapse" data-target=".getIt .collapse">
+<h2>getIt()
+        </h2>
+<pre>getIt() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getNo" id="getNo"></a><div class="element clickable method public getNo" data-toggle="collapse" data-target=".getNo .collapse">
+<h2>getNo()
+        </h2>
+<pre>getNo() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getPr" id="getPr"></a><div class="element clickable method public getPr" data-toggle="collapse" data-target=".getPr .collapse">
+<h2>getPr()
+        </h2>
+<pre>getPr() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getSd" id="getSd"></a><div class="element clickable method public getSd" data-toggle="collapse" data-target=".getSd .collapse">
+<h2>getSd()
+        </h2>
+<pre>getSd() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getVa" id="getVa"></a><div class="element clickable method public getVa" data-toggle="collapse" data-target=".getVa .collapse">
+<h2>getVa()
+        </h2>
+<pre>getVa() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getValue" id="getValue"></a><div class="element clickable method public getValue" data-toggle="collapse" data-target=".getValue .collapse">
+<h2>getValue()
+        </h2>
+<pre>getValue(string $key) : null | mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::getValue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>mixed</code>
+</div>
+</div></div>
+</div>
+<a name="init" id="init"></a><div class="element clickable method public init" data-toggle="collapse" data-target=".init .collapse">
+<h2>init()
+        </h2>
+<pre>init(array $data) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::init()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="set" id="set"></a><div class="element clickable method public set" data-toggle="collapse" data-target=".set .collapse">
+<h2>set()
+        </h2>
+<pre>set(string $property, string $value) : bool | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::set()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="setDe" id="setDe"></a><div class="element clickable method public setDe" data-toggle="collapse" data-target=".setDe .collapse">
+<h2>setDe()
+        </h2>
+<pre>setDe(string $de) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$de</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setEd" id="setEd"></a><div class="element clickable method public setEd" data-toggle="collapse" data-target=".setEd .collapse">
+<h2>setEd()
+        </h2>
+<pre>setEd(string $ed) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ed</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setId" id="setId"></a><div class="element clickable method public setId" data-toggle="collapse" data-target=".setId .collapse">
+<h2>setId()
+        </h2>
+<pre>setId(string $id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setIt" id="setIt"></a><div class="element clickable method public setIt" data-toggle="collapse" data-target=".setIt .collapse">
+<h2>setIt()
+        </h2>
+<pre>setIt(string $it) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$it</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setNo" id="setNo"></a><div class="element clickable method public setNo" data-toggle="collapse" data-target=".setNo .collapse">
+<h2>setNo()
+        </h2>
+<pre>setNo(int $no) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$no</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setPr" id="setPr"></a><div class="element clickable method public setPr" data-toggle="collapse" data-target=".setPr .collapse">
+<h2>setPr()
+        </h2>
+<pre>setPr(int $pr) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pr</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setSd" id="setSd"></a><div class="element clickable method public setSd" data-toggle="collapse" data-target=".setSd .collapse">
+<h2>setSd()
+        </h2>
+<pre>setSd(string $sd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$sd</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setVa" id="setVa"></a><div class="element clickable method public setVa" data-toggle="collapse" data-target=".setVa .collapse">
+<h2>setVa()
+        </h2>
+<pre>setVa(int $va) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$va</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setValue" id="setValue"></a><div class="element clickable method public setValue" data-toggle="collapse" data-target=".setValue .collapse">
+<h2>setValue()
+        </h2>
+<pre>setValue(string $key, string $name) : boolean | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::setValue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="toArray" id="toArray"></a><div class="element clickable method public toArray" data-toggle="collapse" data-target=".toArray .collapse">
+<h2>toArray()
+        </h2>
+<pre>toArray() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::toArray()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="toArrayByKey" id="toArrayByKey"></a><div class="element clickable method public toArrayByKey" data-toggle="collapse" data-target=".toArrayByKey .collapse">
+<h2>toArrayByKey()
+        </h2>
+<pre>toArrayByKey(int $key) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24de" id="$de"> </a><div class="element clickable property protected $de" data-toggle="collapse" data-target=".$de .collapse">
+<h2>$de</h2>
+<pre>$de : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24ed" id="$ed"> </a><div class="element clickable property protected $ed" data-toggle="collapse" data-target=".$ed .collapse">
+<h2>Lieferzeitraums-Ende (YYYYMMDD)</h2>
+<pre>$ed : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24id" id="$id"> </a><div class="element clickable property protected $id" data-toggle="collapse" data-target=".$id .collapse">
+<h2>$id</h2>
+<pre>$id : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24it" id="$it"> </a><div class="element clickable property protected $it" data-toggle="collapse" data-target=".$it .collapse">
+<h2>Artikeltyp (Enum)</h2>
+<pre>$it : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24no" id="$no"> </a><div class="element clickable property protected $no" data-toggle="collapse" data-target=".$no .collapse">
+<h2>$no</h2>
+<pre>$no : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24pr" id="$pr"> </a><div class="element clickable property protected $pr" data-toggle="collapse" data-target=".$pr .collapse">
+<h2>$pr</h2>
+<pre>$pr : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24sd" id="$sd"> </a><div class="element clickable property protected $sd" data-toggle="collapse" data-target=".$sd .collapse">
+<h2>DeliveryDate (YYYYMMDD)</h2>
+<pre>$sd : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24va" id="$va"> </a><div class="element clickable property protected $va" data-toggle="collapse" data-target=".$va .collapse">
+<h2>$va</h2>
+<pre>$va : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:04+02:00.<br></footer></div>
+</div>
+</body>
+</html>

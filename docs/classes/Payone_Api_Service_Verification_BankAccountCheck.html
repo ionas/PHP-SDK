@@ -1,0 +1,463 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Api_Service_Verification_BankAccountCheck</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#check" title="check :: Perform a BankAccountCheck with the injected request"><span class="description">Perform a BankAccountCheck with the injected request</span><pre>check()</pre></a></li>
+<li class="method public inherited"><a href="#getAdapter" title="getAdapter :: "><span class="description">getAdapter()
+        </span><pre>getAdapter()</pre></a></li>
+<li class="method public inherited"><a href="#getMapperRequest" title="getMapperRequest :: "><span class="description">getMapperRequest()
+        </span><pre>getMapperRequest()</pre></a></li>
+<li class="method public inherited"><a href="#getMapperResponse" title="getMapperResponse :: "><span class="description">getMapperResponse()
+        </span><pre>getMapperResponse()</pre></a></li>
+<li class="method public inherited"><a href="#getServiceProtocol" title="getServiceProtocol :: "><span class="description">getServiceProtocol()
+        </span><pre>getServiceProtocol()</pre></a></li>
+<li class="method public inherited"><a href="#getValidator" title="getValidator :: "><span class="description">getValidator()
+        </span><pre>getValidator()</pre></a></li>
+<li class="method public inherited"><a href="#setAdapter" title="setAdapter :: "><span class="description">setAdapter()
+        </span><pre>setAdapter()</pre></a></li>
+<li class="method public inherited"><a href="#setMapperRequest" title="setMapperRequest :: "><span class="description">setMapperRequest()
+        </span><pre>setMapperRequest()</pre></a></li>
+<li class="method public inherited"><a href="#setMapperResponse" title="setMapperResponse :: "><span class="description">setMapperResponse()
+        </span><pre>setMapperResponse()</pre></a></li>
+<li class="method public inherited"><a href="#setServiceProtocol" title="setServiceProtocol :: "><span class="description">setServiceProtocol()
+        </span><pre>setServiceProtocol()</pre></a></li>
+<li class="method public inherited"><a href="#setValidator" title="setValidator :: "><span class="description">setValidator()
+        </span><pre>setValidator()</pre></a></li>
+<li class="nav-header protected">» Protected</li>
+<li class="method protected inherited"><a href="#protocol" title="protocol :: "><span class="description">protocol()
+        </span><pre>protocol()</pre></a></li>
+<li class="method protected inherited"><a href="#protocolException" title="protocolException :: "><span class="description">protocolException()
+        </span><pre>protocolException()</pre></a></li>
+<li class="method protected inherited"><a href="#validateRequest" title="validateRequest :: "><span class="description">validateRequest()
+        </span><pre>validateRequest()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected inherited"><a href="#%24adapter" title="$adapter :: "><span class="description">$adapter</span><pre>$adapter</pre></a></li>
+<li class="property protected inherited"><a href="#%24mapperRequest" title="$mapperRequest :: "><span class="description">$mapperRequest</span><pre>$mapperRequest</pre></a></li>
+<li class="property protected inherited"><a href="#%24mapperResponse" title="$mapperResponse :: "><span class="description">$mapperResponse</span><pre>$mapperResponse</pre></a></li>
+<li class="property protected inherited"><a href="#%24serviceProtocol" title="$serviceProtocol :: "><span class="description">$serviceProtocol</span><pre>$serviceProtocol</pre></a></li>
+<li class="property protected inherited"><a href="#%24validator" title="$validator :: "><span class="description">$validator</span><pre>$validator</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Api_Service_Verification_BankAccountCheck" id="\Payone_Api_Service_Verification_BankAccountCheck"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Api_Service_Verification_BankAccountCheck.html">Payone_Api_Service_Verification_BankAccountCheck</a>
+</li>
+</ul>
+<div href="../classes/Payone_Api_Service_Verification_BankAccountCheck.html" class="element class">
+<p class="short_description">Perform an BankAccountCheck by providing a Request Object</p>
+<div class="details">
+<p class="long_description"><p><b>Example:</b></p>
+
+<pre class="prettyprint">
+// Construct the service (Builder handles dependencies):
+// custom config can be injected, see Payone_Config
+$builder = new Payone_Builder();
+
+$service = $builder->buildServiceVerificationBankAccountCheck();
+
+// Construct a valid request:
+$request = new Payone_Api_Request_BankAccountCheck();
+$request->setAid($aid);
+// Set all required parameters for an "bankaccountcheck" request
+
+// Start BankAccountCheck action:
+$response = $service->check($request);
+
+</pre></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.Api.Service.html">Payone_Api</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Service</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="check" id="check"></a><div class="element clickable method public check" data-toggle="collapse" data-target=".check .collapse">
+<h2>Perform a BankAccountCheck with the injected request</h2>
+<pre>check(\Payone_Api_Request_BankAccountCheck $request) : <a href="../classes/Payone_Api_Response_BankAccountCheck_Blocked.html">\Payone_Api_Response_BankAccountCheck_Blocked</a> | <a href="../classes/Payone_Api_Response_BankAccountCheck_Invalid.html">\Payone_Api_Response_BankAccountCheck_Invalid</a> | <a href="../classes/Payone_Api_Response_BankAccountCheck_Valid.html">\Payone_Api_Response_BankAccountCheck_Valid</a> | <a href="../classes/Payone_Api_Response_Error.html">\Payone_Api_Response_Error</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$request</h4>
+<code><a href="../classes/Payone_Api_Request_BankAccountCheck.html">\Payone_Api_Request_BankAccountCheck</a></code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/Payone_Api_Response_BankAccountCheck_Blocked.html">\Payone_Api_Response_BankAccountCheck_Blocked</a></code><code><a href="../classes/Payone_Api_Response_BankAccountCheck_Invalid.html">\Payone_Api_Response_BankAccountCheck_Invalid</a></code><code><a href="../classes/Payone_Api_Response_BankAccountCheck_Valid.html">\Payone_Api_Response_BankAccountCheck_Valid</a></code><code><a href="../classes/Payone_Api_Response_Error.html">\Payone_Api_Response_Error</a></code>
+</div>
+</div></div>
+</div>
+<a name="getAdapter" id="getAdapter"></a><div class="element clickable method public getAdapter" data-toggle="collapse" data-target=".getAdapter .collapse">
+<h2>getAdapter()
+        </h2>
+<pre>getAdapter() : <a href="../classes/Payone_Api_Adapter_Interface.html">\Payone_Api_Adapter_Interface</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::getAdapter()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Adapter_Interface.html">\Payone_Api_Adapter_Interface</a></code></div>
+</div></div>
+</div>
+<a name="getMapperRequest" id="getMapperRequest"></a><div class="element clickable method public getMapperRequest" data-toggle="collapse" data-target=".getMapperRequest .collapse">
+<h2>getMapperRequest()
+        </h2>
+<pre>getMapperRequest() : <a href="../classes/Payone_Api_Mapper_Request_Interface.html">\Payone_Api_Mapper_Request_Interface</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::getMapperRequest()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Mapper_Request_Interface.html">\Payone_Api_Mapper_Request_Interface</a></code></div>
+</div></div>
+</div>
+<a name="getMapperResponse" id="getMapperResponse"></a><div class="element clickable method public getMapperResponse" data-toggle="collapse" data-target=".getMapperResponse .collapse">
+<h2>getMapperResponse()
+        </h2>
+<pre>getMapperResponse() : <a href="../classes/Payone_Api_Mapper_Response_Interface.html">\Payone_Api_Mapper_Response_Interface</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::getMapperResponse()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Mapper_Response_Interface.html">\Payone_Api_Mapper_Response_Interface</a></code></div>
+</div></div>
+</div>
+<a name="getServiceProtocol" id="getServiceProtocol"></a><div class="element clickable method public getServiceProtocol" data-toggle="collapse" data-target=".getServiceProtocol .collapse">
+<h2>getServiceProtocol()
+        </h2>
+<pre>getServiceProtocol() : <a href="../classes/Payone_Api_Service_ProtocolRequest_Interface.html">\Payone_Api_Service_ProtocolRequest_Interface</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::getServiceProtocol()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_ProtocolRequest_Interface.html">\Payone_Api_Service_ProtocolRequest_Interface</a></code></div>
+</div></div>
+</div>
+<a name="getValidator" id="getValidator"></a><div class="element clickable method public getValidator" data-toggle="collapse" data-target=".getValidator .collapse">
+<h2>getValidator()
+        </h2>
+<pre>getValidator() : <a href="../classes/Payone_Api_Validator_Interface.html">\Payone_Api_Validator_Interface</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::getValidator()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Validator_Interface.html">\Payone_Api_Validator_Interface</a></code></div>
+</div></div>
+</div>
+<a name="setAdapter" id="setAdapter"></a><div class="element clickable method public setAdapter" data-toggle="collapse" data-target=".setAdapter .collapse">
+<h2>setAdapter()
+        </h2>
+<pre>setAdapter(\Payone_Api_Adapter_Interface $adapter) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::setAdapter()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$adapter</h4>
+<code><a href="../classes/Payone_Api_Adapter_Interface.html">\Payone_Api_Adapter_Interface</a></code>
+</div>
+</div></div>
+</div>
+<a name="setMapperRequest" id="setMapperRequest"></a><div class="element clickable method public setMapperRequest" data-toggle="collapse" data-target=".setMapperRequest .collapse">
+<h2>setMapperRequest()
+        </h2>
+<pre>setMapperRequest(<a href="../classes/Payone_Api_Mapper_Request_Interface.html">\Payone_Api_Mapper_Request_Interface</a> $mapperRequest) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::setMapperRequest()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mapperRequest</h4>
+<code><a href="../classes/Payone_Api_Mapper_Request_Interface.html">\Payone_Api_Mapper_Request_Interface</a></code>
+</div>
+</div></div>
+</div>
+<a name="setMapperResponse" id="setMapperResponse"></a><div class="element clickable method public setMapperResponse" data-toggle="collapse" data-target=".setMapperResponse .collapse">
+<h2>setMapperResponse()
+        </h2>
+<pre>setMapperResponse(\Payone_Api_Mapper_Response_Interface $mapperResponse) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::setMapperResponse()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mapperResponse</h4>
+<code><a href="../classes/Payone_Api_Mapper_Response_Interface.html">\Payone_Api_Mapper_Response_Interface</a></code>
+</div>
+</div></div>
+</div>
+<a name="setServiceProtocol" id="setServiceProtocol"></a><div class="element clickable method public setServiceProtocol" data-toggle="collapse" data-target=".setServiceProtocol .collapse">
+<h2>setServiceProtocol()
+        </h2>
+<pre>setServiceProtocol(\Payone_Api_Service_ProtocolRequest_Interface $serviceProtocol) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::setServiceProtocol()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$serviceProtocol</h4>
+<code><a href="../classes/Payone_Api_Service_ProtocolRequest_Interface.html">\Payone_Api_Service_ProtocolRequest_Interface</a></code>
+</div>
+</div></div>
+</div>
+<a name="setValidator" id="setValidator"></a><div class="element clickable method public setValidator" data-toggle="collapse" data-target=".setValidator .collapse">
+<h2>setValidator()
+        </h2>
+<pre>setValidator(\Payone_Api_Validator_Interface $validator) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::setValidator()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$validator</h4>
+<code><a href="../classes/Payone_Api_Validator_Interface.html">\Payone_Api_Validator_Interface</a></code>
+</div>
+</div></div>
+</div>
+<a name="protocol" id="protocol"></a><div class="element clickable method protected protocol" data-toggle="collapse" data-target=".protocol .collapse">
+<h2>protocol()
+        </h2>
+<pre>protocol(\Payone_Api_Request_Interface $request, \Payone_Api_Response_Interface $response) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::protocol()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$request</h4>
+<code><a href="../classes/Payone_Api_Request_Interface.html">\Payone_Api_Request_Interface</a></code>
+</div>
+<div class="subelement argument">
+<h4>$response</h4>
+<code><a href="../classes/Payone_Api_Response_Interface.html">\Payone_Api_Response_Interface</a></code>
+</div>
+</div></div>
+</div>
+<a name="protocolException" id="protocolException"></a><div class="element clickable method protected protocolException" data-toggle="collapse" data-target=".protocolException .collapse">
+<h2>protocolException()
+        </h2>
+<pre>protocolException(\Exception $e, \Payone_Api_Request_Interface $request) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::protocolException()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$e</h4>
+<code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code>
+</div>
+<div class="subelement argument">
+<h4>$request</h4>
+<code><a href="../classes/Payone_Api_Request_Interface.html">\Payone_Api_Request_Interface</a></code>
+</div>
+</div></div>
+</div>
+<a name="validateRequest" id="validateRequest"></a><div class="element clickable method protected validateRequest" data-toggle="collapse" data-target=".validateRequest .collapse">
+<h2>validateRequest()
+        </h2>
+<pre>validateRequest(\Payone_Api_Request_Interface $request) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::validateRequest()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$request</h4>
+<code><a href="../classes/Payone_Api_Request_Interface.html">\Payone_Api_Request_Interface</a></code>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24adapter" id="$adapter"> </a><div class="element clickable property protected $adapter" data-toggle="collapse" data-target=".$adapter .collapse">
+<h2>$adapter</h2>
+<pre>$adapter : <a href="../classes/Payone_Api_Adapter_Interface.html">\Payone_Api_Adapter_Interface</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::$$adapter</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24mapperRequest" id="$mapperRequest"> </a><div class="element clickable property protected $mapperRequest" data-toggle="collapse" data-target=".$mapperRequest .collapse">
+<h2>$mapperRequest</h2>
+<pre>$mapperRequest : <a href="../classes/Payone_Api_Mapper_Request_Interface.html">\Payone_Api_Mapper_Request_Interface</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::$$mapperRequest</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24mapperResponse" id="$mapperResponse"> </a><div class="element clickable property protected $mapperResponse" data-toggle="collapse" data-target=".$mapperResponse .collapse">
+<h2>$mapperResponse</h2>
+<pre>$mapperResponse : <a href="../classes/Payone_Api_Mapper_Response_Interface.html">\Payone_Api_Mapper_Response_Interface</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::$$mapperResponse</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24serviceProtocol" id="$serviceProtocol"> </a><div class="element clickable property protected $serviceProtocol" data-toggle="collapse" data-target=".$serviceProtocol .collapse">
+<h2>$serviceProtocol</h2>
+<pre>$serviceProtocol : <a href="../classes/Payone_Api_Service_ProtocolRequest_Interface.html">\Payone_Api_Service_ProtocolRequest_Interface</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::$$serviceProtocol</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24validator" id="$validator"> </a><div class="element clickable property protected $validator" data-toggle="collapse" data-target=".$validator .collapse">
+<h2>$validator</h2>
+<pre>$validator : <a href="../classes/Payone_Api_Validator_Interface.html">\Payone_Api_Validator_Interface</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Service_Abstract::$$validator</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:07+02:00.<br></footer></div>
+</div>
+</body>
+</html>

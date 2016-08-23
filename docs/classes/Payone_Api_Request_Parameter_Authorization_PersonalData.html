@@ -1,0 +1,929 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Api_Request_Parameter_Authorization_PersonalData</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public inherited"><a href="#__construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#get" title="get :: "><span class="description">get()
+        </span><pre>get()</pre></a></li>
+<li class="method public "><a href="#getAddressaddition" title="getAddressaddition :: "><span class="description">getAddressaddition()
+        </span><pre>getAddressaddition()</pre></a></li>
+<li class="method public "><a href="#getBirthday" title="getBirthday :: "><span class="description">getBirthday()
+        </span><pre>getBirthday()</pre></a></li>
+<li class="method public "><a href="#getCity" title="getCity :: "><span class="description">getCity()
+        </span><pre>getCity()</pre></a></li>
+<li class="method public "><a href="#getCompany" title="getCompany :: "><span class="description">getCompany()
+        </span><pre>getCompany()</pre></a></li>
+<li class="method public "><a href="#getCountry" title="getCountry :: "><span class="description">getCountry()
+        </span><pre>getCountry()</pre></a></li>
+<li class="method public "><a href="#getCustomerid" title="getCustomerid :: "><span class="description">getCustomerid()
+        </span><pre>getCustomerid()</pre></a></li>
+<li class="method public "><a href="#getEmail" title="getEmail :: "><span class="description">getEmail()
+        </span><pre>getEmail()</pre></a></li>
+<li class="method public "><a href="#getFirstname" title="getFirstname :: "><span class="description">getFirstname()
+        </span><pre>getFirstname()</pre></a></li>
+<li class="method public "><a href="#getIp" title="getIp :: "><span class="description">getIp()
+        </span><pre>getIp()</pre></a></li>
+<li class="method public "><a href="#getLanguage" title="getLanguage :: "><span class="description">getLanguage()
+        </span><pre>getLanguage()</pre></a></li>
+<li class="method public "><a href="#getLastname" title="getLastname :: "><span class="description">getLastname()
+        </span><pre>getLastname()</pre></a></li>
+<li class="method public "><a href="#getSalutation" title="getSalutation :: "><span class="description">getSalutation()
+        </span><pre>getSalutation()</pre></a></li>
+<li class="method public "><a href="#getState" title="getState :: "><span class="description">getState()
+        </span><pre>getState()</pre></a></li>
+<li class="method public "><a href="#getStreet" title="getStreet :: "><span class="description">getStreet()
+        </span><pre>getStreet()</pre></a></li>
+<li class="method public "><a href="#getTelephonenumber" title="getTelephonenumber :: "><span class="description">getTelephonenumber()
+        </span><pre>getTelephonenumber()</pre></a></li>
+<li class="method public "><a href="#getTitle" title="getTitle :: "><span class="description">getTitle()
+        </span><pre>getTitle()</pre></a></li>
+<li class="method public "><a href="#getUserid" title="getUserid :: "><span class="description">getUserid()
+        </span><pre>getUserid()</pre></a></li>
+<li class="method public inherited"><a href="#getValue" title="getValue :: "><span class="description">getValue()
+        </span><pre>getValue()</pre></a></li>
+<li class="method public "><a href="#getVatid" title="getVatid :: "><span class="description">getVatid()
+        </span><pre>getVatid()</pre></a></li>
+<li class="method public "><a href="#getZip" title="getZip :: "><span class="description">getZip()
+        </span><pre>getZip()</pre></a></li>
+<li class="method public inherited"><a href="#init" title="init :: "><span class="description">init()
+        </span><pre>init()</pre></a></li>
+<li class="method public inherited"><a href="#set" title="set :: "><span class="description">set()
+        </span><pre>set()</pre></a></li>
+<li class="method public "><a href="#setAddressaddition" title="setAddressaddition :: "><span class="description">setAddressaddition()
+        </span><pre>setAddressaddition()</pre></a></li>
+<li class="method public "><a href="#setBirthday" title="setBirthday :: "><span class="description">setBirthday()
+        </span><pre>setBirthday()</pre></a></li>
+<li class="method public "><a href="#setCity" title="setCity :: "><span class="description">setCity()
+        </span><pre>setCity()</pre></a></li>
+<li class="method public "><a href="#setCompany" title="setCompany :: "><span class="description">setCompany()
+        </span><pre>setCompany()</pre></a></li>
+<li class="method public "><a href="#setCountry" title="setCountry :: "><span class="description">setCountry()
+        </span><pre>setCountry()</pre></a></li>
+<li class="method public "><a href="#setCustomerid" title="setCustomerid :: "><span class="description">setCustomerid()
+        </span><pre>setCustomerid()</pre></a></li>
+<li class="method public "><a href="#setEmail" title="setEmail :: "><span class="description">setEmail()
+        </span><pre>setEmail()</pre></a></li>
+<li class="method public "><a href="#setFirstname" title="setFirstname :: "><span class="description">setFirstname()
+        </span><pre>setFirstname()</pre></a></li>
+<li class="method public "><a href="#setIp" title="setIp :: "><span class="description">setIp()
+        </span><pre>setIp()</pre></a></li>
+<li class="method public "><a href="#setLanguage" title="setLanguage :: "><span class="description">setLanguage()
+        </span><pre>setLanguage()</pre></a></li>
+<li class="method public "><a href="#setLastname" title="setLastname :: "><span class="description">setLastname()
+        </span><pre>setLastname()</pre></a></li>
+<li class="method public "><a href="#setSalutation" title="setSalutation :: "><span class="description">setSalutation()
+        </span><pre>setSalutation()</pre></a></li>
+<li class="method public "><a href="#setState" title="setState :: "><span class="description">setState()
+        </span><pre>setState()</pre></a></li>
+<li class="method public "><a href="#setStreet" title="setStreet :: "><span class="description">setStreet()
+        </span><pre>setStreet()</pre></a></li>
+<li class="method public "><a href="#setTelephonenumber" title="setTelephonenumber :: "><span class="description">setTelephonenumber()
+        </span><pre>setTelephonenumber()</pre></a></li>
+<li class="method public "><a href="#setTitle" title="setTitle :: "><span class="description">setTitle()
+        </span><pre>setTitle()</pre></a></li>
+<li class="method public "><a href="#setUserid" title="setUserid :: "><span class="description">setUserid()
+        </span><pre>setUserid()</pre></a></li>
+<li class="method public inherited"><a href="#setValue" title="setValue :: "><span class="description">setValue()
+        </span><pre>setValue()</pre></a></li>
+<li class="method public "><a href="#setVatid" title="setVatid :: "><span class="description">setVatid()
+        </span><pre>setVatid()</pre></a></li>
+<li class="method public "><a href="#setZip" title="setZip :: "><span class="description">setZip()
+        </span><pre>setZip()</pre></a></li>
+<li class="method public inherited"><a href="#toArray" title="toArray :: "><span class="description">toArray()
+        </span><pre>toArray()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24addressaddition" title="$addressaddition :: "><span class="description">$addressaddition</span><pre>$addressaddition</pre></a></li>
+<li class="property protected "><a href="#%24birthday" title="$birthday :: Date of birth (YYYYMMDD)"><span class="description">Date of birth (YYYYMMDD)</span><pre>$birthday</pre></a></li>
+<li class="property protected "><a href="#%24city" title="$city :: "><span class="description">$city</span><pre>$city</pre></a></li>
+<li class="property protected "><a href="#%24company" title="$company :: "><span class="description">$company</span><pre>$company</pre></a></li>
+<li class="property protected "><a href="#%24country" title="$country :: Country (ISO-3166)"><span class="description">Country (ISO-3166)</span><pre>$country</pre></a></li>
+<li class="property protected "><a href="#%24customerid" title="$customerid :: Merchant's customer ID (Permitted symbols: 0-9, a-z, A-Z, .,-,_,/)"><span class="description">Merchant's customer ID (Permitted symbols: 0-9, a-z, A-Z, .,-,_,/)</span><pre>$customerid</pre></a></li>
+<li class="property protected "><a href="#%24email" title="$email :: "><span class="description">$email</span><pre>$email</pre></a></li>
+<li class="property protected "><a href="#%24firstname" title="$firstname :: "><span class="description">$firstname</span><pre>$firstname</pre></a></li>
+<li class="property protected "><a href="#%24ip" title="$ip :: "><span class="description">$ip</span><pre>$ip</pre></a></li>
+<li class="property protected "><a href="#%24language" title="$language :: Language indicator (ISO639)"><span class="description">Language indicator (ISO639)</span><pre>$language</pre></a></li>
+<li class="property protected "><a href="#%24lastname" title="$lastname :: "><span class="description">$lastname</span><pre>$lastname</pre></a></li>
+<li class="property protected "><a href="#%24salutation" title="$salutation :: "><span class="description">$salutation</span><pre>$salutation</pre></a></li>
+<li class="property protected "><a href="#%24state" title="$state :: "><span class="description">$state</span><pre>$state</pre></a></li>
+<li class="property protected "><a href="#%24street" title="$street :: "><span class="description">$street</span><pre>$street</pre></a></li>
+<li class="property protected "><a href="#%24telephonenumber" title="$telephonenumber :: "><span class="description">$telephonenumber</span><pre>$telephonenumber</pre></a></li>
+<li class="property protected "><a href="#%24title" title="$title :: "><span class="description">$title</span><pre>$title</pre></a></li>
+<li class="property protected "><a href="#%24userid" title="$userid :: PAYONE debtor ID"><span class="description">PAYONE debtor ID</span><pre>$userid</pre></a></li>
+<li class="property protected "><a href="#%24vatid" title="$vatid :: "><span class="description">$vatid</span><pre>$vatid</pre></a></li>
+<li class="property protected "><a href="#%24zip" title="$zip :: "><span class="description">$zip</span><pre>$zip</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Api_Request_Parameter_Authorization_PersonalData" id="\Payone_Api_Request_Parameter_Authorization_PersonalData"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Api_Request_Parameter_Authorization_PersonalData.html">Payone_Api_Request_Parameter_Authorization_PersonalData</a>
+</li>
+</ul>
+<div href="../classes/Payone_Api_Request_Parameter_Authorization_PersonalData.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.Api.Request.html">Payone_Api</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Request</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct(array $data) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::__construct()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::__construct()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="get" id="get"></a><div class="element clickable method public get" data-toggle="collapse" data-target=".get .collapse">
+<h2>get()
+        </h2>
+<pre>get($property) : null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::get()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::get()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>null</code></div>
+</div></div>
+</div>
+<a name="getAddressaddition" id="getAddressaddition"></a><div class="element clickable method public getAddressaddition" data-toggle="collapse" data-target=".getAddressaddition .collapse">
+<h2>getAddressaddition()
+        </h2>
+<pre>getAddressaddition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getBirthday" id="getBirthday"></a><div class="element clickable method public getBirthday" data-toggle="collapse" data-target=".getBirthday .collapse">
+<h2>getBirthday()
+        </h2>
+<pre>getBirthday() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getCity" id="getCity"></a><div class="element clickable method public getCity" data-toggle="collapse" data-target=".getCity .collapse">
+<h2>getCity()
+        </h2>
+<pre>getCity() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getCompany" id="getCompany"></a><div class="element clickable method public getCompany" data-toggle="collapse" data-target=".getCompany .collapse">
+<h2>getCompany()
+        </h2>
+<pre>getCompany() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getCountry" id="getCountry"></a><div class="element clickable method public getCountry" data-toggle="collapse" data-target=".getCountry .collapse">
+<h2>getCountry()
+        </h2>
+<pre>getCountry() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getCustomerid" id="getCustomerid"></a><div class="element clickable method public getCustomerid" data-toggle="collapse" data-target=".getCustomerid .collapse">
+<h2>getCustomerid()
+        </h2>
+<pre>getCustomerid() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getEmail" id="getEmail"></a><div class="element clickable method public getEmail" data-toggle="collapse" data-target=".getEmail .collapse">
+<h2>getEmail()
+        </h2>
+<pre>getEmail() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getFirstname" id="getFirstname"></a><div class="element clickable method public getFirstname" data-toggle="collapse" data-target=".getFirstname .collapse">
+<h2>getFirstname()
+        </h2>
+<pre>getFirstname() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getIp" id="getIp"></a><div class="element clickable method public getIp" data-toggle="collapse" data-target=".getIp .collapse">
+<h2>getIp()
+        </h2>
+<pre>getIp() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getLanguage" id="getLanguage"></a><div class="element clickable method public getLanguage" data-toggle="collapse" data-target=".getLanguage .collapse">
+<h2>getLanguage()
+        </h2>
+<pre>getLanguage() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getLastname" id="getLastname"></a><div class="element clickable method public getLastname" data-toggle="collapse" data-target=".getLastname .collapse">
+<h2>getLastname()
+        </h2>
+<pre>getLastname() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getSalutation" id="getSalutation"></a><div class="element clickable method public getSalutation" data-toggle="collapse" data-target=".getSalutation .collapse">
+<h2>getSalutation()
+        </h2>
+<pre>getSalutation() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getState" id="getState"></a><div class="element clickable method public getState" data-toggle="collapse" data-target=".getState .collapse">
+<h2>getState()
+        </h2>
+<pre>getState() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getStreet" id="getStreet"></a><div class="element clickable method public getStreet" data-toggle="collapse" data-target=".getStreet .collapse">
+<h2>getStreet()
+        </h2>
+<pre>getStreet() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getTelephonenumber" id="getTelephonenumber"></a><div class="element clickable method public getTelephonenumber" data-toggle="collapse" data-target=".getTelephonenumber .collapse">
+<h2>getTelephonenumber()
+        </h2>
+<pre>getTelephonenumber() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getTitle" id="getTitle"></a><div class="element clickable method public getTitle" data-toggle="collapse" data-target=".getTitle .collapse">
+<h2>getTitle()
+        </h2>
+<pre>getTitle() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getUserid" id="getUserid"></a><div class="element clickable method public getUserid" data-toggle="collapse" data-target=".getUserid .collapse">
+<h2>getUserid()
+        </h2>
+<pre>getUserid() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getValue" id="getValue"></a><div class="element clickable method public getValue" data-toggle="collapse" data-target=".getValue .collapse">
+<h2>getValue()
+        </h2>
+<pre>getValue(string $key) : null | mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::getValue()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::getValue()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>mixed</code>
+</div>
+</div></div>
+</div>
+<a name="getVatid" id="getVatid"></a><div class="element clickable method public getVatid" data-toggle="collapse" data-target=".getVatid .collapse">
+<h2>getVatid()
+        </h2>
+<pre>getVatid() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="getZip" id="getZip"></a><div class="element clickable method public getZip" data-toggle="collapse" data-target=".getZip .collapse">
+<h2>getZip()
+        </h2>
+<pre>getZip() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="init" id="init"></a><div class="element clickable method public init" data-toggle="collapse" data-target=".init .collapse">
+<h2>init()
+        </h2>
+<pre>init(array $data) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::init()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::init()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="set" id="set"></a><div class="element clickable method public set" data-toggle="collapse" data-target=".set .collapse">
+<h2>set()
+        </h2>
+<pre>set(string $property, string $value) : bool | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::set()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::set()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="setAddressaddition" id="setAddressaddition"></a><div class="element clickable method public setAddressaddition" data-toggle="collapse" data-target=".setAddressaddition .collapse">
+<h2>setAddressaddition()
+        </h2>
+<pre>setAddressaddition($addressaddition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$addressaddition</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setBirthday" id="setBirthday"></a><div class="element clickable method public setBirthday" data-toggle="collapse" data-target=".setBirthday .collapse">
+<h2>setBirthday()
+        </h2>
+<pre>setBirthday(string $birthday) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$birthday</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setCity" id="setCity"></a><div class="element clickable method public setCity" data-toggle="collapse" data-target=".setCity .collapse">
+<h2>setCity()
+        </h2>
+<pre>setCity($city) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$city</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setCompany" id="setCompany"></a><div class="element clickable method public setCompany" data-toggle="collapse" data-target=".setCompany .collapse">
+<h2>setCompany()
+        </h2>
+<pre>setCompany($company) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$company</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setCountry" id="setCountry"></a><div class="element clickable method public setCountry" data-toggle="collapse" data-target=".setCountry .collapse">
+<h2>setCountry()
+        </h2>
+<pre>setCountry(string $country) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$country</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setCustomerid" id="setCustomerid"></a><div class="element clickable method public setCustomerid" data-toggle="collapse" data-target=".setCustomerid .collapse">
+<h2>setCustomerid()
+        </h2>
+<pre>setCustomerid(string $customerid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$customerid</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setEmail" id="setEmail"></a><div class="element clickable method public setEmail" data-toggle="collapse" data-target=".setEmail .collapse">
+<h2>setEmail()
+        </h2>
+<pre>setEmail($email) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$email</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setFirstname" id="setFirstname"></a><div class="element clickable method public setFirstname" data-toggle="collapse" data-target=".setFirstname .collapse">
+<h2>setFirstname()
+        </h2>
+<pre>setFirstname($firstname) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$firstname</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setIp" id="setIp"></a><div class="element clickable method public setIp" data-toggle="collapse" data-target=".setIp .collapse">
+<h2>setIp()
+        </h2>
+<pre>setIp($ip) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ip</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setLanguage" id="setLanguage"></a><div class="element clickable method public setLanguage" data-toggle="collapse" data-target=".setLanguage .collapse">
+<h2>setLanguage()
+        </h2>
+<pre>setLanguage(string $language) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$language</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setLastname" id="setLastname"></a><div class="element clickable method public setLastname" data-toggle="collapse" data-target=".setLastname .collapse">
+<h2>setLastname()
+        </h2>
+<pre>setLastname($lastname) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$lastname</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setSalutation" id="setSalutation"></a><div class="element clickable method public setSalutation" data-toggle="collapse" data-target=".setSalutation .collapse">
+<h2>setSalutation()
+        </h2>
+<pre>setSalutation($salutation) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$salutation</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setState" id="setState"></a><div class="element clickable method public setState" data-toggle="collapse" data-target=".setState .collapse">
+<h2>setState()
+        </h2>
+<pre>setState($state) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$state</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setStreet" id="setStreet"></a><div class="element clickable method public setStreet" data-toggle="collapse" data-target=".setStreet .collapse">
+<h2>setStreet()
+        </h2>
+<pre>setStreet($street) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$street</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setTelephonenumber" id="setTelephonenumber"></a><div class="element clickable method public setTelephonenumber" data-toggle="collapse" data-target=".setTelephonenumber .collapse">
+<h2>setTelephonenumber()
+        </h2>
+<pre>setTelephonenumber($telephonenumber) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$telephonenumber</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setTitle" id="setTitle"></a><div class="element clickable method public setTitle" data-toggle="collapse" data-target=".setTitle .collapse">
+<h2>setTitle()
+        </h2>
+<pre>setTitle($title) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setUserid" id="setUserid"></a><div class="element clickable method public setUserid" data-toggle="collapse" data-target=".setUserid .collapse">
+<h2>setUserid()
+        </h2>
+<pre>setUserid(string $userid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$userid</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setValue" id="setValue"></a><div class="element clickable method public setValue" data-toggle="collapse" data-target=".setValue .collapse">
+<h2>setValue()
+        </h2>
+<pre>setValue(string $key, string $name) : boolean | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::setValue()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::setValue()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="setVatid" id="setVatid"></a><div class="element clickable method public setVatid" data-toggle="collapse" data-target=".setVatid .collapse">
+<h2>setVatid()
+        </h2>
+<pre>setVatid($vatid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$vatid</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setZip" id="setZip"></a><div class="element clickable method public setZip" data-toggle="collapse" data-target=".setZip .collapse">
+<h2>setZip()
+        </h2>
+<pre>setZip($zip) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$zip</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="toArray" id="toArray"></a><div class="element clickable method public toArray" data-toggle="collapse" data-target=".toArray .collapse">
+<h2>toArray()
+        </h2>
+<pre>toArray() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::toArray()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::toArray()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24addressaddition" id="$addressaddition"> </a><div class="element clickable property protected $addressaddition" data-toggle="collapse" data-target=".$addressaddition .collapse">
+<h2>$addressaddition</h2>
+<pre>$addressaddition </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24birthday" id="$birthday"> </a><div class="element clickable property protected $birthday" data-toggle="collapse" data-target=".$birthday .collapse">
+<h2>Date of birth (YYYYMMDD)</h2>
+<pre>$birthday : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24city" id="$city"> </a><div class="element clickable property protected $city" data-toggle="collapse" data-target=".$city .collapse">
+<h2>$city</h2>
+<pre>$city </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24company" id="$company"> </a><div class="element clickable property protected $company" data-toggle="collapse" data-target=".$company .collapse">
+<h2>$company</h2>
+<pre>$company </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24country" id="$country"> </a><div class="element clickable property protected $country" data-toggle="collapse" data-target=".$country .collapse">
+<h2>Country (ISO-3166)</h2>
+<pre>$country : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24customerid" id="$customerid"> </a><div class="element clickable property protected $customerid" data-toggle="collapse" data-target=".$customerid .collapse">
+<h2>Merchant's customer ID (Permitted symbols: 0-9, a-z, A-Z, .,-,_,/)</h2>
+<pre>$customerid : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24email" id="$email"> </a><div class="element clickable property protected $email" data-toggle="collapse" data-target=".$email .collapse">
+<h2>$email</h2>
+<pre>$email </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24firstname" id="$firstname"> </a><div class="element clickable property protected $firstname" data-toggle="collapse" data-target=".$firstname .collapse">
+<h2>$firstname</h2>
+<pre>$firstname </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24ip" id="$ip"> </a><div class="element clickable property protected $ip" data-toggle="collapse" data-target=".$ip .collapse">
+<h2>$ip</h2>
+<pre>$ip </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24language" id="$language"> </a><div class="element clickable property protected $language" data-toggle="collapse" data-target=".$language .collapse">
+<h2>Language indicator (ISO639)</h2>
+<pre>$language : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24lastname" id="$lastname"> </a><div class="element clickable property protected $lastname" data-toggle="collapse" data-target=".$lastname .collapse">
+<h2>$lastname</h2>
+<pre>$lastname </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24salutation" id="$salutation"> </a><div class="element clickable property protected $salutation" data-toggle="collapse" data-target=".$salutation .collapse">
+<h2>$salutation</h2>
+<pre>$salutation </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24state" id="$state"> </a><div class="element clickable property protected $state" data-toggle="collapse" data-target=".$state .collapse">
+<h2>$state</h2>
+<pre>$state </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24street" id="$street"> </a><div class="element clickable property protected $street" data-toggle="collapse" data-target=".$street .collapse">
+<h2>$street</h2>
+<pre>$street </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24telephonenumber" id="$telephonenumber"> </a><div class="element clickable property protected $telephonenumber" data-toggle="collapse" data-target=".$telephonenumber .collapse">
+<h2>$telephonenumber</h2>
+<pre>$telephonenumber </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24title" id="$title"> </a><div class="element clickable property protected $title" data-toggle="collapse" data-target=".$title .collapse">
+<h2>$title</h2>
+<pre>$title </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24userid" id="$userid"> </a><div class="element clickable property protected $userid" data-toggle="collapse" data-target=".$userid .collapse">
+<h2>PAYONE debtor ID</h2>
+<pre>$userid : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24vatid" id="$vatid"> </a><div class="element clickable property protected $vatid" data-toggle="collapse" data-target=".$vatid .collapse">
+<h2>$vatid</h2>
+<pre>$vatid </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24zip" id="$zip"> </a><div class="element clickable property protected $zip" data-toggle="collapse" data-target=".$zip .collapse">
+<h2>$zip</h2>
+<pre>$zip </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:04+02:00.<br></footer></div>
+</div>
+</body>
+</html>

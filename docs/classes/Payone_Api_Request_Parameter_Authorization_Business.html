@@ -1,0 +1,409 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Api_Request_Parameter_Authorization_Business</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public inherited"><a href="#__construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#get" title="get :: "><span class="description">get()
+        </span><pre>get()</pre></a></li>
+<li class="method public "><a href="#getBookingDate" title="getBookingDate :: "><span class="description">getBookingDate()
+        </span><pre>getBookingDate()</pre></a></li>
+<li class="method public "><a href="#getDocumentDate" title="getDocumentDate :: "><span class="description">getDocumentDate()
+        </span><pre>getDocumentDate()</pre></a></li>
+<li class="method public "><a href="#getDueTime" title="getDueTime :: "><span class="description">getDueTime()
+        </span><pre>getDueTime()</pre></a></li>
+<li class="method public inherited"><a href="#getValue" title="getValue :: "><span class="description">getValue()
+        </span><pre>getValue()</pre></a></li>
+<li class="method public inherited"><a href="#init" title="init :: "><span class="description">init()
+        </span><pre>init()</pre></a></li>
+<li class="method public inherited"><a href="#set" title="set :: "><span class="description">set()
+        </span><pre>set()</pre></a></li>
+<li class="method public "><a href="#setBookingDate" title="setBookingDate :: "><span class="description">setBookingDate()
+        </span><pre>setBookingDate()</pre></a></li>
+<li class="method public "><a href="#setDocumentDate" title="setDocumentDate :: "><span class="description">setDocumentDate()
+        </span><pre>setDocumentDate()</pre></a></li>
+<li class="method public "><a href="#setDueTime" title="setDueTime :: "><span class="description">setDueTime()
+        </span><pre>setDueTime()</pre></a></li>
+<li class="method public inherited"><a href="#setValue" title="setValue :: "><span class="description">setValue()
+        </span><pre>setValue()</pre></a></li>
+<li class="method public inherited"><a href="#toArray" title="toArray :: "><span class="description">toArray()
+        </span><pre>toArray()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24booking_date" title="$booking_date :: (YYYYMMDD)"><span class="description">(YYYYMMDD)</span><pre>$booking_date</pre></a></li>
+<li class="property protected "><a href="#%24document_date" title="$document_date :: (YYYYMMDD)"><span class="description">(YYYYMMDD)</span><pre>$document_date</pre></a></li>
+<li class="property protected "><a href="#%24due_time" title="$due_time :: (Unixtimestamp)"><span class="description">(Unixtimestamp)</span><pre>$due_time</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Api_Request_Parameter_Authorization_Business" id="\Payone_Api_Request_Parameter_Authorization_Business"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Api_Request_Parameter_Authorization_Business.html">Payone_Api_Request_Parameter_Authorization_Business</a>
+</li>
+</ul>
+<div href="../classes/Payone_Api_Request_Parameter_Authorization_Business.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.Api.Request.html">Payone_Api</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Request</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct(array $data) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::__construct()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::__construct()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="get" id="get"></a><div class="element clickable method public get" data-toggle="collapse" data-target=".get .collapse">
+<h2>get()
+        </h2>
+<pre>get($property) : null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::get()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::get()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>null</code></div>
+</div></div>
+</div>
+<a name="getBookingDate" id="getBookingDate"></a><div class="element clickable method public getBookingDate" data-toggle="collapse" data-target=".getBookingDate .collapse">
+<h2>getBookingDate()
+        </h2>
+<pre>getBookingDate() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getDocumentDate" id="getDocumentDate"></a><div class="element clickable method public getDocumentDate" data-toggle="collapse" data-target=".getDocumentDate .collapse">
+<h2>getDocumentDate()
+        </h2>
+<pre>getDocumentDate() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getDueTime" id="getDueTime"></a><div class="element clickable method public getDueTime" data-toggle="collapse" data-target=".getDueTime .collapse">
+<h2>getDueTime()
+        </h2>
+<pre>getDueTime() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getValue" id="getValue"></a><div class="element clickable method public getValue" data-toggle="collapse" data-target=".getValue .collapse">
+<h2>getValue()
+        </h2>
+<pre>getValue(string $key) : null | mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::getValue()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::getValue()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>mixed</code>
+</div>
+</div></div>
+</div>
+<a name="init" id="init"></a><div class="element clickable method public init" data-toggle="collapse" data-target=".init .collapse">
+<h2>init()
+        </h2>
+<pre>init(array $data) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::init()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::init()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="set" id="set"></a><div class="element clickable method public set" data-toggle="collapse" data-target=".set .collapse">
+<h2>set()
+        </h2>
+<pre>set(string $property, string $value) : bool | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::set()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::set()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="setBookingDate" id="setBookingDate"></a><div class="element clickable method public setBookingDate" data-toggle="collapse" data-target=".setBookingDate .collapse">
+<h2>setBookingDate()
+        </h2>
+<pre>setBookingDate(string $booking_date) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$booking_date</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setDocumentDate" id="setDocumentDate"></a><div class="element clickable method public setDocumentDate" data-toggle="collapse" data-target=".setDocumentDate .collapse">
+<h2>setDocumentDate()
+        </h2>
+<pre>setDocumentDate(string $document_date) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$document_date</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setDueTime" id="setDueTime"></a><div class="element clickable method public setDueTime" data-toggle="collapse" data-target=".setDueTime .collapse">
+<h2>setDueTime()
+        </h2>
+<pre>setDueTime(string $due_time) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$due_time</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setValue" id="setValue"></a><div class="element clickable method public setValue" data-toggle="collapse" data-target=".setValue .collapse">
+<h2>setValue()
+        </h2>
+<pre>setValue(string $key, string $name) : boolean | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::setValue()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::setValue()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="toArray" id="toArray"></a><div class="element clickable method public toArray" data-toggle="collapse" data-target=".toArray .collapse">
+<h2>toArray()
+        </h2>
+<pre>toArray() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Abstract::toArray()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Parameter_Authorization_Abstract::toArray()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24booking_date" id="$booking_date"> </a><div class="element clickable property protected $booking_date" data-toggle="collapse" data-target=".$booking_date .collapse">
+<h2>(YYYYMMDD)</h2>
+<pre>$booking_date : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24document_date" id="$document_date"> </a><div class="element clickable property protected $document_date" data-toggle="collapse" data-target=".$document_date .collapse">
+<h2>(YYYYMMDD)</h2>
+<pre>$document_date : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24due_time" id="$due_time"> </a><div class="element clickable property protected $due_time" data-toggle="collapse" data-target=".$due_time .collapse">
+<h2>(Unixtimestamp)</h2>
+<pre>$due_time : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:04+02:00.<br></footer></div>
+</div>
+</body>
+</html>
