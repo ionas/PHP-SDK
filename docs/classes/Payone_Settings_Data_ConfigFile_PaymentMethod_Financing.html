@@ -1,0 +1,848 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Settings_Data_ConfigFile_PaymentMethod_Financing</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public inherited"><a href="#addFeeConfig" title="addFeeConfig :: "><span class="description">addFeeConfig()
+        </span><pre>addFeeConfig()</pre></a></li>
+<li class="method public inherited"><a href="#getActive" title="getActive :: "><span class="description">getActive()
+        </span><pre>getActive()</pre></a></li>
+<li class="method public inherited"><a href="#getAid" title="getAid :: "><span class="description">getAid()
+        </span><pre>getAid()</pre></a></li>
+<li class="method public inherited"><a href="#getAuthorization" title="getAuthorization :: "><span class="description">getAuthorization()
+        </span><pre>getAuthorization()</pre></a></li>
+<li class="method public "><a href="#getClearingType" title="getClearingType :: "><span class="description">getClearingType()
+        </span><pre>getClearingType()</pre></a></li>
+<li class="method public inherited"><a href="#getCountries" title="getCountries :: "><span class="description">getCountries()
+        </span><pre>getCountries()</pre></a></li>
+<li class="method public inherited"><a href="#getFeeConfig" title="getFeeConfig :: "><span class="description">getFeeConfig()
+        </span><pre>getFeeConfig()</pre></a></li>
+<li class="method public "><a href="#getFinancingType" title="getFinancingType :: "><span class="description">getFinancingType()
+        </span><pre>getFinancingType()</pre></a></li>
+<li class="method public inherited"><a href="#getId" title="getId :: "><span class="description">getId()
+        </span><pre>getId()</pre></a></li>
+<li class="method public "><a href="#getKey" title="getKey :: "><span class="description">getKey()
+        </span><pre>getKey()</pre></a></li>
+<li class="method public inherited"><a href="#getMaxOrderTotal" title="getMaxOrderTotal :: "><span class="description">getMaxOrderTotal()
+        </span><pre>getMaxOrderTotal()</pre></a></li>
+<li class="method public inherited"><a href="#getMid" title="getMid :: "><span class="description">getMid()
+        </span><pre>getMid()</pre></a></li>
+<li class="method public inherited"><a href="#getMinOrderTotal" title="getMinOrderTotal :: "><span class="description">getMinOrderTotal()
+        </span><pre>getMinOrderTotal()</pre></a></li>
+<li class="method public inherited"><a href="#getMode" title="getMode :: "><span class="description">getMode()
+        </span><pre>getMode()</pre></a></li>
+<li class="method public inherited"><a href="#getPortalid" title="getPortalid :: "><span class="description">getPortalid()
+        </span><pre>getPortalid()</pre></a></li>
+<li class="method public inherited"><a href="#getTitle" title="getTitle :: "><span class="description">getTitle()
+        </span><pre>getTitle()</pre></a></li>
+<li class="method public inherited"><a href="#getTypes" title="getTypes :: "><span class="description">getTypes()
+        </span><pre>getTypes()</pre></a></li>
+<li class="method public inherited"><a href="#setActive" title="setActive :: "><span class="description">setActive()
+        </span><pre>setActive()</pre></a></li>
+<li class="method public inherited"><a href="#setAid" title="setAid :: "><span class="description">setAid()
+        </span><pre>setAid()</pre></a></li>
+<li class="method public inherited"><a href="#setAuthorization" title="setAuthorization :: "><span class="description">setAuthorization()
+        </span><pre>setAuthorization()</pre></a></li>
+<li class="method public inherited"><a href="#setCountries" title="setCountries :: "><span class="description">setCountries()
+        </span><pre>setCountries()</pre></a></li>
+<li class="method public inherited"><a href="#setFeeConfig" title="setFeeConfig :: "><span class="description">setFeeConfig()
+        </span><pre>setFeeConfig()</pre></a></li>
+<li class="method public "><a href="#setFinancingType" title="setFinancingType :: "><span class="description">setFinancingType()
+        </span><pre>setFinancingType()</pre></a></li>
+<li class="method public inherited"><a href="#setId" title="setId :: "><span class="description">setId()
+        </span><pre>setId()</pre></a></li>
+<li class="method public inherited"><a href="#setMaxOrderTotal" title="setMaxOrderTotal :: "><span class="description">setMaxOrderTotal()
+        </span><pre>setMaxOrderTotal()</pre></a></li>
+<li class="method public inherited"><a href="#setMid" title="setMid :: "><span class="description">setMid()
+        </span><pre>setMid()</pre></a></li>
+<li class="method public inherited"><a href="#setMinOrderTotal" title="setMinOrderTotal :: "><span class="description">setMinOrderTotal()
+        </span><pre>setMinOrderTotal()</pre></a></li>
+<li class="method public inherited"><a href="#setMode" title="setMode :: "><span class="description">setMode()
+        </span><pre>setMode()</pre></a></li>
+<li class="method public inherited"><a href="#setPortalid" title="setPortalid :: "><span class="description">setPortalid()
+        </span><pre>setPortalid()</pre></a></li>
+<li class="method public inherited"><a href="#setTitle" title="setTitle :: "><span class="description">setTitle()
+        </span><pre>setTitle()</pre></a></li>
+<li class="method public inherited"><a href="#setTypes" title="setTypes :: "><span class="description">setTypes()
+        </span><pre>setTypes()</pre></a></li>
+<li class="method public inherited"><a href="#toArray" title="toArray :: "><span class="description">toArray()
+        </span><pre>toArray()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected inherited"><a href="#%24active" title="$active :: "><span class="description">$active</span><pre>$active</pre></a></li>
+<li class="property protected inherited"><a href="#%24aid" title="$aid :: "><span class="description">$aid</span><pre>$aid</pre></a></li>
+<li class="property protected inherited"><a href="#%24authorization" title="$authorization :: "><span class="description">$authorization</span><pre>$authorization</pre></a></li>
+<li class="property protected inherited"><a href="#%24countries" title="$countries :: "><span class="description">$countries</span><pre>$countries</pre></a></li>
+<li class="property protected inherited"><a href="#%24fee_config" title="$fee_config :: "><span class="description">$fee_config</span><pre>$fee_config</pre></a></li>
+<li class="property protected "><a href="#%24financingType" title="$financingType :: "><span class="description">$financingType</span><pre>$financingType</pre></a></li>
+<li class="property protected inherited"><a href="#%24id" title="$id :: "><span class="description">$id</span><pre>$id</pre></a></li>
+<li class="property protected "><a href="#%24key" title="$key :: "><span class="description">$key</span><pre>$key</pre></a></li>
+<li class="property protected inherited"><a href="#%24max_order_total" title="$max_order_total :: "><span class="description">$max_order_total</span><pre>$max_order_total</pre></a></li>
+<li class="property protected inherited"><a href="#%24mid" title="$mid :: "><span class="description">$mid</span><pre>$mid</pre></a></li>
+<li class="property protected inherited"><a href="#%24min_order_total" title="$min_order_total :: "><span class="description">$min_order_total</span><pre>$min_order_total</pre></a></li>
+<li class="property protected inherited"><a href="#%24mode" title="$mode :: "><span class="description">$mode</span><pre>$mode</pre></a></li>
+<li class="property protected inherited"><a href="#%24portalid" title="$portalid :: "><span class="description">$portalid</span><pre>$portalid</pre></a></li>
+<li class="property protected inherited"><a href="#%24title" title="$title :: "><span class="description">$title</span><pre>$title</pre></a></li>
+<li class="property protected inherited"><a href="#%24types" title="$types :: "><span class="description">$types</span><pre>$types</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Settings_Data_ConfigFile_PaymentMethod_Financing" id="\Payone_Settings_Data_ConfigFile_PaymentMethod_Financing"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Financing.html">Payone_Settings_Data_ConfigFile_PaymentMethod_Financing</a>
+</li>
+</ul>
+<div href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Financing.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.Settings.Data.html">Payone_Settings</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Data</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="addFeeConfig" id="addFeeConfig"></a><div class="element clickable method public addFeeConfig" data-toggle="collapse" data-target=".addFeeConfig .collapse">
+<h2>addFeeConfig()
+        </h2>
+<pre>addFeeConfig($value) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::addFeeConfig()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="getActive" id="getActive"></a><div class="element clickable method public getActive" data-toggle="collapse" data-target=".getActive .collapse">
+<h2>getActive()
+        </h2>
+<pre>getActive() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getActive()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getAid" id="getAid"></a><div class="element clickable method public getAid" data-toggle="collapse" data-target=".getAid .collapse">
+<h2>getAid()
+        </h2>
+<pre>getAid() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getAid()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="getAuthorization" id="getAuthorization"></a><div class="element clickable method public getAuthorization" data-toggle="collapse" data-target=".getAuthorization .collapse">
+<h2>getAuthorization()
+        </h2>
+<pre>getAuthorization() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getAuthorization()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingType" id="getClearingType"></a><div class="element clickable method public getClearingType" data-toggle="collapse" data-target=".getClearingType .collapse">
+<h2>getClearingType()
+        </h2>
+<pre>getClearingType() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getCountries" id="getCountries"></a><div class="element clickable method public getCountries" data-toggle="collapse" data-target=".getCountries .collapse">
+<h2>getCountries()
+        </h2>
+<pre>getCountries() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getCountries()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getFeeConfig" id="getFeeConfig"></a><div class="element clickable method public getFeeConfig" data-toggle="collapse" data-target=".getFeeConfig .collapse">
+<h2>getFeeConfig()
+        </h2>
+<pre>getFeeConfig() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getFeeConfig()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="getFinancingType" id="getFinancingType"></a><div class="element clickable method public getFinancingType" data-toggle="collapse" data-target=".getFinancingType .collapse">
+<h2>getFinancingType()
+        </h2>
+<pre>getFinancingType() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getId" id="getId"></a><div class="element clickable method public getId" data-toggle="collapse" data-target=".getId .collapse">
+<h2>getId()
+        </h2>
+<pre>getId() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getId()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getKey" id="getKey"></a><div class="element clickable method public getKey" data-toggle="collapse" data-target=".getKey .collapse">
+<h2>getKey()
+        </h2>
+<pre>getKey() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getMaxOrderTotal" id="getMaxOrderTotal"></a><div class="element clickable method public getMaxOrderTotal" data-toggle="collapse" data-target=".getMaxOrderTotal .collapse">
+<h2>getMaxOrderTotal()
+        </h2>
+<pre>getMaxOrderTotal() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getMaxOrderTotal()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="getMid" id="getMid"></a><div class="element clickable method public getMid" data-toggle="collapse" data-target=".getMid .collapse">
+<h2>getMid()
+        </h2>
+<pre>getMid() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getMid()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="getMinOrderTotal" id="getMinOrderTotal"></a><div class="element clickable method public getMinOrderTotal" data-toggle="collapse" data-target=".getMinOrderTotal .collapse">
+<h2>getMinOrderTotal()
+        </h2>
+<pre>getMinOrderTotal() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getMinOrderTotal()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="getMode" id="getMode"></a><div class="element clickable method public getMode" data-toggle="collapse" data-target=".getMode .collapse">
+<h2>getMode()
+        </h2>
+<pre>getMode() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getMode()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getPortalid" id="getPortalid"></a><div class="element clickable method public getPortalid" data-toggle="collapse" data-target=".getPortalid .collapse">
+<h2>getPortalid()
+        </h2>
+<pre>getPortalid() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getPortalid()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="getTitle" id="getTitle"></a><div class="element clickable method public getTitle" data-toggle="collapse" data-target=".getTitle .collapse">
+<h2>getTitle()
+        </h2>
+<pre>getTitle() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getTitle()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getTypes" id="getTypes"></a><div class="element clickable method public getTypes" data-toggle="collapse" data-target=".getTypes .collapse">
+<h2>getTypes()
+        </h2>
+<pre>getTypes() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::getTypes()</td>
+</tr></table>
+</div></div>
+</div>
+<a name="setActive" id="setActive"></a><div class="element clickable method public setActive" data-toggle="collapse" data-target=".setActive .collapse">
+<h2>setActive()
+        </h2>
+<pre>setActive(string $active) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setActive()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$active</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setAid" id="setAid"></a><div class="element clickable method public setAid" data-toggle="collapse" data-target=".setAid .collapse">
+<h2>setAid()
+        </h2>
+<pre>setAid($aid) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setAid()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$aid</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setAuthorization" id="setAuthorization"></a><div class="element clickable method public setAuthorization" data-toggle="collapse" data-target=".setAuthorization .collapse">
+<h2>setAuthorization()
+        </h2>
+<pre>setAuthorization(string $authorization) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setAuthorization()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$authorization</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setCountries" id="setCountries"></a><div class="element clickable method public setCountries" data-toggle="collapse" data-target=".setCountries .collapse">
+<h2>setCountries()
+        </h2>
+<pre>setCountries(string $countries) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setCountries()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$countries</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setFeeConfig" id="setFeeConfig"></a><div class="element clickable method public setFeeConfig" data-toggle="collapse" data-target=".setFeeConfig .collapse">
+<h2>setFeeConfig()
+        </h2>
+<pre>setFeeConfig($fee_config) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setFeeConfig()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$fee_config</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setFinancingType" id="setFinancingType"></a><div class="element clickable method public setFinancingType" data-toggle="collapse" data-target=".setFinancingType .collapse">
+<h2>setFinancingType()
+        </h2>
+<pre>setFinancingType(string $financingType) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$financingType</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setId" id="setId"></a><div class="element clickable method public setId" data-toggle="collapse" data-target=".setId .collapse">
+<h2>setId()
+        </h2>
+<pre>setId(string $id) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setId()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setMaxOrderTotal" id="setMaxOrderTotal"></a><div class="element clickable method public setMaxOrderTotal" data-toggle="collapse" data-target=".setMaxOrderTotal .collapse">
+<h2>setMaxOrderTotal()
+        </h2>
+<pre>setMaxOrderTotal($max_order_total) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setMaxOrderTotal()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$max_order_total</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setMid" id="setMid"></a><div class="element clickable method public setMid" data-toggle="collapse" data-target=".setMid .collapse">
+<h2>setMid()
+        </h2>
+<pre>setMid($mid) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setMid()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mid</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setMinOrderTotal" id="setMinOrderTotal"></a><div class="element clickable method public setMinOrderTotal" data-toggle="collapse" data-target=".setMinOrderTotal .collapse">
+<h2>setMinOrderTotal()
+        </h2>
+<pre>setMinOrderTotal($min_order_total) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setMinOrderTotal()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$min_order_total</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setMode" id="setMode"></a><div class="element clickable method public setMode" data-toggle="collapse" data-target=".setMode .collapse">
+<h2>setMode()
+        </h2>
+<pre>setMode(string $mode) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setMode()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setPortalid" id="setPortalid"></a><div class="element clickable method public setPortalid" data-toggle="collapse" data-target=".setPortalid .collapse">
+<h2>setPortalid()
+        </h2>
+<pre>setPortalid($portalid) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setPortalid()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$portalid</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="setTitle" id="setTitle"></a><div class="element clickable method public setTitle" data-toggle="collapse" data-target=".setTitle .collapse">
+<h2>setTitle()
+        </h2>
+<pre>setTitle(string $title) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setTitle()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$title</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setTypes" id="setTypes"></a><div class="element clickable method public setTypes" data-toggle="collapse" data-target=".setTypes .collapse">
+<h2>setTypes()
+        </h2>
+<pre>setTypes($types) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::setTypes()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$types</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="toArray" id="toArray"></a><div class="element clickable method public toArray" data-toggle="collapse" data-target=".toArray .collapse">
+<h2>toArray()
+        </h2>
+<pre>toArray() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>abstract</th>
+<td></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_Interface::toArray()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24active" id="$active"> </a><div class="element clickable property protected $active" data-toggle="collapse" data-target=".$active .collapse">
+<h2>$active</h2>
+<pre>$active : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$active</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24aid" id="$aid"> </a><div class="element clickable property protected $aid" data-toggle="collapse" data-target=".$aid .collapse">
+<h2>$aid</h2>
+<pre>$aid </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$aid</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24authorization" id="$authorization"> </a><div class="element clickable property protected $authorization" data-toggle="collapse" data-target=".$authorization .collapse">
+<h2>$authorization</h2>
+<pre>$authorization : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$authorization</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24countries" id="$countries"> </a><div class="element clickable property protected $countries" data-toggle="collapse" data-target=".$countries .collapse">
+<h2>$countries</h2>
+<pre>$countries : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$countries</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24fee_config" id="$fee_config"> </a><div class="element clickable property protected $fee_config" data-toggle="collapse" data-target=".$fee_config .collapse">
+<h2>$fee_config</h2>
+<pre>$fee_config </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$fee_config</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24financingType" id="$financingType"> </a><div class="element clickable property protected $financingType" data-toggle="collapse" data-target=".$financingType .collapse">
+<h2>$financingType</h2>
+<pre>$financingType : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24id" id="$id"> </a><div class="element clickable property protected $id" data-toggle="collapse" data-target=".$id .collapse">
+<h2>$id</h2>
+<pre>$id : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$id</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24key" id="$key"> </a><div class="element clickable property protected $key" data-toggle="collapse" data-target=".$key .collapse">
+<h2>$key</h2>
+<pre>$key : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24max_order_total" id="$max_order_total"> </a><div class="element clickable property protected $max_order_total" data-toggle="collapse" data-target=".$max_order_total .collapse">
+<h2>$max_order_total</h2>
+<pre>$max_order_total </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$max_order_total</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24mid" id="$mid"> </a><div class="element clickable property protected $mid" data-toggle="collapse" data-target=".$mid .collapse">
+<h2>$mid</h2>
+<pre>$mid </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$mid</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24min_order_total" id="$min_order_total"> </a><div class="element clickable property protected $min_order_total" data-toggle="collapse" data-target=".$min_order_total .collapse">
+<h2>$min_order_total</h2>
+<pre>$min_order_total </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$min_order_total</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24mode" id="$mode"> </a><div class="element clickable property protected $mode" data-toggle="collapse" data-target=".$mode .collapse">
+<h2>$mode</h2>
+<pre>$mode : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$mode</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24portalid" id="$portalid"> </a><div class="element clickable property protected $portalid" data-toggle="collapse" data-target=".$portalid .collapse">
+<h2>$portalid</h2>
+<pre>$portalid </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$portalid</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24title" id="$title"> </a><div class="element clickable property protected $title" data-toggle="collapse" data-target=".$title .collapse">
+<h2>$title</h2>
+<pre>$title : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$title</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24types" id="$types"> </a><div class="element clickable property protected $types" data-toggle="collapse" data-target=".$types .collapse">
+<h2>$types</h2>
+<pre>$types : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract::$$types</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:09+02:00.<br></footer></div>
+</div>
+</body>
+</html>

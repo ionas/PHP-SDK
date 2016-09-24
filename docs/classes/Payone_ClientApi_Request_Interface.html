@@ -1,0 +1,504 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_ClientApi_Request_Interface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__toString" title="__toString :: "><span class="description">__toString()
+        </span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#get" title="get :: "><span class="description">get()
+        </span><pre>get()</pre></a></li>
+<li class="method public "><a href="#getEncoding" title="getEncoding :: "><span class="description">getEncoding()
+        </span><pre>getEncoding()</pre></a></li>
+<li class="method public "><a href="#getIntegratorName" title="getIntegratorName :: "><span class="description">getIntegratorName()
+        </span><pre>getIntegratorName()</pre></a></li>
+<li class="method public "><a href="#getIntegratorVersion" title="getIntegratorVersion :: "><span class="description">getIntegratorVersion()
+        </span><pre>getIntegratorVersion()</pre></a></li>
+<li class="method public "><a href="#getKey" title="getKey :: "><span class="description">getKey()
+        </span><pre>getKey()</pre></a></li>
+<li class="method public "><a href="#getMid" title="getMid :: "><span class="description">getMid()
+        </span><pre>getMid()</pre></a></li>
+<li class="method public "><a href="#getMode" title="getMode :: "><span class="description">getMode()
+        </span><pre>getMode()</pre></a></li>
+<li class="method public "><a href="#getPortalid" title="getPortalid :: "><span class="description">getPortalid()
+        </span><pre>getPortalid()</pre></a></li>
+<li class="method public "><a href="#getRequest" title="getRequest :: "><span class="description">getRequest()
+        </span><pre>getRequest()</pre></a></li>
+<li class="method public "><a href="#getResponseType" title="getResponseType :: "><span class="description">getResponseType()
+        </span><pre>getResponseType()</pre></a></li>
+<li class="method public "><a href="#getSolutionName" title="getSolutionName :: "><span class="description">getSolutionName()
+        </span><pre>getSolutionName()</pre></a></li>
+<li class="method public "><a href="#getSolutionVersion" title="getSolutionVersion :: "><span class="description">getSolutionVersion()
+        </span><pre>getSolutionVersion()</pre></a></li>
+<li class="method public "><a href="#init" title="init :: "><span class="description">init()
+        </span><pre>init()</pre></a></li>
+<li class="method public "><a href="#set" title="set :: "><span class="description">set()
+        </span><pre>set()</pre></a></li>
+<li class="method public "><a href="#setEncoding" title="setEncoding :: "><span class="description">setEncoding()
+        </span><pre>setEncoding()</pre></a></li>
+<li class="method public "><a href="#setIntegratorName" title="setIntegratorName :: "><span class="description">setIntegratorName()
+        </span><pre>setIntegratorName()</pre></a></li>
+<li class="method public "><a href="#setIntegratorVersion" title="setIntegratorVersion :: "><span class="description">setIntegratorVersion()
+        </span><pre>setIntegratorVersion()</pre></a></li>
+<li class="method public "><a href="#setKey" title="setKey :: "><span class="description">setKey()
+        </span><pre>setKey()</pre></a></li>
+<li class="method public "><a href="#setMid" title="setMid :: "><span class="description">setMid()
+        </span><pre>setMid()</pre></a></li>
+<li class="method public "><a href="#setMode" title="setMode :: "><span class="description">setMode()
+        </span><pre>setMode()</pre></a></li>
+<li class="method public "><a href="#setPortalid" title="setPortalid :: "><span class="description">setPortalid()
+        </span><pre>setPortalid()</pre></a></li>
+<li class="method public "><a href="#setRequest" title="setRequest :: "><span class="description">setRequest()
+        </span><pre>setRequest()</pre></a></li>
+<li class="method public "><a href="#setResponsetype" title="setResponsetype :: "><span class="description">setResponsetype()
+        </span><pre>setResponsetype()</pre></a></li>
+<li class="method public "><a href="#setSolutionName" title="setSolutionName :: "><span class="description">setSolutionName()
+        </span><pre>setSolutionName()</pre></a></li>
+<li class="method public "><a href="#setSolutionVersion" title="setSolutionVersion :: "><span class="description">setSolutionVersion()
+        </span><pre>setSolutionVersion()</pre></a></li>
+<li class="method public "><a href="#toArray" title="toArray :: "><span class="description">toArray()
+        </span><pre>toArray()</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_ClientApi_Request_Interface" id="\Payone_ClientApi_Request_Interface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_ClientApi_Request_Interface.html">Payone_ClientApi_Request_Interface</a>
+</li>
+</ul>
+<div href="../classes/Payone_ClientApi_Request_Interface.html" class="element interface">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.ClientApi.Request.html">Payone_ClientApi</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Request</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__toString" id="__toString"></a><div class="element clickable method public __toString" data-toggle="collapse" data-target=".__toString .collapse">
+<h2>__toString()
+        </h2>
+<pre>__toString() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="get" id="get"></a><div class="element clickable method public get" data-toggle="collapse" data-target=".get .collapse">
+<h2>get()
+        </h2>
+<pre>get(string $property) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>abstract</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="getEncoding" id="getEncoding"></a><div class="element clickable method public getEncoding" data-toggle="collapse" data-target=".getEncoding .collapse">
+<h2>getEncoding()
+        </h2>
+<pre>getEncoding() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getIntegratorName" id="getIntegratorName"></a><div class="element clickable method public getIntegratorName" data-toggle="collapse" data-target=".getIntegratorName .collapse">
+<h2>getIntegratorName()
+        </h2>
+<pre>getIntegratorName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getIntegratorVersion" id="getIntegratorVersion"></a><div class="element clickable method public getIntegratorVersion" data-toggle="collapse" data-target=".getIntegratorVersion .collapse">
+<h2>getIntegratorVersion()
+        </h2>
+<pre>getIntegratorVersion() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getKey" id="getKey"></a><div class="element clickable method public getKey" data-toggle="collapse" data-target=".getKey .collapse">
+<h2>getKey()
+        </h2>
+<pre>getKey() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getMid" id="getMid"></a><div class="element clickable method public getMid" data-toggle="collapse" data-target=".getMid .collapse">
+<h2>getMid()
+        </h2>
+<pre>getMid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getMode" id="getMode"></a><div class="element clickable method public getMode" data-toggle="collapse" data-target=".getMode .collapse">
+<h2>getMode()
+        </h2>
+<pre>getMode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getPortalid" id="getPortalid"></a><div class="element clickable method public getPortalid" data-toggle="collapse" data-target=".getPortalid .collapse">
+<h2>getPortalid()
+        </h2>
+<pre>getPortalid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getRequest" id="getRequest"></a><div class="element clickable method public getRequest" data-toggle="collapse" data-target=".getRequest .collapse">
+<h2>getRequest()
+        </h2>
+<pre>getRequest() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getResponseType" id="getResponseType"></a><div class="element clickable method public getResponseType" data-toggle="collapse" data-target=".getResponseType .collapse">
+<h2>getResponseType()
+        </h2>
+<pre>getResponseType() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getSolutionName" id="getSolutionName"></a><div class="element clickable method public getSolutionName" data-toggle="collapse" data-target=".getSolutionName .collapse">
+<h2>getSolutionName()
+        </h2>
+<pre>getSolutionName() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getSolutionVersion" id="getSolutionVersion"></a><div class="element clickable method public getSolutionVersion" data-toggle="collapse" data-target=".getSolutionVersion .collapse">
+<h2>getSolutionVersion()
+        </h2>
+<pre>getSolutionVersion() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="init" id="init"></a><div class="element clickable method public init" data-toggle="collapse" data-target=".init .collapse">
+<h2>init()
+        </h2>
+<pre>init(array $data) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>abstract</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="set" id="set"></a><div class="element clickable method public set" data-toggle="collapse" data-target=".set .collapse">
+<h2>set()
+        </h2>
+<pre>set(string $property, string $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>abstract</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setEncoding" id="setEncoding"></a><div class="element clickable method public setEncoding" data-toggle="collapse" data-target=".setEncoding .collapse">
+<h2>setEncoding()
+        </h2>
+<pre>setEncoding(string $encoding) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$encoding</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setIntegratorName" id="setIntegratorName"></a><div class="element clickable method public setIntegratorName" data-toggle="collapse" data-target=".setIntegratorName .collapse">
+<h2>setIntegratorName()
+        </h2>
+<pre>setIntegratorName(string $integrator_name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$integrator_name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setIntegratorVersion" id="setIntegratorVersion"></a><div class="element clickable method public setIntegratorVersion" data-toggle="collapse" data-target=".setIntegratorVersion .collapse">
+<h2>setIntegratorVersion()
+        </h2>
+<pre>setIntegratorVersion(string $integrator_version) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$integrator_version</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setKey" id="setKey"></a><div class="element clickable method public setKey" data-toggle="collapse" data-target=".setKey .collapse">
+<h2>setKey()
+        </h2>
+<pre>setKey(string $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setMid" id="setMid"></a><div class="element clickable method public setMid" data-toggle="collapse" data-target=".setMid .collapse">
+<h2>setMid()
+        </h2>
+<pre>setMid(int $mid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setMode" id="setMode"></a><div class="element clickable method public setMode" data-toggle="collapse" data-target=".setMode .collapse">
+<h2>setMode()
+        </h2>
+<pre>setMode(string $mode) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setPortalid" id="setPortalid"></a><div class="element clickable method public setPortalid" data-toggle="collapse" data-target=".setPortalid .collapse">
+<h2>setPortalid()
+        </h2>
+<pre>setPortalid(int $portalid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$portalid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setRequest" id="setRequest"></a><div class="element clickable method public setRequest" data-toggle="collapse" data-target=".setRequest .collapse">
+<h2>setRequest()
+        </h2>
+<pre>setRequest(string $request) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$request</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setResponsetype" id="setResponsetype"></a><div class="element clickable method public setResponsetype" data-toggle="collapse" data-target=".setResponsetype .collapse">
+<h2>setResponsetype()
+        </h2>
+<pre>setResponsetype(string $responseType) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$responseType</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setSolutionName" id="setSolutionName"></a><div class="element clickable method public setSolutionName" data-toggle="collapse" data-target=".setSolutionName .collapse">
+<h2>setSolutionName()
+        </h2>
+<pre>setSolutionName(string $solution_name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$solution_name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setSolutionVersion" id="setSolutionVersion"></a><div class="element clickable method public setSolutionVersion" data-toggle="collapse" data-target=".setSolutionVersion .collapse">
+<h2>setSolutionVersion()
+        </h2>
+<pre>setSolutionVersion(string $solution_version) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$solution_version</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="toArray" id="toArray"></a><div class="element clickable method public toArray" data-toggle="collapse" data-target=".toArray .collapse">
+<h2>toArray()
+        </h2>
+<pre>toArray() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:07+02:00.<br></footer></div>
+</div>
+</body>
+</html>

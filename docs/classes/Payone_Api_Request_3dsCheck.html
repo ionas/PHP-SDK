@@ -1,0 +1,1160 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Api_Request_3dsCheck</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public inherited"><a href="#__construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#__toString" title="__toString :: "><span class="description">__toString()
+        </span><pre>__toString()</pre></a></li>
+<li class="method public inherited"><a href="#get" title="get :: "><span class="description">get()
+        </span><pre>get()</pre></a></li>
+<li class="method public "><a href="#getAid" title="getAid :: "><span class="description">getAid()
+        </span><pre>getAid()</pre></a></li>
+<li class="method public "><a href="#getAmount" title="getAmount :: "><span class="description">getAmount()
+        </span><pre>getAmount()</pre></a></li>
+<li class="method public "><a href="#getCardcvc2" title="getCardcvc2 :: "><span class="description">getCardcvc2()
+        </span><pre>getCardcvc2()</pre></a></li>
+<li class="method public "><a href="#getCardexpiredate" title="getCardexpiredate :: "><span class="description">getCardexpiredate()
+        </span><pre>getCardexpiredate()</pre></a></li>
+<li class="method public "><a href="#getCardpan" title="getCardpan :: "><span class="description">getCardpan()
+        </span><pre>getCardpan()</pre></a></li>
+<li class="method public "><a href="#getCardtype" title="getCardtype :: "><span class="description">getCardtype()
+        </span><pre>getCardtype()</pre></a></li>
+<li class="method public "><a href="#getClearingtype" title="getClearingtype :: "><span class="description">getClearingtype()
+        </span><pre>getClearingtype()</pre></a></li>
+<li class="method public "><a href="#getCurrency" title="getCurrency :: "><span class="description">getCurrency()
+        </span><pre>getCurrency()</pre></a></li>
+<li class="method public inherited"><a href="#getEncoding" title="getEncoding :: "><span class="description">getEncoding()
+        </span><pre>getEncoding()</pre></a></li>
+<li class="method public "><a href="#getExiturl" title="getExiturl :: "><span class="description">getExiturl()
+        </span><pre>getExiturl()</pre></a></li>
+<li class="method public inherited"><a href="#getIntegratorName" title="getIntegratorName :: "><span class="description">getIntegratorName()
+        </span><pre>getIntegratorName()</pre></a></li>
+<li class="method public inherited"><a href="#getIntegratorVersion" title="getIntegratorVersion :: "><span class="description">getIntegratorVersion()
+        </span><pre>getIntegratorVersion()</pre></a></li>
+<li class="method public inherited"><a href="#getKey" title="getKey :: "><span class="description">getKey()
+        </span><pre>getKey()</pre></a></li>
+<li class="method public "><a href="#getLanguage" title="getLanguage :: "><span class="description">getLanguage()
+        </span><pre>getLanguage()</pre></a></li>
+<li class="method public inherited"><a href="#getMid" title="getMid :: "><span class="description">getMid()
+        </span><pre>getMid()</pre></a></li>
+<li class="method public inherited"><a href="#getMode" title="getMode :: "><span class="description">getMode()
+        </span><pre>getMode()</pre></a></li>
+<li class="method public inherited"><a href="#getPortalid" title="getPortalid :: "><span class="description">getPortalid()
+        </span><pre>getPortalid()</pre></a></li>
+<li class="method public inherited"><a href="#getRequest" title="getRequest :: "><span class="description">getRequest()
+        </span><pre>getRequest()</pre></a></li>
+<li class="method public inherited"><a href="#getSolutionName" title="getSolutionName :: "><span class="description">getSolutionName()
+        </span><pre>getSolutionName()</pre></a></li>
+<li class="method public inherited"><a href="#getSolutionVersion" title="getSolutionVersion :: "><span class="description">getSolutionVersion()
+        </span><pre>getSolutionVersion()</pre></a></li>
+<li class="method public "><a href="#getStorecarddata" title="getStorecarddata :: "><span class="description">getStorecarddata()
+        </span><pre>getStorecarddata()</pre></a></li>
+<li class="method public inherited"><a href="#getValue" title="getValue :: "><span class="description">getValue()
+        </span><pre>getValue()</pre></a></li>
+<li class="method public inherited"><a href="#init" title="init :: "><span class="description">init()
+        </span><pre>init()</pre></a></li>
+<li class="method public inherited"><a href="#set" title="set :: "><span class="description">set()
+        </span><pre>set()</pre></a></li>
+<li class="method public "><a href="#setAid" title="setAid :: "><span class="description">setAid()
+        </span><pre>setAid()</pre></a></li>
+<li class="method public "><a href="#setAmount" title="setAmount :: "><span class="description">setAmount()
+        </span><pre>setAmount()</pre></a></li>
+<li class="method public "><a href="#setCardcvc2" title="setCardcvc2 :: "><span class="description">setCardcvc2()
+        </span><pre>setCardcvc2()</pre></a></li>
+<li class="method public "><a href="#setCardexpiredate" title="setCardexpiredate :: "><span class="description">setCardexpiredate()
+        </span><pre>setCardexpiredate()</pre></a></li>
+<li class="method public "><a href="#setCardpan" title="setCardpan :: "><span class="description">setCardpan()
+        </span><pre>setCardpan()</pre></a></li>
+<li class="method public "><a href="#setCardtype" title="setCardtype :: "><span class="description">setCardtype()
+        </span><pre>setCardtype()</pre></a></li>
+<li class="method public "><a href="#setClearingtype" title="setClearingtype :: "><span class="description">setClearingtype()
+        </span><pre>setClearingtype()</pre></a></li>
+<li class="method public "><a href="#setCurrency" title="setCurrency :: "><span class="description">setCurrency()
+        </span><pre>setCurrency()</pre></a></li>
+<li class="method public inherited"><a href="#setEncoding" title="setEncoding :: "><span class="description">setEncoding()
+        </span><pre>setEncoding()</pre></a></li>
+<li class="method public "><a href="#setExiturl" title="setExiturl :: "><span class="description">setExiturl()
+        </span><pre>setExiturl()</pre></a></li>
+<li class="method public inherited"><a href="#setIntegratorName" title="setIntegratorName :: set the system-Name"><span class="description">set the system-Name</span><pre>setIntegratorName()</pre></a></li>
+<li class="method public inherited"><a href="#setIntegratorVersion" title="setIntegratorVersion :: set the system-version"><span class="description">set the system-version</span><pre>setIntegratorVersion()</pre></a></li>
+<li class="method public inherited"><a href="#setKey" title="setKey :: "><span class="description">setKey()
+        </span><pre>setKey()</pre></a></li>
+<li class="method public "><a href="#setLanguage" title="setLanguage :: "><span class="description">setLanguage()
+        </span><pre>setLanguage()</pre></a></li>
+<li class="method public inherited"><a href="#setMid" title="setMid :: "><span class="description">setMid()
+        </span><pre>setMid()</pre></a></li>
+<li class="method public inherited"><a href="#setMode" title="setMode :: "><span class="description">setMode()
+        </span><pre>setMode()</pre></a></li>
+<li class="method public inherited"><a href="#setPortalid" title="setPortalid :: "><span class="description">setPortalid()
+        </span><pre>setPortalid()</pre></a></li>
+<li class="method public inherited"><a href="#setRequest" title="setRequest :: "><span class="description">setRequest()
+        </span><pre>setRequest()</pre></a></li>
+<li class="method public inherited"><a href="#setSolutionName" title="setSolutionName :: set the name of the solution-partner (company)"><span class="description">set the name of the solution-partner (company)</span><pre>setSolutionName()</pre></a></li>
+<li class="method public inherited"><a href="#setSolutionVersion" title="setSolutionVersion :: set the version of the solution-partner's app / extension / plugin / etc."><span class="description">set the version of the solution-partner's app / extension / plugin / etc.</span><pre>setSolutionVersion()</pre></a></li>
+<li class="method public "><a href="#setStorecarddata" title="setStorecarddata :: "><span class="description">setStorecarddata()
+        </span><pre>setStorecarddata()</pre></a></li>
+<li class="method public inherited"><a href="#setValue" title="setValue :: "><span class="description">setValue()
+        </span><pre>setValue()</pre></a></li>
+<li class="method public inherited"><a href="#toArray" title="toArray :: "><span class="description">toArray()
+        </span><pre>toArray()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24aid" title="$aid :: "><span class="description">$aid</span><pre>$aid</pre></a></li>
+<li class="property protected "><a href="#%24amount" title="$amount :: "><span class="description">$amount</span><pre>$amount</pre></a></li>
+<li class="property protected "><a href="#%24cardcvc2" title="$cardcvc2 :: "><span class="description">$cardcvc2</span><pre>$cardcvc2</pre></a></li>
+<li class="property protected "><a href="#%24cardexpiredate" title="$cardexpiredate :: "><span class="description">$cardexpiredate</span><pre>$cardexpiredate</pre></a></li>
+<li class="property protected "><a href="#%24cardpan" title="$cardpan :: "><span class="description">$cardpan</span><pre>$cardpan</pre></a></li>
+<li class="property protected "><a href="#%24cardtype" title="$cardtype :: "><span class="description">$cardtype</span><pre>$cardtype</pre></a></li>
+<li class="property protected "><a href="#%24clearingtype" title="$clearingtype :: "><span class="description">$clearingtype</span><pre>$clearingtype</pre></a></li>
+<li class="property protected "><a href="#%24currency" title="$currency :: "><span class="description">$currency</span><pre>$currency</pre></a></li>
+<li class="property protected inherited"><a href="#%24encoding" title="$encoding :: "><span class="description">$encoding</span><pre>$encoding</pre></a></li>
+<li class="property protected "><a href="#%24exiturl" title="$exiturl :: "><span class="description">$exiturl</span><pre>$exiturl</pre></a></li>
+<li class="property protected inherited"><a href="#%24integrator_name" title="$integrator_name :: system-name"><span class="description">system-name</span><pre>$integrator_name</pre></a></li>
+<li class="property protected inherited"><a href="#%24integrator_version" title="$integrator_version :: system-version"><span class="description">system-version</span><pre>$integrator_version</pre></a></li>
+<li class="property protected inherited"><a href="#%24key" title="$key :: "><span class="description">$key</span><pre>$key</pre></a></li>
+<li class="property protected "><a href="#%24language" title="$language :: "><span class="description">$language</span><pre>$language</pre></a></li>
+<li class="property protected inherited"><a href="#%24mid" title="$mid :: "><span class="description">$mid</span><pre>$mid</pre></a></li>
+<li class="property protected inherited"><a href="#%24mode" title="$mode :: "><span class="description">$mode</span><pre>$mode</pre></a></li>
+<li class="property protected inherited"><a href="#%24portalid" title="$portalid :: "><span class="description">$portalid</span><pre>$portalid</pre></a></li>
+<li class="property protected "><a href="#%24request" title="$request :: "><span class="description">$request</span><pre>$request</pre></a></li>
+<li class="property protected inherited"><a href="#%24solution_name" title="$solution_name :: name of the solution-partner (company)"><span class="description">name of the solution-partner (company)</span><pre>$solution_name</pre></a></li>
+<li class="property protected inherited"><a href="#%24solution_version" title="$solution_version :: version of the solution-partner's app / extension / plugin / etc."><span class="description">version of the solution-partner's app / extension / plugin / etc.</span><pre>$solution_version</pre></a></li>
+<li class="property protected "><a href="#%24storecarddata" title="$storecarddata :: "><span class="description">$storecarddata</span><pre>$storecarddata</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Api_Request_3dsCheck" id="\Payone_Api_Request_3dsCheck"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Api_Request_3dsCheck.html">Payone_Api_Request_3dsCheck</a>
+</li>
+</ul>
+<div href="../classes/Payone_Api_Request_3dsCheck.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.Api.Request.html">Payone_Api</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Request</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct(array $data) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::__construct()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="__toString" id="__toString"></a><div class="element clickable method public __toString" data-toggle="collapse" data-target=".__toString .collapse">
+<h2>__toString()
+        </h2>
+<pre>__toString() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::__toString()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="get" id="get"></a><div class="element clickable method public get" data-toggle="collapse" data-target=".get .collapse">
+<h2>get()
+        </h2>
+<pre>get($name) : null | mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::get()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>mixed</code>
+</div>
+</div></div>
+</div>
+<a name="getAid" id="getAid"></a><div class="element clickable method public getAid" data-toggle="collapse" data-target=".getAid .collapse">
+<h2>getAid()
+        </h2>
+<pre>getAid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getAmount" id="getAmount"></a><div class="element clickable method public getAmount" data-toggle="collapse" data-target=".getAmount .collapse">
+<h2>getAmount()
+        </h2>
+<pre>getAmount() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getCardcvc2" id="getCardcvc2"></a><div class="element clickable method public getCardcvc2" data-toggle="collapse" data-target=".getCardcvc2 .collapse">
+<h2>getCardcvc2()
+        </h2>
+<pre>getCardcvc2() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getCardexpiredate" id="getCardexpiredate"></a><div class="element clickable method public getCardexpiredate" data-toggle="collapse" data-target=".getCardexpiredate .collapse">
+<h2>getCardexpiredate()
+        </h2>
+<pre>getCardexpiredate() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getCardpan" id="getCardpan"></a><div class="element clickable method public getCardpan" data-toggle="collapse" data-target=".getCardpan .collapse">
+<h2>getCardpan()
+        </h2>
+<pre>getCardpan() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getCardtype" id="getCardtype"></a><div class="element clickable method public getCardtype" data-toggle="collapse" data-target=".getCardtype .collapse">
+<h2>getCardtype()
+        </h2>
+<pre>getCardtype() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingtype" id="getClearingtype"></a><div class="element clickable method public getClearingtype" data-toggle="collapse" data-target=".getClearingtype .collapse">
+<h2>getClearingtype()
+        </h2>
+<pre>getClearingtype() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getCurrency" id="getCurrency"></a><div class="element clickable method public getCurrency" data-toggle="collapse" data-target=".getCurrency .collapse">
+<h2>getCurrency()
+        </h2>
+<pre>getCurrency() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getEncoding" id="getEncoding"></a><div class="element clickable method public getEncoding" data-toggle="collapse" data-target=".getEncoding .collapse">
+<h2>getEncoding()
+        </h2>
+<pre>getEncoding() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getEncoding()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getExiturl" id="getExiturl"></a><div class="element clickable method public getExiturl" data-toggle="collapse" data-target=".getExiturl .collapse">
+<h2>getExiturl()
+        </h2>
+<pre>getExiturl() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getIntegratorName" id="getIntegratorName"></a><div class="element clickable method public getIntegratorName" data-toggle="collapse" data-target=".getIntegratorName .collapse">
+<h2>getIntegratorName()
+        </h2>
+<pre>getIntegratorName() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getIntegratorName()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getIntegratorVersion" id="getIntegratorVersion"></a><div class="element clickable method public getIntegratorVersion" data-toggle="collapse" data-target=".getIntegratorVersion .collapse">
+<h2>getIntegratorVersion()
+        </h2>
+<pre>getIntegratorVersion() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getIntegratorVersion()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getKey" id="getKey"></a><div class="element clickable method public getKey" data-toggle="collapse" data-target=".getKey .collapse">
+<h2>getKey()
+        </h2>
+<pre>getKey() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getKey()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getLanguage" id="getLanguage"></a><div class="element clickable method public getLanguage" data-toggle="collapse" data-target=".getLanguage .collapse">
+<h2>getLanguage()
+        </h2>
+<pre>getLanguage() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getMid" id="getMid"></a><div class="element clickable method public getMid" data-toggle="collapse" data-target=".getMid .collapse">
+<h2>getMid()
+        </h2>
+<pre>getMid() : int</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getMid()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getMode" id="getMode"></a><div class="element clickable method public getMode" data-toggle="collapse" data-target=".getMode .collapse">
+<h2>getMode()
+        </h2>
+<pre>getMode() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getMode()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getPortalid" id="getPortalid"></a><div class="element clickable method public getPortalid" data-toggle="collapse" data-target=".getPortalid .collapse">
+<h2>getPortalid()
+        </h2>
+<pre>getPortalid() : int</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getPortalid()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getRequest" id="getRequest"></a><div class="element clickable method public getRequest" data-toggle="collapse" data-target=".getRequest .collapse">
+<h2>getRequest()
+        </h2>
+<pre>getRequest() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getRequest()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getSolutionName" id="getSolutionName"></a><div class="element clickable method public getSolutionName" data-toggle="collapse" data-target=".getSolutionName .collapse">
+<h2>getSolutionName()
+        </h2>
+<pre>getSolutionName() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getSolutionName()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getSolutionVersion" id="getSolutionVersion"></a><div class="element clickable method public getSolutionVersion" data-toggle="collapse" data-target=".getSolutionVersion .collapse">
+<h2>getSolutionVersion()
+        </h2>
+<pre>getSolutionVersion() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getSolutionVersion()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getStorecarddata" id="getStorecarddata"></a><div class="element clickable method public getStorecarddata" data-toggle="collapse" data-target=".getStorecarddata .collapse">
+<h2>getStorecarddata()
+        </h2>
+<pre>getStorecarddata() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getValue" id="getValue"></a><div class="element clickable method public getValue" data-toggle="collapse" data-target=".getValue .collapse">
+<h2>getValue()
+        </h2>
+<pre>getValue(string $key) : null | mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::getValue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>mixed</code>
+</div>
+</div></div>
+</div>
+<a name="init" id="init"></a><div class="element clickable method public init" data-toggle="collapse" data-target=".init .collapse">
+<h2>init()
+        </h2>
+<pre>init(array $data) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::init()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="set" id="set"></a><div class="element clickable method public set" data-toggle="collapse" data-target=".set .collapse">
+<h2>set()
+        </h2>
+<pre>set(string $name, mixed $value) : boolean | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::set()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="setAid" id="setAid"></a><div class="element clickable method public setAid" data-toggle="collapse" data-target=".setAid .collapse">
+<h2>setAid()
+        </h2>
+<pre>setAid(int $aid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$aid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setAmount" id="setAmount"></a><div class="element clickable method public setAmount" data-toggle="collapse" data-target=".setAmount .collapse">
+<h2>setAmount()
+        </h2>
+<pre>setAmount(int $amount) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$amount</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setCardcvc2" id="setCardcvc2"></a><div class="element clickable method public setCardcvc2" data-toggle="collapse" data-target=".setCardcvc2 .collapse">
+<h2>setCardcvc2()
+        </h2>
+<pre>setCardcvc2(int $cardcvc2) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cardcvc2</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setCardexpiredate" id="setCardexpiredate"></a><div class="element clickable method public setCardexpiredate" data-toggle="collapse" data-target=".setCardexpiredate .collapse">
+<h2>setCardexpiredate()
+        </h2>
+<pre>setCardexpiredate(string $cardexpiredate) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cardexpiredate</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setCardpan" id="setCardpan"></a><div class="element clickable method public setCardpan" data-toggle="collapse" data-target=".setCardpan .collapse">
+<h2>setCardpan()
+        </h2>
+<pre>setCardpan(string $cardpan) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cardpan</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setCardtype" id="setCardtype"></a><div class="element clickable method public setCardtype" data-toggle="collapse" data-target=".setCardtype .collapse">
+<h2>setCardtype()
+        </h2>
+<pre>setCardtype(string $cardtype) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cardtype</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingtype" id="setClearingtype"></a><div class="element clickable method public setClearingtype" data-toggle="collapse" data-target=".setClearingtype .collapse">
+<h2>setClearingtype()
+        </h2>
+<pre>setClearingtype(string $clearingtype) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearingtype</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setCurrency" id="setCurrency"></a><div class="element clickable method public setCurrency" data-toggle="collapse" data-target=".setCurrency .collapse">
+<h2>setCurrency()
+        </h2>
+<pre>setCurrency(string $currency) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$currency</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setEncoding" id="setEncoding"></a><div class="element clickable method public setEncoding" data-toggle="collapse" data-target=".setEncoding .collapse">
+<h2>setEncoding()
+        </h2>
+<pre>setEncoding(string $encoding) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setEncoding()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$encoding</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setExiturl" id="setExiturl"></a><div class="element clickable method public setExiturl" data-toggle="collapse" data-target=".setExiturl .collapse">
+<h2>setExiturl()
+        </h2>
+<pre>setExiturl(string $exiturl) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$exiturl</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setIntegratorName" id="setIntegratorName"></a><div class="element clickable method public setIntegratorName" data-toggle="collapse" data-target=".setIntegratorName .collapse">
+<h2>set the system-Name</h2>
+<pre>setIntegratorName(string $integrator_name) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setIntegratorName()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$integrator_name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setIntegratorVersion" id="setIntegratorVersion"></a><div class="element clickable method public setIntegratorVersion" data-toggle="collapse" data-target=".setIntegratorVersion .collapse">
+<h2>set the system-version</h2>
+<pre>setIntegratorVersion(string $integrator_version) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setIntegratorVersion()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$integrator_version</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setKey" id="setKey"></a><div class="element clickable method public setKey" data-toggle="collapse" data-target=".setKey .collapse">
+<h2>setKey()
+        </h2>
+<pre>setKey(string $key) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setKey()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setLanguage" id="setLanguage"></a><div class="element clickable method public setLanguage" data-toggle="collapse" data-target=".setLanguage .collapse">
+<h2>setLanguage()
+        </h2>
+<pre>setLanguage(string $language) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$language</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setMid" id="setMid"></a><div class="element clickable method public setMid" data-toggle="collapse" data-target=".setMid .collapse">
+<h2>setMid()
+        </h2>
+<pre>setMid(int $mid) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setMid()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setMode" id="setMode"></a><div class="element clickable method public setMode" data-toggle="collapse" data-target=".setMode .collapse">
+<h2>setMode()
+        </h2>
+<pre>setMode(string $mode) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setMode()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setPortalid" id="setPortalid"></a><div class="element clickable method public setPortalid" data-toggle="collapse" data-target=".setPortalid .collapse">
+<h2>setPortalid()
+        </h2>
+<pre>setPortalid(int $portalid) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setPortalid()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$portalid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setRequest" id="setRequest"></a><div class="element clickable method public setRequest" data-toggle="collapse" data-target=".setRequest .collapse">
+<h2>setRequest()
+        </h2>
+<pre>setRequest(string $request) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setRequest()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$request</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setSolutionName" id="setSolutionName"></a><div class="element clickable method public setSolutionName" data-toggle="collapse" data-target=".setSolutionName .collapse">
+<h2>set the name of the solution-partner (company)</h2>
+<pre>setSolutionName(string $solution_name) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setSolutionName()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$solution_name</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setSolutionVersion" id="setSolutionVersion"></a><div class="element clickable method public setSolutionVersion" data-toggle="collapse" data-target=".setSolutionVersion .collapse">
+<h2>set the version of the solution-partner's app / extension / plugin / etc.</h2>
+<pre>setSolutionVersion(string $solution_version) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"><p>.</p></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setSolutionVersion()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$solution_version</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setStorecarddata" id="setStorecarddata"></a><div class="element clickable method public setStorecarddata" data-toggle="collapse" data-target=".setStorecarddata .collapse">
+<h2>setStorecarddata()
+        </h2>
+<pre>setStorecarddata(string $storecarddata) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$storecarddata</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setValue" id="setValue"></a><div class="element clickable method public setValue" data-toggle="collapse" data-target=".setValue .collapse">
+<h2>setValue()
+        </h2>
+<pre>setValue(string $key, string $name) : boolean | null</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::setValue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="toArray" id="toArray"></a><div class="element clickable method public toArray" data-toggle="collapse" data-target=".toArray .collapse">
+<h2>toArray()
+        </h2>
+<pre>toArray() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::toArray()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24aid" id="$aid"> </a><div class="element clickable property protected $aid" data-toggle="collapse" data-target=".$aid .collapse">
+<h2>$aid</h2>
+<pre>$aid : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24amount" id="$amount"> </a><div class="element clickable property protected $amount" data-toggle="collapse" data-target=".$amount .collapse">
+<h2>$amount</h2>
+<pre>$amount : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24cardcvc2" id="$cardcvc2"> </a><div class="element clickable property protected $cardcvc2" data-toggle="collapse" data-target=".$cardcvc2 .collapse">
+<h2>$cardcvc2</h2>
+<pre>$cardcvc2 : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24cardexpiredate" id="$cardexpiredate"> </a><div class="element clickable property protected $cardexpiredate" data-toggle="collapse" data-target=".$cardexpiredate .collapse">
+<h2>$cardexpiredate</h2>
+<pre>$cardexpiredate : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24cardpan" id="$cardpan"> </a><div class="element clickable property protected $cardpan" data-toggle="collapse" data-target=".$cardpan .collapse">
+<h2>$cardpan</h2>
+<pre>$cardpan : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24cardtype" id="$cardtype"> </a><div class="element clickable property protected $cardtype" data-toggle="collapse" data-target=".$cardtype .collapse">
+<h2>$cardtype</h2>
+<pre>$cardtype : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24clearingtype" id="$clearingtype"> </a><div class="element clickable property protected $clearingtype" data-toggle="collapse" data-target=".$clearingtype .collapse">
+<h2>$clearingtype</h2>
+<pre>$clearingtype : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24currency" id="$currency"> </a><div class="element clickable property protected $currency" data-toggle="collapse" data-target=".$currency .collapse">
+<h2>$currency</h2>
+<pre>$currency : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24encoding" id="$encoding"> </a><div class="element clickable property protected $encoding" data-toggle="collapse" data-target=".$encoding .collapse">
+<h2>$encoding</h2>
+<pre>$encoding : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::$$encoding</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24exiturl" id="$exiturl"> </a><div class="element clickable property protected $exiturl" data-toggle="collapse" data-target=".$exiturl .collapse">
+<h2>$exiturl</h2>
+<pre>$exiturl : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24integrator_name" id="$integrator_name"> </a><div class="element clickable property protected $integrator_name" data-toggle="collapse" data-target=".$integrator_name .collapse">
+<h2>system-name</h2>
+<pre>$integrator_name : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::$$integrator_name</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24integrator_version" id="$integrator_version"> </a><div class="element clickable property protected $integrator_version" data-toggle="collapse" data-target=".$integrator_version .collapse">
+<h2>system-version</h2>
+<pre>$integrator_version : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::$$integrator_version</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24key" id="$key"> </a><div class="element clickable property protected $key" data-toggle="collapse" data-target=".$key .collapse">
+<h2>$key</h2>
+<pre>$key : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::$$key</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24language" id="$language"> </a><div class="element clickable property protected $language" data-toggle="collapse" data-target=".$language .collapse">
+<h2>$language</h2>
+<pre>$language : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24mid" id="$mid"> </a><div class="element clickable property protected $mid" data-toggle="collapse" data-target=".$mid .collapse">
+<h2>$mid</h2>
+<pre>$mid : int</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::$$mid</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24mode" id="$mode"> </a><div class="element clickable property protected $mode" data-toggle="collapse" data-target=".$mode .collapse">
+<h2>$mode</h2>
+<pre>$mode : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::$$mode</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24portalid" id="$portalid"> </a><div class="element clickable property protected $portalid" data-toggle="collapse" data-target=".$portalid .collapse">
+<h2>$portalid</h2>
+<pre>$portalid : int</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::$$portalid</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24request" id="$request"> </a><div class="element clickable property protected $request" data-toggle="collapse" data-target=".$request .collapse">
+<h2>$request</h2>
+<pre>$request : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24solution_name" id="$solution_name"> </a><div class="element clickable property protected $solution_name" data-toggle="collapse" data-target=".$solution_name .collapse">
+<h2>name of the solution-partner (company)</h2>
+<pre>$solution_name : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::$$solution_name</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24solution_version" id="$solution_version"> </a><div class="element clickable property protected $solution_version" data-toggle="collapse" data-target=".$solution_version .collapse">
+<h2>version of the solution-partner's app / extension / plugin / etc.</h2>
+<pre>$solution_version : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"><p>.</p></p>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Payone_Api_Request_Abstract::$$solution_version</td>
+</tr></table>
+</div></div>
+</div>
+<a name="%24storecarddata" id="$storecarddata"> </a><div class="element clickable property protected $storecarddata" data-toggle="collapse" data-target=".$storecarddata .collapse">
+<h2>$storecarddata</h2>
+<pre>$storecarddata : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:03+02:00.<br></footer></div>
+</div>
+</body>
+</html>

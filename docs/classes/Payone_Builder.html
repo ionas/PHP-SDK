@@ -1,0 +1,536 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Builder</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#buildServiceClientApiGenerateHash" title="buildServiceClientApiGenerateHash :: "><span class="description">buildServiceClientApiGenerateHash()
+        </span><pre>buildServiceClientApiGenerateHash()</pre></a></li>
+<li class="method public "><a href="#buildServiceManagementGetInvoice" title="buildServiceManagementGetInvoice :: "><span class="description">buildServiceManagementGetInvoice()
+        </span><pre>buildServiceManagementGetInvoice()</pre></a></li>
+<li class="method public "><a href="#buildServicePaymentAuthorize" title="buildServicePaymentAuthorize :: "><span class="description">buildServicePaymentAuthorize()
+        </span><pre>buildServicePaymentAuthorize()</pre></a></li>
+<li class="method public "><a href="#buildServicePaymentCapture" title="buildServicePaymentCapture :: "><span class="description">buildServicePaymentCapture()
+        </span><pre>buildServicePaymentCapture()</pre></a></li>
+<li class="method public "><a href="#buildServicePaymentDebit" title="buildServicePaymentDebit :: "><span class="description">buildServicePaymentDebit()
+        </span><pre>buildServicePaymentDebit()</pre></a></li>
+<li class="method public "><a href="#buildServicePaymentPreauthorize" title="buildServicePaymentPreauthorize :: "><span class="description">buildServicePaymentPreauthorize()
+        </span><pre>buildServicePaymentPreauthorize()</pre></a></li>
+<li class="method public "><a href="#buildServicePaymentRefund" title="buildServicePaymentRefund :: "><span class="description">buildServicePaymentRefund()
+        </span><pre>buildServicePaymentRefund()</pre></a></li>
+<li class="method public "><a href="#buildServiceSettingsXmlGenerate" title="buildServiceSettingsXmlGenerate :: "><span class="description">buildServiceSettingsXmlGenerate()
+        </span><pre>buildServiceSettingsXmlGenerate()</pre></a></li>
+<li class="method public "><a href="#buildServiceTransactionStatusHandleRequest" title="buildServiceTransactionStatusHandleRequest :: "><span class="description">buildServiceTransactionStatusHandleRequest()
+        </span><pre>buildServiceTransactionStatusHandleRequest()</pre></a></li>
+<li class="method public "><a href="#buildServiceVerification3dsCheck" title="buildServiceVerification3dsCheck :: "><span class="description">buildServiceVerification3dsCheck()
+        </span><pre>buildServiceVerification3dsCheck()</pre></a></li>
+<li class="method public "><a href="#buildServiceVerificationAddressCheck" title="buildServiceVerificationAddressCheck :: "><span class="description">buildServiceVerificationAddressCheck()
+        </span><pre>buildServiceVerificationAddressCheck()</pre></a></li>
+<li class="method public "><a href="#buildServiceVerificationBankAccountCheck" title="buildServiceVerificationBankAccountCheck :: "><span class="description">buildServiceVerificationBankAccountCheck()
+        </span><pre>buildServiceVerificationBankAccountCheck()</pre></a></li>
+<li class="method public "><a href="#buildServiceVerificationConsumerscore" title="buildServiceVerificationConsumerscore :: "><span class="description">buildServiceVerificationConsumerscore()
+        </span><pre>buildServiceVerificationConsumerscore()</pre></a></li>
+<li class="method public "><a href="#buildServiceVerificationCreditCardCheck" title="buildServiceVerificationCreditCardCheck :: "><span class="description">buildServiceVerificationCreditCardCheck()
+        </span><pre>buildServiceVerificationCreditCardCheck()</pre></a></li>
+<li class="method public "><a href="#setConfig" title="setConfig :: "><span class="description">setConfig()
+        </span><pre>setConfig()</pre></a></li>
+<li class="nav-header protected">» Protected</li>
+<li class="method protected "><a href="#buildService" title="buildService :: "><span class="description">buildService()
+        </span><pre>buildService()</pre></a></li>
+<li class="method protected "><a href="#buildServiceProtocol" title="buildServiceProtocol :: "><span class="description">buildServiceProtocol()
+        </span><pre>buildServiceProtocol()</pre></a></li>
+<li class="method protected "><a href="#buildServiceValidation" title="buildServiceValidation :: "><span class="description">buildServiceValidation()
+        </span><pre>buildServiceValidation()</pre></a></li>
+<li class="method protected "><a href="#getConfig" title="getConfig :: "><span class="description">getConfig()
+        </span><pre>getConfig()</pre></a></li>
+<li class="method protected "><a href="#getFactory" title="getFactory :: "><span class="description">getFactory()
+        </span><pre>getFactory()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24config" title="$config :: "><span class="description">$config</span><pre>$config</pre></a></li>
+<li class="property protected "><a href="#%24factories" title="$factories :: "><span class="description">$factories</span><pre>$factories</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#KEY_API" title="KEY_API :: "><span class="description">KEY_API</span><pre>KEY_API</pre></a></li>
+<li class="constant  "><a href="#KEY_CLIENTAPI" title="KEY_CLIENTAPI :: "><span class="description">KEY_CLIENTAPI</span><pre>KEY_CLIENTAPI</pre></a></li>
+<li class="constant  "><a href="#KEY_PROTOCOL" title="KEY_PROTOCOL :: "><span class="description">KEY_PROTOCOL</span><pre>KEY_PROTOCOL</pre></a></li>
+<li class="constant  "><a href="#KEY_SETTINGS" title="KEY_SETTINGS :: "><span class="description">KEY_SETTINGS</span><pre>KEY_SETTINGS</pre></a></li>
+<li class="constant  "><a href="#KEY_TRANSACTIONSTATUS" title="KEY_TRANSACTIONSTATUS :: "><span class="description">KEY_TRANSACTIONSTATUS</span><pre>KEY_TRANSACTIONSTATUS</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Builder" id="\Payone_Builder"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Builder.html">Payone_Builder</a>
+</li>
+</ul>
+<div href="../classes/Payone_Builder.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.html">Payone</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct(\Payone_Config $config) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>constructor</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>null<a href="../classes/Payone_Config.html">\Payone_Config</a></code><p>config can be set via constructor or setConfig()</p>
+</div>
+</div></div>
+</div>
+<a name="buildServiceClientApiGenerateHash" id="buildServiceClientApiGenerateHash"></a><div class="element clickable method public buildServiceClientApiGenerateHash" data-toggle="collapse" data-target=".buildServiceClientApiGenerateHash .collapse">
+<h2>buildServiceClientApiGenerateHash()
+        </h2>
+<pre>buildServiceClientApiGenerateHash() : <a href="../classes/Payone_ClientApi_Service_GenerateHash.html">\Payone_ClientApi_Service_GenerateHash</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_ClientApi_Service_GenerateHash.html">\Payone_ClientApi_Service_GenerateHash</a></code></div>
+</div></div>
+</div>
+<a name="buildServiceManagementGetInvoice" id="buildServiceManagementGetInvoice"></a><div class="element clickable method public buildServiceManagementGetInvoice" data-toggle="collapse" data-target=".buildServiceManagementGetInvoice .collapse">
+<h2>buildServiceManagementGetInvoice()
+        </h2>
+<pre>buildServiceManagementGetInvoice() : <a href="../classes/Payone_Api_Service_Management_GetInvoice.html">\Payone_Api_Service_Management_GetInvoice</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Management_GetInvoice.html">\Payone_Api_Service_Management_GetInvoice</a></code></div>
+</div></div>
+</div>
+<a name="buildServicePaymentAuthorize" id="buildServicePaymentAuthorize"></a><div class="element clickable method public buildServicePaymentAuthorize" data-toggle="collapse" data-target=".buildServicePaymentAuthorize .collapse">
+<h2>buildServicePaymentAuthorize()
+        </h2>
+<pre>buildServicePaymentAuthorize() : <a href="../classes/Payone_Api_Service_Payment_Authorize.html">\Payone_Api_Service_Payment_Authorize</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Payment_Authorize.html">\Payone_Api_Service_Payment_Authorize</a></code></div>
+</div></div>
+</div>
+<a name="buildServicePaymentCapture" id="buildServicePaymentCapture"></a><div class="element clickable method public buildServicePaymentCapture" data-toggle="collapse" data-target=".buildServicePaymentCapture .collapse">
+<h2>buildServicePaymentCapture()
+        </h2>
+<pre>buildServicePaymentCapture() : <a href="../classes/Payone_Api_Service_Payment_Capture.html">\Payone_Api_Service_Payment_Capture</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Payment_Capture.html">\Payone_Api_Service_Payment_Capture</a></code></div>
+</div></div>
+</div>
+<a name="buildServicePaymentDebit" id="buildServicePaymentDebit"></a><div class="element clickable method public buildServicePaymentDebit" data-toggle="collapse" data-target=".buildServicePaymentDebit .collapse">
+<h2>buildServicePaymentDebit()
+        </h2>
+<pre>buildServicePaymentDebit() : <a href="../classes/Payone_Api_Service_Payment_Debit.html">\Payone_Api_Service_Payment_Debit</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Payment_Debit.html">\Payone_Api_Service_Payment_Debit</a></code></div>
+</div></div>
+</div>
+<a name="buildServicePaymentPreauthorize" id="buildServicePaymentPreauthorize"></a><div class="element clickable method public buildServicePaymentPreauthorize" data-toggle="collapse" data-target=".buildServicePaymentPreauthorize .collapse">
+<h2>buildServicePaymentPreauthorize()
+        </h2>
+<pre>buildServicePaymentPreauthorize() : <a href="../classes/Payone_Api_Service_Payment_Preauthorize.html">\Payone_Api_Service_Payment_Preauthorize</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Payment_Preauthorize.html">\Payone_Api_Service_Payment_Preauthorize</a></code></div>
+</div></div>
+</div>
+<a name="buildServicePaymentRefund" id="buildServicePaymentRefund"></a><div class="element clickable method public buildServicePaymentRefund" data-toggle="collapse" data-target=".buildServicePaymentRefund .collapse">
+<h2>buildServicePaymentRefund()
+        </h2>
+<pre>buildServicePaymentRefund() : <a href="../classes/Payone_Api_Service_Payment_Refund.html">\Payone_Api_Service_Payment_Refund</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Payment_Refund.html">\Payone_Api_Service_Payment_Refund</a></code></div>
+</div></div>
+</div>
+<a name="buildServiceSettingsXmlGenerate" id="buildServiceSettingsXmlGenerate"></a><div class="element clickable method public buildServiceSettingsXmlGenerate" data-toggle="collapse" data-target=".buildServiceSettingsXmlGenerate .collapse">
+<h2>buildServiceSettingsXmlGenerate()
+        </h2>
+<pre>buildServiceSettingsXmlGenerate() : <a href="../classes/Payone_Settings_Service_XmlGenerate.html">\Payone_Settings_Service_XmlGenerate</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Settings_Service_XmlGenerate.html">\Payone_Settings_Service_XmlGenerate</a></code></div>
+</div></div>
+</div>
+<a name="buildServiceTransactionStatusHandleRequest" id="buildServiceTransactionStatusHandleRequest"></a><div class="element clickable method public buildServiceTransactionStatusHandleRequest" data-toggle="collapse" data-target=".buildServiceTransactionStatusHandleRequest .collapse">
+<h2>buildServiceTransactionStatusHandleRequest()
+        </h2>
+<pre>buildServiceTransactionStatusHandleRequest($key, array $validIps) : <a href="../classes/Payone_TransactionStatus_Service_HandleRequest.html">\Payone_TransactionStatus_Service_HandleRequest</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$validIps</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_TransactionStatus_Service_HandleRequest.html">\Payone_TransactionStatus_Service_HandleRequest</a></code></div>
+</div></div>
+</div>
+<a name="buildServiceVerification3dsCheck" id="buildServiceVerification3dsCheck"></a><div class="element clickable method public buildServiceVerification3dsCheck" data-toggle="collapse" data-target=".buildServiceVerification3dsCheck .collapse">
+<h2>buildServiceVerification3dsCheck()
+        </h2>
+<pre>buildServiceVerification3dsCheck() : <a href="../classes/Payone_Api_Service_Verification_3dsCheck.html">\Payone_Api_Service_Verification_3dsCheck</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Verification_3dsCheck.html">\Payone_Api_Service_Verification_3dsCheck</a></code></div>
+</div></div>
+</div>
+<a name="buildServiceVerificationAddressCheck" id="buildServiceVerificationAddressCheck"></a><div class="element clickable method public buildServiceVerificationAddressCheck" data-toggle="collapse" data-target=".buildServiceVerificationAddressCheck .collapse">
+<h2>buildServiceVerificationAddressCheck()
+        </h2>
+<pre>buildServiceVerificationAddressCheck() : <a href="../classes/Payone_Api_Service_Verification_AddressCheck.html">\Payone_Api_Service_Verification_AddressCheck</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Verification_AddressCheck.html">\Payone_Api_Service_Verification_AddressCheck</a></code></div>
+</div></div>
+</div>
+<a name="buildServiceVerificationBankAccountCheck" id="buildServiceVerificationBankAccountCheck"></a><div class="element clickable method public buildServiceVerificationBankAccountCheck" data-toggle="collapse" data-target=".buildServiceVerificationBankAccountCheck .collapse">
+<h2>buildServiceVerificationBankAccountCheck()
+        </h2>
+<pre>buildServiceVerificationBankAccountCheck() : <a href="../classes/Payone_Api_Service_Verification_BankAccountCheck.html">\Payone_Api_Service_Verification_BankAccountCheck</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Verification_BankAccountCheck.html">\Payone_Api_Service_Verification_BankAccountCheck</a></code></div>
+</div></div>
+</div>
+<a name="buildServiceVerificationConsumerscore" id="buildServiceVerificationConsumerscore"></a><div class="element clickable method public buildServiceVerificationConsumerscore" data-toggle="collapse" data-target=".buildServiceVerificationConsumerscore .collapse">
+<h2>buildServiceVerificationConsumerscore()
+        </h2>
+<pre>buildServiceVerificationConsumerscore() : <a href="../classes/Payone_Api_Service_Verification_Consumerscore.html">\Payone_Api_Service_Verification_Consumerscore</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Verification_Consumerscore.html">\Payone_Api_Service_Verification_Consumerscore</a></code></div>
+</div></div>
+</div>
+<a name="buildServiceVerificationCreditCardCheck" id="buildServiceVerificationCreditCardCheck"></a><div class="element clickable method public buildServiceVerificationCreditCardCheck" data-toggle="collapse" data-target=".buildServiceVerificationCreditCardCheck .collapse">
+<h2>buildServiceVerificationCreditCardCheck()
+        </h2>
+<pre>buildServiceVerificationCreditCardCheck() : <a href="../classes/Payone_Api_Service_Verification_CreditCardCheck.html">\Payone_Api_Service_Verification_CreditCardCheck</a></pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Verification_CreditCardCheck.html">\Payone_Api_Service_Verification_CreditCardCheck</a></code></div>
+</div></div>
+</div>
+<a name="setConfig" id="setConfig"></a><div class="element clickable method public setConfig" data-toggle="collapse" data-target=".setConfig .collapse">
+<h2>setConfig()
+        </h2>
+<pre>setConfig(\Payone_Config $config) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code><a href="../classes/Payone_Config.html">\Payone_Config</a></code>
+</div>
+</div></div>
+</div>
+<a name="buildService" id="buildService"></a><div class="element clickable method protected buildService" data-toggle="collapse" data-target=".buildService .collapse">
+<h2>buildService()
+        </h2>
+<pre>buildService(string $key) : <a href="../classes/Payone_Api_Service_Payment_Abstract.html">\Payone_Api_Service_Payment_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>Service key, e.g. "api/payment/authorize"</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Api_Service_Payment_Abstract.html">\Payone_Api_Service_Payment_Abstract</a></code></div>
+</div></div>
+</div>
+<a name="buildServiceProtocol" id="buildServiceProtocol"></a><div class="element clickable method protected buildServiceProtocol" data-toggle="collapse" data-target=".buildServiceProtocol .collapse">
+<h2>buildServiceProtocol()
+        </h2>
+<pre>buildServiceProtocol(array $protocolConfig, string $factoryKey) : <a href="../classes/Payone_Protocol_Service_Protocol_Abstract.html">\Payone_Protocol_Service_Protocol_Abstract</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$protocolConfig</h4>
+<code>array</code>
+</div>
+<div class="subelement argument">
+<h4>$factoryKey</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Protocol_Service_Protocol_Abstract.html">\Payone_Protocol_Service_Protocol_Abstract</a></code></div>
+</div></div>
+</div>
+<a name="buildServiceValidation" id="buildServiceValidation"></a><div class="element clickable method protected buildServiceValidation" data-toggle="collapse" data-target=".buildServiceValidation .collapse">
+<h2>buildServiceValidation()
+        </h2>
+<pre>buildServiceValidation($validatorConfig) : null | \validator</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$validatorConfig</h4>
+<code></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>\validator</code>
+</div>
+</div></div>
+</div>
+<a name="getConfig" id="getConfig"></a><div class="element clickable method protected getConfig" data-toggle="collapse" data-target=".getConfig .collapse">
+<h2>getConfig()
+        </h2>
+<pre>getConfig() : <a href="../classes/Payone_Config.html">\Payone_Config</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Payone_Config.html">\Payone_Config</a></code></div>
+</div></div>
+</div>
+<a name="getFactory" id="getFactory"></a><div class="element clickable method protected getFactory" data-toggle="collapse" data-target=".getFactory .collapse">
+<h2>getFactory()
+        </h2>
+<pre>getFactory($key) : null | <a href="../classes/Payone_Api_Factory.html">\Payone_Api_Factory</a> | <a href="../classes/Payone_Protocol_Factory.html">\Payone_Protocol_Factory</a> | <a href="../classes/Payone_Settings_Factory.html">\Payone_Settings_Factory</a> | <a href="../classes/Payone_TransactionStatus_Factory.html">\Payone_TransactionStatus_Factory</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code></code>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code><a href="../classes/Payone_Api_Factory.html">\Payone_Api_Factory</a></code><code><a href="../classes/Payone_Protocol_Factory.html">\Payone_Protocol_Factory</a></code><code><a href="../classes/Payone_Settings_Factory.html">\Payone_Settings_Factory</a></code><code><a href="../classes/Payone_TransactionStatus_Factory.html">\Payone_TransactionStatus_Factory</a></code>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24config" id="$config"> </a><div class="element clickable property protected $config" data-toggle="collapse" data-target=".$config .collapse">
+<h2>$config</h2>
+<pre>$config : <a href="../classes/Payone_Config.html">\Payone_Config</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="%24factories" id="$factories"> </a><div class="element clickable property protected $factories" data-toggle="collapse" data-target=".$factories .collapse">
+<h2>$factories</h2>
+<pre>$factories : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a name="KEY_API" id="KEY_API"> </a><div class="element clickable constant  KEY_API" data-toggle="collapse" data-target=".KEY_API .collapse">
+<h2>KEY_API</h2>
+<pre>KEY_API </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="KEY_CLIENTAPI" id="KEY_CLIENTAPI"> </a><div class="element clickable constant  KEY_CLIENTAPI" data-toggle="collapse" data-target=".KEY_CLIENTAPI .collapse">
+<h2>KEY_CLIENTAPI</h2>
+<pre>KEY_CLIENTAPI </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="KEY_PROTOCOL" id="KEY_PROTOCOL"> </a><div class="element clickable constant  KEY_PROTOCOL" data-toggle="collapse" data-target=".KEY_PROTOCOL .collapse">
+<h2>KEY_PROTOCOL</h2>
+<pre>KEY_PROTOCOL </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="KEY_SETTINGS" id="KEY_SETTINGS"> </a><div class="element clickable constant  KEY_SETTINGS" data-toggle="collapse" data-target=".KEY_SETTINGS .collapse">
+<h2>KEY_SETTINGS</h2>
+<pre>KEY_SETTINGS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="KEY_TRANSACTIONSTATUS" id="KEY_TRANSACTIONSTATUS"> </a><div class="element clickable constant  KEY_TRANSACTIONSTATUS" data-toggle="collapse" data-target=".KEY_TRANSACTIONSTATUS .collapse">
+<h2>KEY_TRANSACTIONSTATUS</h2>
+<pre>KEY_TRANSACTIONSTATUS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:07+02:00.<br></footer></div>
+</div>
+</body>
+</html>

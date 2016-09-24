@@ -1,0 +1,245 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » Payone\Api\Enum</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Payone.Api.Enum.html" title="Enum"><i class="icon-folder-open"></i>Enum</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#Payone_Api_Enum_AddressCheckDivergence" title="">Payone_Api_Enum_AddressCheckDivergence</a></li>
+<li><a href="#Payone_Api_Enum_AddressCheckPersonstatus" title="">Payone_Api_Enum_AddressCheckPersonstatus</a></li>
+<li><a href="#Payone_Api_Enum_AddressCheckScore" title="">Payone_Api_Enum_AddressCheckScore</a></li>
+<li><a href="#Payone_Api_Enum_AddressCheckSecstatus" title="">Payone_Api_Enum_AddressCheckSecstatus</a></li>
+<li><a href="#Payone_Api_Enum_AddressCheckType" title="">Payone_Api_Enum_AddressCheckType</a></li>
+<li><a href="#Payone_Api_Enum_AvsResult" title="">Payone_Api_Enum_AvsResult</a></li>
+<li><a href="#Payone_Api_Enum_BankaccountCheckType" title="">Payone_Api_Enum_BankaccountCheckType</a></li>
+<li><a href="#Payone_Api_Enum_ConsumerscoreScore" title="">Payone_Api_Enum_ConsumerscoreScore</a></li>
+<li><a href="#Payone_Api_Enum_ConsumerscoreType" title="">Payone_Api_Enum_ConsumerscoreType</a></li>
+<li><a href="#Payone_Api_Enum_CreditcardType" title="">Payone_Api_Enum_CreditcardType</a></li>
+<li><a href="#Payone_Api_Enum_DebitTransactionType" title="">Payone_Api_Enum_DebitTransactionType</a></li>
+<li><a href="#Payone_Api_Enum_Ecommercemode" title="">Payone_Api_Enum_Ecommercemode</a></li>
+<li><a href="#Payone_Api_Enum_FinancingType" title="">Payone_Api_Enum_FinancingType</a></li>
+<li><a href="#Payone_Api_Enum_InvoiceDeliverymode" title="">Payone_Api_Enum_InvoiceDeliverymode</a></li>
+<li><a href="#Payone_Api_Enum_OnlinebanktransferType" title="">Payone_Api_Enum_OnlinebanktransferType</a></li>
+<li><a href="#Payone_Api_Enum_RequestType" title="">Payone_Api_Enum_RequestType</a></li>
+<li><a href="#Payone_Api_Enum_ResponseType" title="">Payone_Api_Enum_ResponseType</a></li>
+<li><a href="#Payone_Api_Enum_Settleaccount" title="">Payone_Api_Enum_Settleaccount</a></li>
+<li><a href="#Payone_Api_Enum_Shippingprovider" title="">Payone_Api_Enum_Shippingprovider</a></li>
+<li><a href="#Payone_Api_Enum_Storecarddata" title="">Payone_Api_Enum_Storecarddata</a></li>
+<li><a href="#Payone_Api_Enum_UseCustomerdata" title="">Payone_Api_Enum_UseCustomerdata</a></li>
+<li><a href="#Payone_Api_Enum_WalletType" title="">Payone_Api_Enum_WalletType</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Payone.html">Payone</a></li>
+<span class="divider">\</span><li><a href="../packages/Payone.Api.html">Api</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Payone.Api.Enum.html">Enum</a></li>
+</ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<a name="Payone_Api_Enum_AddressCheckDivergence" id="Payone_Api_Enum_AddressCheckDivergence"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_AddressCheckDivergence.html">
+<h1>Payone_Api_Enum_AddressCheckDivergence<a href="../classes/Payone_Api_Enum_AddressCheckDivergence.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_AddressCheckDivergence.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_AddressCheckPersonstatus" id="Payone_Api_Enum_AddressCheckPersonstatus"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_AddressCheckPersonstatus.html">
+<h1>Payone_Api_Enum_AddressCheckPersonstatus<a href="../classes/Payone_Api_Enum_AddressCheckPersonstatus.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_AddressCheckPersonstatus.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_AddressCheckScore" id="Payone_Api_Enum_AddressCheckScore"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_AddressCheckScore.html">
+<h1>Payone_Api_Enum_AddressCheckScore<a href="../classes/Payone_Api_Enum_AddressCheckScore.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_AddressCheckScore.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_AddressCheckSecstatus" id="Payone_Api_Enum_AddressCheckSecstatus"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_AddressCheckSecstatus.html">
+<h1>Payone_Api_Enum_AddressCheckSecstatus<a href="../classes/Payone_Api_Enum_AddressCheckSecstatus.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_AddressCheckSecstatus.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_AddressCheckType" id="Payone_Api_Enum_AddressCheckType"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_AddressCheckType.html">
+<h1>Payone_Api_Enum_AddressCheckType<a href="../classes/Payone_Api_Enum_AddressCheckType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_AddressCheckType.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_AvsResult" id="Payone_Api_Enum_AvsResult"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_AvsResult.html">
+<h1>Payone_Api_Enum_AvsResult<a href="../classes/Payone_Api_Enum_AvsResult.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_AvsResult.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_BankaccountCheckType" id="Payone_Api_Enum_BankaccountCheckType"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_BankaccountCheckType.html">
+<h1>Payone_Api_Enum_BankaccountCheckType<a href="../classes/Payone_Api_Enum_BankaccountCheckType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_BankaccountCheckType.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_ConsumerscoreScore" id="Payone_Api_Enum_ConsumerscoreScore"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_ConsumerscoreScore.html">
+<h1>Payone_Api_Enum_ConsumerscoreScore<a href="../classes/Payone_Api_Enum_ConsumerscoreScore.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_ConsumerscoreScore.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_ConsumerscoreType" id="Payone_Api_Enum_ConsumerscoreType"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_ConsumerscoreType.html">
+<h1>Payone_Api_Enum_ConsumerscoreType<a href="../classes/Payone_Api_Enum_ConsumerscoreType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_ConsumerscoreType.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_CreditcardType" id="Payone_Api_Enum_CreditcardType"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_CreditcardType.html">
+<h1>Payone_Api_Enum_CreditcardType<a href="../classes/Payone_Api_Enum_CreditcardType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_CreditcardType.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_DebitTransactionType" id="Payone_Api_Enum_DebitTransactionType"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_DebitTransactionType.html">
+<h1>Payone_Api_Enum_DebitTransactionType<a href="../classes/Payone_Api_Enum_DebitTransactionType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_DebitTransactionType.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_Ecommercemode" id="Payone_Api_Enum_Ecommercemode"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_Ecommercemode.html">
+<h1>Payone_Api_Enum_Ecommercemode<a href="../classes/Payone_Api_Enum_Ecommercemode.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_Ecommercemode.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_FinancingType" id="Payone_Api_Enum_FinancingType"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_FinancingType.html">
+<h1>Payone_Api_Enum_FinancingType<a href="../classes/Payone_Api_Enum_FinancingType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_FinancingType.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_InvoiceDeliverymode" id="Payone_Api_Enum_InvoiceDeliverymode"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_InvoiceDeliverymode.html">
+<h1>Payone_Api_Enum_InvoiceDeliverymode<a href="../classes/Payone_Api_Enum_InvoiceDeliverymode.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_InvoiceDeliverymode.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_OnlinebanktransferType" id="Payone_Api_Enum_OnlinebanktransferType"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_OnlinebanktransferType.html">
+<h1>Payone_Api_Enum_OnlinebanktransferType<a href="../classes/Payone_Api_Enum_OnlinebanktransferType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_OnlinebanktransferType.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_RequestType" id="Payone_Api_Enum_RequestType"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_RequestType.html">
+<h1>Payone_Api_Enum_RequestType<a href="../classes/Payone_Api_Enum_RequestType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_RequestType.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_ResponseType" id="Payone_Api_Enum_ResponseType"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_ResponseType.html">
+<h1>Payone_Api_Enum_ResponseType<a href="../classes/Payone_Api_Enum_ResponseType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_ResponseType.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_Settleaccount" id="Payone_Api_Enum_Settleaccount"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_Settleaccount.html">
+<h1>Payone_Api_Enum_Settleaccount<a href="../classes/Payone_Api_Enum_Settleaccount.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_Settleaccount.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_Shippingprovider" id="Payone_Api_Enum_Shippingprovider"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_Shippingprovider.html">
+<h1>Payone_Api_Enum_Shippingprovider<a href="../classes/Payone_Api_Enum_Shippingprovider.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_Shippingprovider.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_Storecarddata" id="Payone_Api_Enum_Storecarddata"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_Storecarddata.html">
+<h1>Payone_Api_Enum_Storecarddata<a href="../classes/Payone_Api_Enum_Storecarddata.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_Storecarddata.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_UseCustomerdata" id="Payone_Api_Enum_UseCustomerdata"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_UseCustomerdata.html">
+<h1>Payone_Api_Enum_UseCustomerdata<a href="../classes/Payone_Api_Enum_UseCustomerdata.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_UseCustomerdata.html" class="more">« More »</a>
+</div>
+<a name="Payone_Api_Enum_WalletType" id="Payone_Api_Enum_WalletType"></a><div class="element ajax clickable class" href="../classes/Payone_Api_Enum_WalletType.html">
+<h1>Payone_Api_Enum_WalletType<a href="../classes/Payone_Api_Enum_WalletType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Api_Enum_WalletType.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:43:59+02:00.<br></footer></div>
+</div>
+</body>
+</html>

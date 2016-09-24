@@ -1,0 +1,255 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » Payone\Settings\Data</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Payone.Settings.Data.html" title="Data"><i class="icon-folder-open"></i>Data</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-interface"></i> Interfaces</li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Interface" title="">Payone_Settings_Data_ConfigFile_Interface</a></li>
+<li class="nav-header">
+<i class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Abstract" title="">Payone_Settings_Data_ConfigFile_Abstract</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Collection" title="">Payone_Settings_Data_ConfigFile_Collection</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Global_StatusMapping" title="">Payone_Settings_Data_ConfigFile_Global_StatusMapping</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Misc_TransactionstatusForwarding" title="">Payone_Settings_Data_ConfigFile_Misc_TransactionstatusForwarding</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract" title="">Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_PaymentMethod_AdvancePayment" title="">Payone_Settings_Data_ConfigFile_PaymentMethod_AdvancePayment</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_PaymentMethod_CashOnDelivery" title="">Payone_Settings_Data_ConfigFile_PaymentMethod_CashOnDelivery</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_PaymentMethod_Creditcard" title="">Payone_Settings_Data_ConfigFile_PaymentMethod_Creditcard</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_PaymentMethod_DebitPayment" title="">Payone_Settings_Data_ConfigFile_PaymentMethod_DebitPayment</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_PaymentMethod_Financing" title="">Payone_Settings_Data_ConfigFile_PaymentMethod_Financing</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_PaymentMethod_Invoice" title="">Payone_Settings_Data_ConfigFile_PaymentMethod_Invoice</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_PaymentMethod_OnlineBankTransfer" title="">Payone_Settings_Data_ConfigFile_PaymentMethod_OnlineBankTransfer</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_PaymentMethod_Wallet" title="">Payone_Settings_Data_ConfigFile_PaymentMethod_Wallet</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Protect_Addresscheck" title="">Payone_Settings_Data_ConfigFile_Protect_Addresscheck</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Protect_Consumerscore" title="">Payone_Settings_Data_ConfigFile_Protect_Consumerscore</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Root" title="">Payone_Settings_Data_ConfigFile_Root</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Shop_ClearingTypes" title="">Payone_Settings_Data_ConfigFile_Shop_ClearingTypes</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Shop_Global" title="">Payone_Settings_Data_ConfigFile_Shop_Global</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Shop_Misc" title="">Payone_Settings_Data_ConfigFile_Shop_Misc</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Shop_Protect" title="">Payone_Settings_Data_ConfigFile_Shop_Protect</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Shop_System" title="">Payone_Settings_Data_ConfigFile_Shop_System</a></li>
+<li><a href="#Payone_Settings_Data_ConfigFile_Shop" title="">Payone_Settings_Data_ConfigFile_Shop</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../packages/Payone.html">Payone</a></li>
+<span class="divider">\</span><li><a href="../packages/Payone.Settings.html">Settings</a></li>
+<span class="divider">\</span><li class="active"><a href="../packages/Payone.Settings.Data.html">Data</a></li>
+</ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<a name="Payone_Settings_Data_ConfigFile_Interface" id="Payone_Settings_Data_ConfigFile_Interface"></a><div class="element ajax clickable interface" href="../classes/Payone_Settings_Data_ConfigFile_Interface.html">
+<h1>Payone_Settings_Data_ConfigFile_Interface<a href="../classes/Payone_Settings_Data_ConfigFile_Interface.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Interface.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Abstract" id="Payone_Settings_Data_ConfigFile_Abstract"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Abstract.html">
+<h1>Payone_Settings_Data_ConfigFile_Abstract<a href="../classes/Payone_Settings_Data_ConfigFile_Abstract.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Abstract.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Collection" id="Payone_Settings_Data_ConfigFile_Collection"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Collection.html">
+<h1>Payone_Settings_Data_ConfigFile_Collection<a href="../classes/Payone_Settings_Data_ConfigFile_Collection.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Collection.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Global_StatusMapping" id="Payone_Settings_Data_ConfigFile_Global_StatusMapping"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Global_StatusMapping.html">
+<h1>Payone_Settings_Data_ConfigFile_Global_StatusMapping<a href="../classes/Payone_Settings_Data_ConfigFile_Global_StatusMapping.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Global_StatusMapping.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Misc_TransactionstatusForwarding" id="Payone_Settings_Data_ConfigFile_Misc_TransactionstatusForwarding"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Misc_TransactionstatusForwarding.html">
+<h1>Payone_Settings_Data_ConfigFile_Misc_TransactionstatusForwarding<a href="../classes/Payone_Settings_Data_ConfigFile_Misc_TransactionstatusForwarding.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Misc_TransactionstatusForwarding.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract" id="Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract.html">
+<h1>Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_PaymentMethod_AdvancePayment" id="Payone_Settings_Data_ConfigFile_PaymentMethod_AdvancePayment"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_AdvancePayment.html">
+<h1>Payone_Settings_Data_ConfigFile_PaymentMethod_AdvancePayment<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_AdvancePayment.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_AdvancePayment.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_PaymentMethod_CashOnDelivery" id="Payone_Settings_Data_ConfigFile_PaymentMethod_CashOnDelivery"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_CashOnDelivery.html">
+<h1>Payone_Settings_Data_ConfigFile_PaymentMethod_CashOnDelivery<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_CashOnDelivery.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_CashOnDelivery.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_PaymentMethod_Creditcard" id="Payone_Settings_Data_ConfigFile_PaymentMethod_Creditcard"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Creditcard.html">
+<h1>Payone_Settings_Data_ConfigFile_PaymentMethod_Creditcard<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Creditcard.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Creditcard.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_PaymentMethod_DebitPayment" id="Payone_Settings_Data_ConfigFile_PaymentMethod_DebitPayment"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_DebitPayment.html">
+<h1>Payone_Settings_Data_ConfigFile_PaymentMethod_DebitPayment<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_DebitPayment.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_DebitPayment.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_PaymentMethod_Financing" id="Payone_Settings_Data_ConfigFile_PaymentMethod_Financing"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Financing.html">
+<h1>Payone_Settings_Data_ConfigFile_PaymentMethod_Financing<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Financing.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Financing.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_PaymentMethod_Invoice" id="Payone_Settings_Data_ConfigFile_PaymentMethod_Invoice"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Invoice.html">
+<h1>Payone_Settings_Data_ConfigFile_PaymentMethod_Invoice<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Invoice.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Invoice.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_PaymentMethod_OnlineBankTransfer" id="Payone_Settings_Data_ConfigFile_PaymentMethod_OnlineBankTransfer"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_OnlineBankTransfer.html">
+<h1>Payone_Settings_Data_ConfigFile_PaymentMethod_OnlineBankTransfer<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_OnlineBankTransfer.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_OnlineBankTransfer.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_PaymentMethod_Wallet" id="Payone_Settings_Data_ConfigFile_PaymentMethod_Wallet"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Wallet.html">
+<h1>Payone_Settings_Data_ConfigFile_PaymentMethod_Wallet<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Wallet.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Wallet.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Protect_Addresscheck" id="Payone_Settings_Data_ConfigFile_Protect_Addresscheck"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Protect_Addresscheck.html">
+<h1>Payone_Settings_Data_ConfigFile_Protect_Addresscheck<a href="../classes/Payone_Settings_Data_ConfigFile_Protect_Addresscheck.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Protect_Addresscheck.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Protect_Consumerscore" id="Payone_Settings_Data_ConfigFile_Protect_Consumerscore"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Protect_Consumerscore.html">
+<h1>Payone_Settings_Data_ConfigFile_Protect_Consumerscore<a href="../classes/Payone_Settings_Data_ConfigFile_Protect_Consumerscore.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Protect_Consumerscore.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Root" id="Payone_Settings_Data_ConfigFile_Root"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Root.html">
+<h1>Payone_Settings_Data_ConfigFile_Root<a href="../classes/Payone_Settings_Data_ConfigFile_Root.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Root.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Shop" id="Payone_Settings_Data_ConfigFile_Shop"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Shop.html">
+<h1>Payone_Settings_Data_ConfigFile_Shop<a href="../classes/Payone_Settings_Data_ConfigFile_Shop.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Shop.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Shop_ClearingTypes" id="Payone_Settings_Data_ConfigFile_Shop_ClearingTypes"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Shop_ClearingTypes.html">
+<h1>Payone_Settings_Data_ConfigFile_Shop_ClearingTypes<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_ClearingTypes.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_ClearingTypes.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Shop_Global" id="Payone_Settings_Data_ConfigFile_Shop_Global"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">
+<h1>Payone_Settings_Data_ConfigFile_Shop_Global<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Shop_Misc" id="Payone_Settings_Data_ConfigFile_Shop_Misc"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Shop_Misc.html">
+<h1>Payone_Settings_Data_ConfigFile_Shop_Misc<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Misc.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Misc.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Shop_Protect" id="Payone_Settings_Data_ConfigFile_Shop_Protect"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Shop_Protect.html">
+<h1>Payone_Settings_Data_ConfigFile_Shop_Protect<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Protect.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Protect.html" class="more">« More »</a>
+</div>
+<a name="Payone_Settings_Data_ConfigFile_Shop_System" id="Payone_Settings_Data_ConfigFile_Shop_System"></a><div class="element ajax clickable class" href="../classes/Payone_Settings_Data_ConfigFile_Shop_System.html">
+<h1>Payone_Settings_Data_ConfigFile_Shop_System<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_System.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Payone_Settings_Data_ConfigFile_Shop_System.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:00+02:00.<br></footer></div>
+</div>
+</body>
+</html>

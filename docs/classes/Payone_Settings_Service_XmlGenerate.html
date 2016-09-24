@@ -1,0 +1,598 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_Settings_Service_XmlGenerate</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#addFeeConfig" title="addFeeConfig :: "><span class="description">addFeeConfig()
+        </span><pre>addFeeConfig()</pre></a></li>
+<li class="method public "><a href="#addGlobal" title="addGlobal :: "><span class="description">addGlobal()
+        </span><pre>addGlobal()</pre></a></li>
+<li class="method public "><a href="#addStatusMapping" title="addStatusMapping :: "><span class="description">addStatusMapping()
+        </span><pre>addStatusMapping()</pre></a></li>
+<li class="method public "><a href="#addTransactionstatusForwarding" title="addTransactionstatusForwarding :: "><span class="description">addTransactionstatusForwarding()
+        </span><pre>addTransactionstatusForwarding()</pre></a></li>
+<li class="method public "><a href="#addTypesOrGlobalInfo" title="addTypesOrGlobalInfo :: "><span class="description">addTypesOrGlobalInfo()
+        </span><pre>addTypesOrGlobalInfo()</pre></a></li>
+<li class="method public "><a href="#execute" title="execute :: Generates an XML string from a Root config object, including all settings (global, shop, payment, protect)"><span class="description">Generates an XML string from a Root config object, including all settings (global, shop, payment, protect)</span><pre>execute()</pre></a></li>
+<li class="method public "><a href="#generate" title="generate :: Generates an XML string from a Root config object, including all settings (global, shop, payment, protect)"><span class="description">Generates an XML string from a Root config object, including all settings (global, shop, payment, protect)</span><pre>generate()</pre></a></li>
+<li class="method public "><a href="#simpleXmlFromNestedArray" title="simpleXmlFromNestedArray :: "><span class="description">simpleXmlFromNestedArray()
+        </span><pre>simpleXmlFromNestedArray()</pre></a></li>
+<li class="nav-header protected">» Protected</li>
+<li class="method protected "><a href="#addAttribute" title="addAttribute :: "><span class="description">addAttribute()
+        </span><pre>addAttribute()</pre></a></li>
+<li class="method protected "><a href="#addChild" title="addChild :: "><span class="description">addChild()
+        </span><pre>addChild()</pre></a></li>
+<li class="method protected "><a href="#appendElement" title="appendElement :: "><span class="description">appendElement()
+        </span><pre>appendElement()</pre></a></li>
+<li class="method protected "><a href="#mapAddresscheck" title="mapAddresscheck :: "><span class="description">mapAddresscheck()
+        </span><pre>mapAddresscheck()</pre></a></li>
+<li class="method protected "><a href="#mapClearingTypes" title="mapClearingTypes :: "><span class="description">mapClearingTypes()
+        </span><pre>mapClearingTypes()</pre></a></li>
+<li class="method protected "><a href="#mapConsumerscore" title="mapConsumerscore :: "><span class="description">mapConsumerscore()
+        </span><pre>mapConsumerscore()</pre></a></li>
+<li class="method protected "><a href="#mapGlobal" title="mapGlobal :: "><span class="description">mapGlobal()
+        </span><pre>mapGlobal()</pre></a></li>
+<li class="method protected "><a href="#mapMisc" title="mapMisc :: "><span class="description">mapMisc()
+        </span><pre>mapMisc()</pre></a></li>
+<li class="method protected "><a href="#mapParameterInvoice" title="mapParameterInvoice :: "><span class="description">mapParameterInvoice()
+        </span><pre>mapParameterInvoice()</pre></a></li>
+<li class="method protected "><a href="#mapPaymentCreditcard" title="mapPaymentCreditcard :: "><span class="description">mapPaymentCreditcard()
+        </span><pre>mapPaymentCreditcard()</pre></a></li>
+<li class="method protected "><a href="#mapProtect" title="mapProtect :: "><span class="description">mapProtect()
+        </span><pre>mapProtect()</pre></a></li>
+<li class="method protected "><a href="#mapShop" title="mapShop :: "><span class="description">mapShop()
+        </span><pre>mapShop()</pre></a></li>
+<li class="method protected "><a href="#mapSystem" title="mapSystem :: "><span class="description">mapSystem()
+        </span><pre>mapSystem()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header private">» Private</li>
+<li class="property private "><a href="#%24dom" title="$dom :: "><span class="description">$dom</span><pre>$dom</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#CLASS_PREFIX" title="CLASS_PREFIX :: "><span class="description">CLASS_PREFIX</span><pre>CLASS_PREFIX</pre></a></li>
+<li class="constant  "><a href="#TAG_CONFIG_ROOT" title="TAG_CONFIG_ROOT :: "><span class="description">TAG_CONFIG_ROOT</span><pre>TAG_CONFIG_ROOT</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_Settings_Service_XmlGenerate" id="\Payone_Settings_Service_XmlGenerate"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_Settings_Service_XmlGenerate.html">Payone_Settings_Service_XmlGenerate</a>
+</li>
+</ul>
+<div href="../classes/Payone_Settings_Service_XmlGenerate.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.Settings.Service.html">Payone_Settings</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Service</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="addFeeConfig" id="addFeeConfig"></a><div class="element clickable method public addFeeConfig" data-toggle="collapse" data-target=".addFeeConfig .collapse">
+<h2>addFeeConfig()
+        </h2>
+<pre>addFeeConfig(\DOMElement $cleatringTypeNode, \Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract $valueClearingType) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cleatringTypeNode</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<div class="subelement argument">
+<h4>$valueClearingType</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract.html">\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a name="addGlobal" id="addGlobal"></a><div class="element clickable method public addGlobal" data-toggle="collapse" data-target=".addGlobal .collapse">
+<h2>addGlobal()
+        </h2>
+<pre>addGlobal($parent, $type) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parent</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="addStatusMapping" id="addStatusMapping"></a><div class="element clickable method public addStatusMapping" data-toggle="collapse" data-target=".addStatusMapping .collapse">
+<h2>addStatusMapping()
+        </h2>
+<pre>addStatusMapping(\Payone_Settings_Data_ConfigFile_Shop_Global $globalConfig, \DOMElement $globalXml) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$globalConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">\Payone_Settings_Data_ConfigFile_Shop_Global</a></code>
+</div>
+<div class="subelement argument">
+<h4>$globalXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+</div></div>
+</div>
+<a name="addTransactionstatusForwarding" id="addTransactionstatusForwarding"></a><div class="element clickable method public addTransactionstatusForwarding" data-toggle="collapse" data-target=".addTransactionstatusForwarding .collapse">
+<h2>addTransactionstatusForwarding()
+        </h2>
+<pre>addTransactionstatusForwarding(\Payone_Settings_Data_ConfigFile_Shop_Misc $miscConfig, \DOMElement $miscXml) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$miscConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Misc.html">\Payone_Settings_Data_ConfigFile_Shop_Misc</a></code>
+</div>
+<div class="subelement argument">
+<h4>$miscXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+</div></div>
+</div>
+<a name="addTypesOrGlobalInfo" id="addTypesOrGlobalInfo"></a><div class="element clickable method public addTypesOrGlobalInfo" data-toggle="collapse" data-target=".addTypesOrGlobalInfo .collapse">
+<h2>addTypesOrGlobalInfo()
+        </h2>
+<pre>addTypesOrGlobalInfo(\DOMElement $cleatringTypeNode, \Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract $valueClearingType) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cleatringTypeNode</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<div class="subelement argument">
+<h4>$valueClearingType</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract.html">\Payone_Settings_Data_ConfigFile_PaymentMethod_Abstract</a></code>
+</div>
+</div></div>
+</div>
+<a name="execute" id="execute"></a><div class="element clickable method public execute" data-toggle="collapse" data-target=".execute .collapse">
+<h2>Generates an XML string from a Root config object, including all settings (global, shop, payment, protect)</h2>
+<pre>execute(\Payone_Settings_Data_ConfigFile_Root $config) : mixed</pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Root.html">\Payone_Settings_Data_ConfigFile_Root</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>@see SimpleXMLElement::asXml()</div>
+</div></div>
+</div>
+<a name="generate" id="generate"></a><div class="element clickable method public generate" data-toggle="collapse" data-target=".generate .collapse">
+<h2>Generates an XML string from a Root config object, including all settings (global, shop, payment, protect)</h2>
+<pre>generate(\Payone_Settings_Data_ConfigFile_Root $config) : mixed</pre>
+<div class="labels"><span class="label label-info">API</span></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>api</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Root.html">\Payone_Settings_Data_ConfigFile_Root</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>@see SimpleXMLElement::asXml()</div>
+</div></div>
+</div>
+<a name="simpleXmlFromNestedArray" id="simpleXmlFromNestedArray"></a><div class="element clickable method public simpleXmlFromNestedArray" data-toggle="collapse" data-target=".simpleXmlFromNestedArray .collapse">
+<h2>simpleXmlFromNestedArray()
+        </h2>
+<pre>simpleXmlFromNestedArray(string $name, array $array, \SimpleXMLElement $root) : <a href="http://php.net/manual/en/class.simplexmlelement.php">\SimpleXMLElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>tag name</p></div>
+<div class="subelement argument">
+<h4>$array</h4>
+<code>array</code><p>data</p></div>
+<div class="subelement argument">
+<h4>$root</h4>
+<code>null<a href="http://php.net/manual/en/class.simplexmlelement.php">\SimpleXMLElement</a></code><p>IF not set, $name will form the root element</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.simplexmlelement.php">\SimpleXMLElement</a></code></div>
+</div></div>
+</div>
+<a name="addAttribute" id="addAttribute"></a><div class="element clickable method protected addAttribute" data-toggle="collapse" data-target=".addAttribute .collapse">
+<h2>addAttribute()
+        </h2>
+<pre>addAttribute(\DOMElement $mapNode, $name, $value) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mapNode</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="addChild" id="addChild"></a><div class="element clickable method protected addChild" data-toggle="collapse" data-target=".addChild .collapse">
+<h2>addChild()
+        </h2>
+<pre>addChild(\DOMElement $parent, $object, $property, bool $withCdata) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parent</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<div class="subelement argument">
+<h4>$object</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$property</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$withCdata</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="appendElement" id="appendElement"></a><div class="element clickable method protected appendElement" data-toggle="collapse" data-target=".appendElement .collapse">
+<h2>appendElement()
+        </h2>
+<pre>appendElement(<a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a> | <a href="http://php.net/manual/en/class.domdocument.php">\DOMDocument</a> $parent, $key, $value, bool $asCdata) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parent</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a><a href="http://php.net/manual/en/class.domdocument.php">\DOMDocument</a></code>
+</div>
+<div class="subelement argument">
+<h4>$key</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$asCdata</h4>
+<code>bool</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="mapAddresscheck" id="mapAddresscheck"></a><div class="element clickable method protected mapAddresscheck" data-toggle="collapse" data-target=".mapAddresscheck .collapse">
+<h2>mapAddresscheck()
+        </h2>
+<pre>mapAddresscheck(\Payone_Settings_Data_ConfigFile_Protect_Addresscheck $addresscheckConfig, \DOMElement $protectXml) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$addresscheckConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Protect_Addresscheck.html">\Payone_Settings_Data_ConfigFile_Protect_Addresscheck</a></code>
+</div>
+<div class="subelement argument">
+<h4>$protectXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="mapClearingTypes" id="mapClearingTypes"></a><div class="element clickable method protected mapClearingTypes" data-toggle="collapse" data-target=".mapClearingTypes .collapse">
+<h2>mapClearingTypes()
+        </h2>
+<pre>mapClearingTypes(\Payone_Settings_Data_ConfigFile_Shop_ClearingTypes $clearingTypes, \DOMElement $shopXml) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearingTypes</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_ClearingTypes.html">\Payone_Settings_Data_ConfigFile_Shop_ClearingTypes</a></code>
+</div>
+<div class="subelement argument">
+<h4>$shopXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="mapConsumerscore" id="mapConsumerscore"></a><div class="element clickable method protected mapConsumerscore" data-toggle="collapse" data-target=".mapConsumerscore .collapse">
+<h2>mapConsumerscore()
+        </h2>
+<pre>mapConsumerscore(\Payone_Settings_Data_ConfigFile_Protect_Consumerscore $consumerscoreConfig, \DOMElement $protectXml) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$consumerscoreConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Protect_Consumerscore.html">\Payone_Settings_Data_ConfigFile_Protect_Consumerscore</a></code>
+</div>
+<div class="subelement argument">
+<h4>$protectXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="mapGlobal" id="mapGlobal"></a><div class="element clickable method protected mapGlobal" data-toggle="collapse" data-target=".mapGlobal .collapse">
+<h2>mapGlobal()
+        </h2>
+<pre>mapGlobal(\Payone_Settings_Data_ConfigFile_Shop_Global $globalConfig, \DOMElement $shopXml) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$globalConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">\Payone_Settings_Data_ConfigFile_Shop_Global</a></code>
+</div>
+<div class="subelement argument">
+<h4>$shopXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="mapMisc" id="mapMisc"></a><div class="element clickable method protected mapMisc" data-toggle="collapse" data-target=".mapMisc .collapse">
+<h2>mapMisc()
+        </h2>
+<pre>mapMisc(\Payone_Settings_Data_ConfigFile_Shop_Misc $miscConfig, \DOMElement $shopXml) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$miscConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Misc.html">\Payone_Settings_Data_ConfigFile_Shop_Misc</a></code>
+</div>
+<div class="subelement argument">
+<h4>$shopXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="mapParameterInvoice" id="mapParameterInvoice"></a><div class="element clickable method protected mapParameterInvoice" data-toggle="collapse" data-target=".mapParameterInvoice .collapse">
+<h2>mapParameterInvoice()
+        </h2>
+<pre>mapParameterInvoice(\Payone_Settings_Data_ConfigFile_Shop_Global $globalConfig, \DOMElement $globalXml) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$globalConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">\Payone_Settings_Data_ConfigFile_Shop_Global</a></code>
+</div>
+<div class="subelement argument">
+<h4>$globalXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="mapPaymentCreditcard" id="mapPaymentCreditcard"></a><div class="element clickable method protected mapPaymentCreditcard" data-toggle="collapse" data-target=".mapPaymentCreditcard .collapse">
+<h2>mapPaymentCreditcard()
+        </h2>
+<pre>mapPaymentCreditcard(\Payone_Settings_Data_ConfigFile_Shop_Global $globalConfig, \DOMElement $globalXml) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$globalConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Global.html">\Payone_Settings_Data_ConfigFile_Shop_Global</a></code>
+</div>
+<div class="subelement argument">
+<h4>$globalXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="mapProtect" id="mapProtect"></a><div class="element clickable method protected mapProtect" data-toggle="collapse" data-target=".mapProtect .collapse">
+<h2>mapProtect()
+        </h2>
+<pre>mapProtect(\Payone_Settings_Data_ConfigFile_Shop_Protect $protectConfig, \DOMElement $shopXml) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$protectConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_Protect.html">\Payone_Settings_Data_ConfigFile_Shop_Protect</a></code>
+</div>
+<div class="subelement argument">
+<h4>$shopXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<a name="mapShop" id="mapShop"></a><div class="element clickable method protected mapShop" data-toggle="collapse" data-target=".mapShop .collapse">
+<h2>mapShop()
+        </h2>
+<pre>mapShop(\Payone_Settings_Data_ConfigFile_Shop $shopConfig, \DOMElement $configXml) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$shopConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop.html">\Payone_Settings_Data_ConfigFile_Shop</a></code>
+</div>
+<div class="subelement argument">
+<h4>$configXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="mapSystem" id="mapSystem"></a><div class="element clickable method protected mapSystem" data-toggle="collapse" data-target=".mapSystem .collapse">
+<h2>mapSystem()
+        </h2>
+<pre>mapSystem(\Payone_Settings_Data_ConfigFile_Shop_System $systemConfig, \DOMElement $shopXml) : <a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$systemConfig</h4>
+<code><a href="../classes/Payone_Settings_Data_ConfigFile_Shop_System.html">\Payone_Settings_Data_ConfigFile_Shop_System</a></code>
+</div>
+<div class="subelement argument">
+<h4>$shopXml</h4>
+<code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.domelement.php">\DOMElement</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24dom" id="$dom"> </a><div class="element clickable property private $dom" data-toggle="collapse" data-target=".$dom .collapse">
+<h2>$dom</h2>
+<pre>$dom : <a href="http://php.net/manual/en/class.domdocument.php">\DOMDocument</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a name="CLASS_PREFIX" id="CLASS_PREFIX"> </a><div class="element clickable constant  CLASS_PREFIX" data-toggle="collapse" data-target=".CLASS_PREFIX .collapse">
+<h2>CLASS_PREFIX</h2>
+<pre>CLASS_PREFIX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+<a name="TAG_CONFIG_ROOT" id="TAG_CONFIG_ROOT"> </a><div class="element clickable constant  TAG_CONFIG_ROOT" data-toggle="collapse" data-target=".TAG_CONFIG_ROOT .collapse">
+<h2>TAG_CONFIG_ROOT</h2>
+<pre>TAG_CONFIG_ROOT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:09+02:00.<br></footer></div>
+</div>
+</body>
+</html>

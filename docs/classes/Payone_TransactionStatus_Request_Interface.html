@@ -1,0 +1,866 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>PAYONE SDK for PHP » \Payone_TransactionStatus_Request_Interface</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.payone.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html" style="padding-bottom: 4px; padding-top: 9px; text-align: center; vertical-align: top;"><img src="../img/payone.gif" border="0" style="padding-right: 5px;">
+                        PAYONE SDK <small>for PHP</small></a><div class="nav-collapse"><ul class="nav"><li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Payone.html"><i class="icon-folder-open"></i> Payone</a></li>
+</ul>
+</li></ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__toString" title="__toString :: "><span class="description">__toString()
+        </span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#getAccessid" title="getAccessid :: "><span class="description">getAccessid()
+        </span><pre>getAccessid()</pre></a></li>
+<li class="method public "><a href="#getAid" title="getAid :: "><span class="description">getAid()
+        </span><pre>getAid()</pre></a></li>
+<li class="method public "><a href="#getBalance" title="getBalance :: "><span class="description">getBalance()
+        </span><pre>getBalance()</pre></a></li>
+<li class="method public "><a href="#getClearingtype" title="getClearingtype :: "><span class="description">getClearingtype()
+        </span><pre>getClearingtype()</pre></a></li>
+<li class="method public "><a href="#getCurrency" title="getCurrency :: "><span class="description">getCurrency()
+        </span><pre>getCurrency()</pre></a></li>
+<li class="method public "><a href="#getCustomerid" title="getCustomerid :: "><span class="description">getCustomerid()
+        </span><pre>getCustomerid()</pre></a></li>
+<li class="method public "><a href="#getFailedcause" title="getFailedcause :: "><span class="description">getFailedcause()
+        </span><pre>getFailedcause()</pre></a></li>
+<li class="method public "><a href="#getInvoiceDate" title="getInvoiceDate :: "><span class="description">getInvoiceDate()
+        </span><pre>getInvoiceDate()</pre></a></li>
+<li class="method public "><a href="#getInvoiceDeliverydate" title="getInvoiceDeliverydate :: "><span class="description">getInvoiceDeliverydate()
+        </span><pre>getInvoiceDeliverydate()</pre></a></li>
+<li class="method public "><a href="#getInvoiceDeliveryenddate" title="getInvoiceDeliveryenddate :: "><span class="description">getInvoiceDeliveryenddate()
+        </span><pre>getInvoiceDeliveryenddate()</pre></a></li>
+<li class="method public "><a href="#getInvoiceGrossamount" title="getInvoiceGrossamount :: "><span class="description">getInvoiceGrossamount()
+        </span><pre>getInvoiceGrossamount()</pre></a></li>
+<li class="method public "><a href="#getInvoiceid" title="getInvoiceid :: "><span class="description">getInvoiceid()
+        </span><pre>getInvoiceid()</pre></a></li>
+<li class="method public "><a href="#getKey" title="getKey :: "><span class="description">getKey()
+        </span><pre>getKey()</pre></a></li>
+<li class="method public "><a href="#getMode" title="getMode :: "><span class="description">getMode()
+        </span><pre>getMode()</pre></a></li>
+<li class="method public "><a href="#getParam" title="getParam :: "><span class="description">getParam()
+        </span><pre>getParam()</pre></a></li>
+<li class="method public "><a href="#getPortalid" title="getPortalid :: "><span class="description">getPortalid()
+        </span><pre>getPortalid()</pre></a></li>
+<li class="method public "><a href="#getProductid" title="getProductid :: "><span class="description">getProductid()
+        </span><pre>getProductid()</pre></a></li>
+<li class="method public "><a href="#getReceivable" title="getReceivable :: "><span class="description">getReceivable()
+        </span><pre>getReceivable()</pre></a></li>
+<li class="method public "><a href="#getReference" title="getReference :: "><span class="description">getReference()
+        </span><pre>getReference()</pre></a></li>
+<li class="method public "><a href="#getReminderlevel" title="getReminderlevel :: "><span class="description">getReminderlevel()
+        </span><pre>getReminderlevel()</pre></a></li>
+<li class="method public "><a href="#getSequencenumber" title="getSequencenumber :: "><span class="description">getSequencenumber()
+        </span><pre>getSequencenumber()</pre></a></li>
+<li class="method public "><a href="#getTxaction" title="getTxaction :: "><span class="description">getTxaction()
+        </span><pre>getTxaction()</pre></a></li>
+<li class="method public "><a href="#getTxid" title="getTxid :: "><span class="description">getTxid()
+        </span><pre>getTxid()</pre></a></li>
+<li class="method public "><a href="#getTxtime" title="getTxtime :: "><span class="description">getTxtime()
+        </span><pre>getTxtime()</pre></a></li>
+<li class="method public "><a href="#getUserid" title="getUserid :: "><span class="description">getUserid()
+        </span><pre>getUserid()</pre></a></li>
+<li class="method public "><a href="#init" title="init :: "><span class="description">init()
+        </span><pre>init()</pre></a></li>
+<li class="method public "><a href="#setAccessid" title="setAccessid :: "><span class="description">setAccessid()
+        </span><pre>setAccessid()</pre></a></li>
+<li class="method public "><a href="#setAid" title="setAid :: "><span class="description">setAid()
+        </span><pre>setAid()</pre></a></li>
+<li class="method public "><a href="#setBalance" title="setBalance :: "><span class="description">setBalance()
+        </span><pre>setBalance()</pre></a></li>
+<li class="method public "><a href="#setClearingtype" title="setClearingtype :: "><span class="description">setClearingtype()
+        </span><pre>setClearingtype()</pre></a></li>
+<li class="method public "><a href="#setCurrency" title="setCurrency :: "><span class="description">setCurrency()
+        </span><pre>setCurrency()</pre></a></li>
+<li class="method public "><a href="#setCustomerid" title="setCustomerid :: "><span class="description">setCustomerid()
+        </span><pre>setCustomerid()</pre></a></li>
+<li class="method public "><a href="#setFailedcause" title="setFailedcause :: "><span class="description">setFailedcause()
+        </span><pre>setFailedcause()</pre></a></li>
+<li class="method public "><a href="#setInvoiceDate" title="setInvoiceDate :: "><span class="description">setInvoiceDate()
+        </span><pre>setInvoiceDate()</pre></a></li>
+<li class="method public "><a href="#setInvoiceDeliverydate" title="setInvoiceDeliverydate :: "><span class="description">setInvoiceDeliverydate()
+        </span><pre>setInvoiceDeliverydate()</pre></a></li>
+<li class="method public "><a href="#setInvoiceDeliveryenddate" title="setInvoiceDeliveryenddate :: "><span class="description">setInvoiceDeliveryenddate()
+        </span><pre>setInvoiceDeliveryenddate()</pre></a></li>
+<li class="method public "><a href="#setInvoiceGrossamount" title="setInvoiceGrossamount :: "><span class="description">setInvoiceGrossamount()
+        </span><pre>setInvoiceGrossamount()</pre></a></li>
+<li class="method public "><a href="#setInvoiceid" title="setInvoiceid :: "><span class="description">setInvoiceid()
+        </span><pre>setInvoiceid()</pre></a></li>
+<li class="method public "><a href="#setKey" title="setKey :: "><span class="description">setKey()
+        </span><pre>setKey()</pre></a></li>
+<li class="method public "><a href="#setMode" title="setMode :: "><span class="description">setMode()
+        </span><pre>setMode()</pre></a></li>
+<li class="method public "><a href="#setParam" title="setParam :: "><span class="description">setParam()
+        </span><pre>setParam()</pre></a></li>
+<li class="method public "><a href="#setPortalid" title="setPortalid :: "><span class="description">setPortalid()
+        </span><pre>setPortalid()</pre></a></li>
+<li class="method public "><a href="#setProductid" title="setProductid :: "><span class="description">setProductid()
+        </span><pre>setProductid()</pre></a></li>
+<li class="method public "><a href="#setReceivable" title="setReceivable :: "><span class="description">setReceivable()
+        </span><pre>setReceivable()</pre></a></li>
+<li class="method public "><a href="#setReference" title="setReference :: "><span class="description">setReference()
+        </span><pre>setReference()</pre></a></li>
+<li class="method public "><a href="#setReminderlevel" title="setReminderlevel :: "><span class="description">setReminderlevel()
+        </span><pre>setReminderlevel()</pre></a></li>
+<li class="method public "><a href="#setSequencenumber" title="setSequencenumber :: "><span class="description">setSequencenumber()
+        </span><pre>setSequencenumber()</pre></a></li>
+<li class="method public "><a href="#setTxaction" title="setTxaction :: "><span class="description">setTxaction()
+        </span><pre>setTxaction()</pre></a></li>
+<li class="method public "><a href="#setTxid" title="setTxid :: "><span class="description">setTxid()
+        </span><pre>setTxid()</pre></a></li>
+<li class="method public "><a href="#setTxtime" title="setTxtime :: "><span class="description">setTxtime()
+        </span><pre>setTxtime()</pre></a></li>
+<li class="method public "><a href="#setUserid" title="setUserid :: "><span class="description">setUserid()
+        </span><pre>setUserid()</pre></a></li>
+<li class="method public "><a href="#toArray" title="toArray :: "><span class="description">toArray()
+        </span><pre>toArray()</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CPayone_TransactionStatus_Request_Interface" id="\Payone_TransactionStatus_Request_Interface"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Payone_TransactionStatus_Request_Interface.html">Payone_TransactionStatus_Request_Interface</a>
+</li>
+</ul>
+<div href="../classes/Payone_TransactionStatus_Request_Interface.html" class="element interface">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>category</th>
+<td>Payone</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="..//packages/Payone.TransactionStatus.Request.html">Payone_TransactionStatus</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>Request</td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright (c) 2012 &lt;info@noovias.com&gt; - www.noovias.com</td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="">&lt;http://www.gnu.org/licenses/&gt; GNU General Public License (GPL 3)</a></td>
+</tr>
+<tr>
+<th>link</th>
+<td><a href="http://www.noovias.com">http://www.noovias.com</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__toString" id="__toString"></a><div class="element clickable method public __toString" data-toggle="collapse" data-target=".__toString .collapse">
+<h2>__toString()
+        </h2>
+<pre>__toString() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a name="getAccessid" id="getAccessid"></a><div class="element clickable method public getAccessid" data-toggle="collapse" data-target=".getAccessid .collapse">
+<h2>getAccessid()
+        </h2>
+<pre>getAccessid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getAid" id="getAid"></a><div class="element clickable method public getAid" data-toggle="collapse" data-target=".getAid .collapse">
+<h2>getAid()
+        </h2>
+<pre>getAid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getBalance" id="getBalance"></a><div class="element clickable method public getBalance" data-toggle="collapse" data-target=".getBalance .collapse">
+<h2>getBalance()
+        </h2>
+<pre>getBalance() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getClearingtype" id="getClearingtype"></a><div class="element clickable method public getClearingtype" data-toggle="collapse" data-target=".getClearingtype .collapse">
+<h2>getClearingtype()
+        </h2>
+<pre>getClearingtype() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getCurrency" id="getCurrency"></a><div class="element clickable method public getCurrency" data-toggle="collapse" data-target=".getCurrency .collapse">
+<h2>getCurrency()
+        </h2>
+<pre>getCurrency() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getCustomerid" id="getCustomerid"></a><div class="element clickable method public getCustomerid" data-toggle="collapse" data-target=".getCustomerid .collapse">
+<h2>getCustomerid()
+        </h2>
+<pre>getCustomerid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getFailedcause" id="getFailedcause"></a><div class="element clickable method public getFailedcause" data-toggle="collapse" data-target=".getFailedcause .collapse">
+<h2>getFailedcause()
+        </h2>
+<pre>getFailedcause() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getInvoiceDate" id="getInvoiceDate"></a><div class="element clickable method public getInvoiceDate" data-toggle="collapse" data-target=".getInvoiceDate .collapse">
+<h2>getInvoiceDate()
+        </h2>
+<pre>getInvoiceDate() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getInvoiceDeliverydate" id="getInvoiceDeliverydate"></a><div class="element clickable method public getInvoiceDeliverydate" data-toggle="collapse" data-target=".getInvoiceDeliverydate .collapse">
+<h2>getInvoiceDeliverydate()
+        </h2>
+<pre>getInvoiceDeliverydate() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getInvoiceDeliveryenddate" id="getInvoiceDeliveryenddate"></a><div class="element clickable method public getInvoiceDeliveryenddate" data-toggle="collapse" data-target=".getInvoiceDeliveryenddate .collapse">
+<h2>getInvoiceDeliveryenddate()
+        </h2>
+<pre>getInvoiceDeliveryenddate() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getInvoiceGrossamount" id="getInvoiceGrossamount"></a><div class="element clickable method public getInvoiceGrossamount" data-toggle="collapse" data-target=".getInvoiceGrossamount .collapse">
+<h2>getInvoiceGrossamount()
+        </h2>
+<pre>getInvoiceGrossamount() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getInvoiceid" id="getInvoiceid"></a><div class="element clickable method public getInvoiceid" data-toggle="collapse" data-target=".getInvoiceid .collapse">
+<h2>getInvoiceid()
+        </h2>
+<pre>getInvoiceid() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getKey" id="getKey"></a><div class="element clickable method public getKey" data-toggle="collapse" data-target=".getKey .collapse">
+<h2>getKey()
+        </h2>
+<pre>getKey() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getMode" id="getMode"></a><div class="element clickable method public getMode" data-toggle="collapse" data-target=".getMode .collapse">
+<h2>getMode()
+        </h2>
+<pre>getMode() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getParam" id="getParam"></a><div class="element clickable method public getParam" data-toggle="collapse" data-target=".getParam .collapse">
+<h2>getParam()
+        </h2>
+<pre>getParam() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getPortalid" id="getPortalid"></a><div class="element clickable method public getPortalid" data-toggle="collapse" data-target=".getPortalid .collapse">
+<h2>getPortalid()
+        </h2>
+<pre>getPortalid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getProductid" id="getProductid"></a><div class="element clickable method public getProductid" data-toggle="collapse" data-target=".getProductid .collapse">
+<h2>getProductid()
+        </h2>
+<pre>getProductid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getReceivable" id="getReceivable"></a><div class="element clickable method public getReceivable" data-toggle="collapse" data-target=".getReceivable .collapse">
+<h2>getReceivable()
+        </h2>
+<pre>getReceivable() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getReference" id="getReference"></a><div class="element clickable method public getReference" data-toggle="collapse" data-target=".getReference .collapse">
+<h2>getReference()
+        </h2>
+<pre>getReference() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getReminderlevel" id="getReminderlevel"></a><div class="element clickable method public getReminderlevel" data-toggle="collapse" data-target=".getReminderlevel .collapse">
+<h2>getReminderlevel()
+        </h2>
+<pre>getReminderlevel() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getSequencenumber" id="getSequencenumber"></a><div class="element clickable method public getSequencenumber" data-toggle="collapse" data-target=".getSequencenumber .collapse">
+<h2>getSequencenumber()
+        </h2>
+<pre>getSequencenumber() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getTxaction" id="getTxaction"></a><div class="element clickable method public getTxaction" data-toggle="collapse" data-target=".getTxaction .collapse">
+<h2>getTxaction()
+        </h2>
+<pre>getTxaction() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a name="getTxid" id="getTxid"></a><div class="element clickable method public getTxid" data-toggle="collapse" data-target=".getTxid .collapse">
+<h2>getTxid()
+        </h2>
+<pre>getTxid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getTxtime" id="getTxtime"></a><div class="element clickable method public getTxtime" data-toggle="collapse" data-target=".getTxtime .collapse">
+<h2>getTxtime()
+        </h2>
+<pre>getTxtime() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="getUserid" id="getUserid"></a><div class="element clickable method public getUserid" data-toggle="collapse" data-target=".getUserid .collapse">
+<h2>getUserid()
+        </h2>
+<pre>getUserid() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a name="init" id="init"></a><div class="element clickable method public init" data-toggle="collapse" data-target=".init .collapse">
+<h2>init()
+        </h2>
+<pre>init(array $data) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>abstract</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a name="setAccessid" id="setAccessid"></a><div class="element clickable method public setAccessid" data-toggle="collapse" data-target=".setAccessid .collapse">
+<h2>setAccessid()
+        </h2>
+<pre>setAccessid(int $accessid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$accessid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setAid" id="setAid"></a><div class="element clickable method public setAid" data-toggle="collapse" data-target=".setAid .collapse">
+<h2>setAid()
+        </h2>
+<pre>setAid(int $aid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$aid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setBalance" id="setBalance"></a><div class="element clickable method public setBalance" data-toggle="collapse" data-target=".setBalance .collapse">
+<h2>setBalance()
+        </h2>
+<pre>setBalance(string $balance) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$balance</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setClearingtype" id="setClearingtype"></a><div class="element clickable method public setClearingtype" data-toggle="collapse" data-target=".setClearingtype .collapse">
+<h2>setClearingtype()
+        </h2>
+<pre>setClearingtype(string $clearingtype) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$clearingtype</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setCurrency" id="setCurrency"></a><div class="element clickable method public setCurrency" data-toggle="collapse" data-target=".setCurrency .collapse">
+<h2>setCurrency()
+        </h2>
+<pre>setCurrency(string $currency) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$currency</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setCustomerid" id="setCustomerid"></a><div class="element clickable method public setCustomerid" data-toggle="collapse" data-target=".setCustomerid .collapse">
+<h2>setCustomerid()
+        </h2>
+<pre>setCustomerid(int $customerid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$customerid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setFailedcause" id="setFailedcause"></a><div class="element clickable method public setFailedcause" data-toggle="collapse" data-target=".setFailedcause .collapse">
+<h2>setFailedcause()
+        </h2>
+<pre>setFailedcause(string $failedcause) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$failedcause</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setInvoiceDate" id="setInvoiceDate"></a><div class="element clickable method public setInvoiceDate" data-toggle="collapse" data-target=".setInvoiceDate .collapse">
+<h2>setInvoiceDate()
+        </h2>
+<pre>setInvoiceDate(string $invoice_date) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$invoice_date</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setInvoiceDeliverydate" id="setInvoiceDeliverydate"></a><div class="element clickable method public setInvoiceDeliverydate" data-toggle="collapse" data-target=".setInvoiceDeliverydate .collapse">
+<h2>setInvoiceDeliverydate()
+        </h2>
+<pre>setInvoiceDeliverydate(string $invoice_deliverydate) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$invoice_deliverydate</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setInvoiceDeliveryenddate" id="setInvoiceDeliveryenddate"></a><div class="element clickable method public setInvoiceDeliveryenddate" data-toggle="collapse" data-target=".setInvoiceDeliveryenddate .collapse">
+<h2>setInvoiceDeliveryenddate()
+        </h2>
+<pre>setInvoiceDeliveryenddate(string $invoice_deliveryenddate) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$invoice_deliveryenddate</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setInvoiceGrossamount" id="setInvoiceGrossamount"></a><div class="element clickable method public setInvoiceGrossamount" data-toggle="collapse" data-target=".setInvoiceGrossamount .collapse">
+<h2>setInvoiceGrossamount()
+        </h2>
+<pre>setInvoiceGrossamount(string $invoice_grossamount) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$invoice_grossamount</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setInvoiceid" id="setInvoiceid"></a><div class="element clickable method public setInvoiceid" data-toggle="collapse" data-target=".setInvoiceid .collapse">
+<h2>setInvoiceid()
+        </h2>
+<pre>setInvoiceid(string $invoiceid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$invoiceid</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setKey" id="setKey"></a><div class="element clickable method public setKey" data-toggle="collapse" data-target=".setKey .collapse">
+<h2>setKey()
+        </h2>
+<pre>setKey(string $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setMode" id="setMode"></a><div class="element clickable method public setMode" data-toggle="collapse" data-target=".setMode .collapse">
+<h2>setMode()
+        </h2>
+<pre>setMode(string $mode) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setParam" id="setParam"></a><div class="element clickable method public setParam" data-toggle="collapse" data-target=".setParam .collapse">
+<h2>setParam()
+        </h2>
+<pre>setParam(string $param) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$param</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setPortalid" id="setPortalid"></a><div class="element clickable method public setPortalid" data-toggle="collapse" data-target=".setPortalid .collapse">
+<h2>setPortalid()
+        </h2>
+<pre>setPortalid(int $portalid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$portalid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setProductid" id="setProductid"></a><div class="element clickable method public setProductid" data-toggle="collapse" data-target=".setProductid .collapse">
+<h2>setProductid()
+        </h2>
+<pre>setProductid(int $productid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$productid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setReceivable" id="setReceivable"></a><div class="element clickable method public setReceivable" data-toggle="collapse" data-target=".setReceivable .collapse">
+<h2>setReceivable()
+        </h2>
+<pre>setReceivable(string $receivable) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$receivable</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setReference" id="setReference"></a><div class="element clickable method public setReference" data-toggle="collapse" data-target=".setReference .collapse">
+<h2>setReference()
+        </h2>
+<pre>setReference(string $reference) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$reference</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setReminderlevel" id="setReminderlevel"></a><div class="element clickable method public setReminderlevel" data-toggle="collapse" data-target=".setReminderlevel .collapse">
+<h2>setReminderlevel()
+        </h2>
+<pre>setReminderlevel(string $reminderlevel) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$reminderlevel</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setSequencenumber" id="setSequencenumber"></a><div class="element clickable method public setSequencenumber" data-toggle="collapse" data-target=".setSequencenumber .collapse">
+<h2>setSequencenumber()
+        </h2>
+<pre>setSequencenumber(string $sequencenumber) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$sequencenumber</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setTxaction" id="setTxaction"></a><div class="element clickable method public setTxaction" data-toggle="collapse" data-target=".setTxaction .collapse">
+<h2>setTxaction()
+        </h2>
+<pre>setTxaction(string $txaction) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$txaction</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a name="setTxid" id="setTxid"></a><div class="element clickable method public setTxid" data-toggle="collapse" data-target=".setTxid .collapse">
+<h2>setTxid()
+        </h2>
+<pre>setTxid(int $txid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$txid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setTxtime" id="setTxtime"></a><div class="element clickable method public setTxtime" data-toggle="collapse" data-target=".setTxtime .collapse">
+<h2>setTxtime()
+        </h2>
+<pre>setTxtime(int $txtime) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$txtime</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="setUserid" id="setUserid"></a><div class="element clickable method public setUserid" data-toggle="collapse" data-target=".setUserid .collapse">
+<h2>setUserid()
+        </h2>
+<pre>setUserid(int $userid) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$userid</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a name="toArray" id="toArray"></a><div class="element clickable method public toArray" data-toggle="collapse" data-target=".toArray .collapse">
+<h2>toArray()
+        </h2>
+<pre>toArray() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="span8">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-04-19T13:44:10+02:00.<br></footer></div>
+</div>
+</body>
+</html>
